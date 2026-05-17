@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transfers to other countries — Vova Kirilyuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
+</head>
+<body class="body">
+  <section class="section section-project">
+    <div class="container w-container">
+      <a class="project-back" href="../index.html">← Back</a>
+
+      <header class="project-header">
+        <p class="project-meta">Tinkoff · FinTech · In-app marketing · 2024–2025</p>
+        <h1 class="project-title">Transfers to other countries</h1>
+        <p class="project-lead">Designed a family of in-app promotional cards that explain international transfers, surface limits and fee-free options, and drive users into the transfer flow via deeplinks.</p>
+      </header>
+
+      <figure class="project-figure">
+        <img class="project-figure__image" src="../assets/projects/transfers-abroad.png" srcset="../assets/projects/transfers-abroad.png 1024w, ../assets/projects/transfers-abroad@2x.png 2048w" sizes="(max-width: 1200px) calc(100vw - 48px), 1024px" alt="Card variants for international transfers: banner, combo, history, dissolving, and top-up layouts" width="1024" height="637" decoding="async">
+        <figcaption class="project-figure__caption">Card variants — Banner, Combo, History, Dissolving, Top-up — with CMS-driven copy and deeplink actions.</figcaption>
+      </figure>
+
+      <div class="project-content">
+        <section class="project-block">
+          <h2 class="project-block__title">Overview</h2>
+          <p class="project-text">The mobile banking app needed clear, trustworthy touchpoints for a high-stakes product: sending money to foreign banks. Users had to understand limits, speed, fees, and supported destinations before tapping through to the transfer flow.</p>
+          <p class="project-text">I designed a modular card system for the in-app feed: compact banners for quick actions, richer combo cards with illustration and primary CTA, and supporting patterns for history and top-up contexts. Copy is templated with placeholders — <code class="project-inline-code">{{foreign bank}}</code>, <code class="project-inline-code">{{country name}}</code>, <code class="project-inline-code">{{currency name}}</code> — so marketing can localize and personalize at scale without redesigning layouts.</p>
+        </section>
+
+        <section class="project-block">
+          <h2 class="project-block__title">Problem</h2>
+          <ul class="project-list">
+            <li>International transfers are complex; users need confidence about limits, fees, and delivery before committing.</li>
+            <li>Multiple propositions compete in the same surface: phone-number transfers, fee-free corridors, and high limits (up to €5,000,000).</li>
+            <li>Content must stay consistent across card types while fitting strict character limits in the CMS.</li>
+          </ul>
+        </section>
+
+        <section class="project-block">
+          <h2 class="project-block__title">Solution</h2>
+          <p class="project-text">A shared visual language — light blue surfaces, 3D globe-and-cash illustration, yellow primary buttons — ties every variant together. Each format optimizes for its placement:</p>
+          <ul class="project-list">
+            <li><strong>Banner</strong> — horizontal strip with headline, limit line, Transfer + Hide actions for persistent feed slots.</li>
+            <li><strong>Combo / Dissolving</strong> — full card with illustration, body copy, and a single primary deeplink (Transfer or View list).</li>
+            <li><strong>History / Top-up</strong> — contextual reuse of the same components when the user is reviewing past transfers or funding a wallet.</li>
+          </ul>
+          <p class="project-text">Actions are configured as deeplinks into the transfer and bank-list flows, with character budgets enforced in the content editor (e.g. title 31/56) so copy never breaks the layout.</p>
+        </section>
+
+        <section class="project-block">
+          <h2 class="project-block__title">Key value props surfaced in UI</h2>
+          <ul class="project-list">
+            <li>Transfer by phone number to supported countries</li>
+            <li>High limits — up to €5,000,000 where applicable</li>
+            <li>Fast credit in the recipient’s currency</li>
+            <li>Fee-free transfers to 20+ partner banks across regions</li>
+            <li>Clear secondary path to browse the full bank list</li>
+          </ul>
+        </section>
+
+        <section class="project-block">
+          <h2 class="project-block__title">My role</h2>
+          <p class="project-text">Lead Product Designer — end-to-end UX and UI for card layouts, illustration direction, copy structure with placeholders, interaction specs for deeplinks, and handoff to engineering and the in-app content platform. Collaborated with marketing and product on messaging hierarchy and A/B-ready variants.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
