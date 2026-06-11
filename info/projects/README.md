@@ -8,6 +8,7 @@ Template used for each per-project `info.md`: [`../../project-page-structure.md`
 
 | Slug | Title | Client / Domain | Status | Folder |
 |------|-------|------------------|--------|--------|
+| `touch-campaign-flow` | Touch — Campaign Creation Flow | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`project-1 Campaign/`](project-1%20Campaign/) |
 | `transfers-abroad` | Transfers to other countries | Tinkoff · FinTech · In-app marketing | Shipped (2024–2025) | [`transfers-abroad/`](transfers-abroad/) |
 
 ## Blank slots

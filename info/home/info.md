@@ -17,6 +17,7 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 
 | Slug | Title | Meta | Description | Source |
 |------|-------|------|-------------|--------|
+| `touch-campaign-flow` | Touch — Campaign Creation Flow | Tinkoff · FinTech · Marketing automation | End-to-end campaign wizard — audiences, multi-channel creatives, A/B testing, and approval routing in one interface. | [`../projects/project-1 Campaign/info.md`](../projects/project-1%20Campaign/info.md) |
 | `transfers-abroad` | Transfers to other countries | Tinkoff · FinTech · In-app marketing | Promotional card system for international transfers — banners, combos, and deeplink CTAs with CMS-driven copy. | [`../projects/transfers-abroad/info.md`](../projects/transfers-abroad/info.md) |
 
 ### Blank slots (not on the site yet)

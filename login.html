@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <title>Enter password — Vova Kirilyuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="body">
+  <section class="section section-login">
+    <div class="container w-container">
+      <h1 class="login-title">Portfolio</h1>
+      <p class="login-lead">This site is private. Enter the password to continue.</p>
+      <form class="login-form" id="login-form" novalidate>
+        <label class="login-label" for="password">Password</label>
+        <input class="login-input" id="password" name="password" type="password" autocomplete="current-password" required>
+        <p class="login-error" id="login-error" hidden>Wrong password. Try again.</p>
+        <button class="login-button" type="submit">Enter</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var STORAGE_KEY = "portfolio_auth";
+      var PASSWORD = "kiri";
+      var form = document.getElementById("login-form");
+      var input = document.getElementById("password");
+      var error = document.getElementById("login-error");
+      var params = new URLSearchParams(window.location.search);
+      var next = params.get("next") || "index.html";
+
+      if (next.indexOf("login.html") !== -1) {
+        next = "index.html";
+      }
+
+      try {
+        if (sessionStorage.getItem(STORAGE_KEY) === "1") {
+          window.location.replace(next);
+          return;
+        }
+      } catch (e) {}
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        error.hidden = true;
+
+        if (input.value === PASSWORD) {
+          try {
+            sessionStorage.setItem(STORAGE_KEY, "1");
+          } catch (e) {}
+          window.location.replace(next);
+          return;
+        }
+
+        error.hidden = false;
+        input.select();
+      });
+    })();
+  </script>
+</body>
+</html>
