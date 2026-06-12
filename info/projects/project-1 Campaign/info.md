@@ -31,7 +31,7 @@
 
 | Name | Role | Avatar |
 |------|------|--------|
-| Vova Kirilyuk | Main designer | `../../team/Vova.png` |
+| Vova Kirilyuk | Lead designer | `../../team/Vova.png` |
 | Alex | Co-designer | `../../team/Alex.png` |
 | Rita | Co-designer | `../../team/Rita.png` |
 | Serge | Co-designer | `../../team/Serge.png` |
