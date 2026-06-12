@@ -530,6 +530,127 @@ img {
   color: #e9e9ea;
 }
 
+.lightbox-trigger {
+  cursor: zoom-in;
+}
+
+.lightbox-trigger:focus-visible {
+  outline: 2px solid #00e0e0;
+  outline-offset: 2px;
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 72px;
+  background: rgba(17, 20, 23, 0.96);
+}
+
+.lightbox__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox__image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 160px);
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+}
+
+.lightbox__caption {
+  margin: 0;
+  max-width: 720px;
+  min-height: 2.8em;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  color: #8b9298;
+}
+
+.lightbox__close,
+.lightbox__nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+  color: #e9e9ea;
+  background: #2b2b2b;
+  border: 1px solid #3a3f44;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lightbox__close:hover,
+.lightbox__nav:hover,
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  color: #00e0e0;
+  border-color: #00e0e0;
+}
+
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  outline: 2px solid #00e0e0;
+  outline-offset: 2px;
+}
+
+.lightbox__close {
+  top: 16px;
+  right: 16px;
+}
+
+.lightbox__nav--prev {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox__nav--next {
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox__counter {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #8b9298;
+}
+
 .w-code-block {
   margin: 0;
   display: block;
@@ -591,5 +712,27 @@ pre.w-code-block code > span {
 
   .project-lead {
     font-size: 16px;
+  }
+
+  .lightbox {
+    padding: 64px 16px;
+  }
+
+  .lightbox__image {
+    max-height: calc(100vh - 200px);
+  }
+
+  .lightbox__nav--prev {
+    top: auto;
+    bottom: 16px;
+    left: 16px;
+    transform: none;
+  }
+
+  .lightbox__nav--next {
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+    transform: none;
   }
 }
