@@ -4,6 +4,15 @@ Index of every case study. Each project lives in its own folder with an `info.md
 
 Template used for each per-project `info.md`: [`../../project-page-structure.md`](../../project-page-structure.md).
 
+## Info ↔ live page
+
+Each project folder is paired with one case study HTML file. **If you edit a project's `info.md`, update that HTML page (and `index.html` if the card text changed) in the same pass** — see [sync rules in `../README.md`](../README.md#sync-with-the-live-site).
+
+| Slug | `info.md` | Live page |
+|------|-----------|-----------|
+| `touch-campaign-flow` | [`project-1 Campaign/info.md`](project-1%20Campaign/info.md) | [`../../projects/touch-campaign-flow.html`](../../projects/touch-campaign-flow.html) |
+| `transfers-abroad` | [`transfers-abroad/info.md`](transfers-abroad/info.md) | [`../../projects/transfers-abroad.html`](../../projects/transfers-abroad.html) |
+
 ## Live projects
 
 | Slug | Title | Client / Domain | Status | Folder |
@@ -38,4 +47,5 @@ Themes from [`../../ideas.md`](../../ideas.md) that may become projects or site-
    - Optional: `notes.md`, `brief.md`, extra screenshots and references.
 3. Add a row in the **Blank / drafts** table above.
 4. Add a row to [`../home/info.md`](../home/info.md) project grid so it shows on the home page.
-5. When the case is shipped, move the row to **Live projects**.
+5. When the case is shipped, move the row to **Live projects** and add a row to the **Info ↔ live page** table above.
+6. Keep `info.md` and `projects/<slug>.html` in sync on every content change — the info file is canonical.

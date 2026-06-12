@@ -8,7 +8,25 @@ Use this folder to:
 - Collect raw and final pictures for each project
 - Keep notes, briefs, and references that should not ship in HTML
 
-The live site (`index.html`, `cv.html`, `projects/*.html`, `assets/*`) is generated/maintained separately. When the info changes here, port the relevant bits into the HTML.
+The live site (`index.html`, `cv.html`, `projects/*.html`, `assets/*`) is built from this folder. **`info.md` is the source of truth** — the HTML is the published copy.
+
+## Sync with the live site
+
+Whenever you change an `info.md`, **update the connected web page in the same edit** so the site stays in sync. Do not leave info and HTML diverged.
+
+| Info source | Live page |
+|-------------|-----------|
+| [`home/info.md`](home/info.md) | [`index.html`](../index.html) |
+| [`cv/info.md`](cv/info.md) | [`cv.html`](../cv.html) |
+| [`projects/<slug>/info.md`](projects/) | [`projects/<slug>.html`](../projects/) |
+
+For projects, the slug in the `info.md` header (and in [`projects/README.md`](projects/README.md)) must match the HTML filename. Each project `info.md` links to its page at the top — e.g. `projects/touch-campaign-flow.html` ← `info/projects/project-1 Campaign/info.md`.
+
+**What to port when info changes:**
+
+- **Text** — title, meta line, lead, snapshot rows, narrative sections, captions → matching blocks in the HTML page.
+- **Images** — new or replaced screenshots in the project folder → copy/export to `assets/projects/<slug>/` (and card `@1x` / `@2x` if the hero or home card changed).
+- **Home grid** — if title, domain, or card blurb changed, update the matching project card in `index.html` (source row in [`home/info.md`](home/info.md)).
 
 ## Convention
 
