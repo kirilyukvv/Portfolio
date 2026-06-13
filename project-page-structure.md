@@ -2,7 +2,7 @@
 
 Template for case study pages: **snapshot** (scannable facts) + **story** (narrative + visuals). Reuse the same HTML/CSS blocks; only copy changes per project.
 
-Reference implementation: `projects/transfers-abroad.html`
+Reference implementation: `projects/touch-campaign-flow.html`
 
 ## Layer 1 — Hero
 

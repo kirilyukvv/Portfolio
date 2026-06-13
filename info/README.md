@@ -54,7 +54,7 @@ info/
 
 ## Adding a new project
 
-1. Create `info/projects/<slug>/` (slug matches the eventual HTML filename, e.g. `transfers-abroad`).
+1. Create `info/projects/<slug>/` (slug matches the eventual HTML filename, e.g. `touch-content-production`).
 2. Copy the structure from [`../project-page-structure.md`](../project-page-structure.md) into a new `info.md` inside that folder and fill it in.
 3. Drop pictures into the same folder. Keep `@1x` and `@2x` versions next to each other.
 4. Add a row in [`projects/README.md`](projects/README.md).

@@ -11,14 +11,21 @@ Each project folder is paired with one case study HTML file. **If you edit a pro
 | Slug | `info.md` | Live page |
 |------|-----------|-----------|
 | `touch-campaign-flow` | [`project-1 Campaign/info.md`](project-1%20Campaign/info.md) | [`../../projects/touch-campaign-flow.html`](../../projects/touch-campaign-flow.html) |
-| `transfers-abroad` | [`transfers-abroad/info.md`](transfers-abroad/info.md) | [`../../projects/transfers-abroad.html`](../../projects/transfers-abroad.html) |
 
 ## Live projects
 
 | Slug | Title | Client / Domain | Status | Folder |
 |------|-------|------------------|--------|--------|
 | `touch-campaign-flow` | Touch — Campaign Creation Flow | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`project-1 Campaign/`](project-1%20Campaign/) |
-| `transfers-abroad` | Transfers to other countries | Tinkoff · FinTech · In-app marketing | Shipped (2024–2025) | [`transfers-abroad/`](transfers-abroad/) |
+
+## Coming soon
+
+On the home grid but no case page yet.
+
+| Slot | Title | Client / Domain | Status | Folder |
+|------|-------|------------------|--------|--------|
+| 2 | Touch — Content production | Tinkoff · FinTech · Marketing automation | Coming soon | [`project-2/`](project-2/) |
+| 3 | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Coming soon | [`project-3/`](project-3/) |
 
 ## Blank slots
 
@@ -27,12 +34,10 @@ Empty placeholder folders ready to be filled in. Each contains a generic `info.m
 | Slot | Folder |
 |------|--------|
 | 1 | [`project-1/`](project-1/) |
-| 2 | [`project-2/`](project-2/) |
-| 3 | [`project-3/`](project-3/) |
 | 4 | [`project-4/`](project-4/) |
 | 5 | [`project-5/`](project-5/) |
 
-Promote a slot to **Live projects** once you've renamed the folder, written the `info.md`, dropped in pictures, and shipped the HTML page at `projects/<slug>.html`.
+Promote a slot to **Coming soon** or **Live projects** once you've written the `info.md` and (for live) shipped the HTML page at `projects/<slug>.html`.
 
 ## Backlog ideas
 
@@ -45,7 +50,7 @@ Themes from [`../../ideas.md`](../../ideas.md) that may become projects or site-
    - `info.md` — copy the structure from [`../../project-page-structure.md`](../../project-page-structure.md) (or any existing project's `info.md` as a starting point).
    - `<slug>.png` and `<slug>@2x.png` — the same images the home card and the case page will use.
    - Optional: `notes.md`, `brief.md`, extra screenshots and references.
-3. Add a row in the **Blank / drafts** table above.
+3. Add a row in the **Blank slots** or **Coming soon** table above.
 4. Add a row to [`../home/info.md`](../home/info.md) project grid so it shows on the home page.
 5. When the case is shipped, move the row to **Live projects** and add a row to the **Info ↔ live page** table above.
 6. Keep `info.md` and `projects/<slug>.html` in sync on every content change — the info file is canonical.

@@ -199,6 +199,42 @@ img {
   color: #00e0e0;
 }
 
+.project-card--soon {
+  cursor: default;
+}
+
+.project-card--soon:hover,
+.project-card--soon:focus-visible {
+  background: #2b2b2b;
+}
+
+.project-card__media--placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #3d4349;
+}
+
+.project-card__soon-symbol {
+  font-size: 22px;
+  line-height: 1;
+  color: #3d4349;
+}
+
+.project-card__soon-label {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7278;
+}
+
+.project-card__link--muted {
+  color: #6b7278;
+}
+
 .section-login {
   min-height: 100vh;
   display: flex;
