@@ -10,22 +10,23 @@ Each project folder is paired with one case study HTML file. **If you edit a pro
 
 | Slug | `info.md` | Live page |
 |------|-----------|-----------|
-| `touch-campaign-flow` | [`project-1 Campaign/info.md`](project-1%20Campaign/info.md) | [`../../projects/touch-campaign-flow.html`](../../projects/touch-campaign-flow.html) |
+| `campaign-creation` | [`Touch — Campaign creation/info.md`](Touch%20%E2%80%94%20Campaign%20creation/info.md) | [`../../projects/campaign-creation.html`](../../projects/campaign-creation.html) |
+| `content-production` | [`Touch — Content production/info.md`](Touch%20%E2%80%94%20Content%20production/info.md) | [`../../projects/content-production.html`](../../projects/content-production.html) |
+| `content-storage` | [`Touch — Content storage/info.md`](Touch%20%E2%80%94%20Content%20storage/info.md) | [`../../projects/content-storage.html`](../../projects/content-storage.html) |
 
 ## Live projects
 
 | Slug | Title | Client / Domain | Status | Folder |
 |------|-------|------------------|--------|--------|
-| `touch-campaign-flow` | Touch — Campaign Creation Flow | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`project-1 Campaign/`](project-1%20Campaign/) |
+| `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`Touch — Campaign creation/`](Touch%20%E2%80%94%20Campaign%20creation/) |
+| `content-production` | Touch — Content production | Tinkoff · FinTech · Marketing automation | Vision / discovery (2026) | [`Touch — Content production/`](Touch%20%E2%80%94%20Content%20production/) |
+| `content-storage` | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Vision / discovery (2026) | [`Touch — Content storage/`](Touch%20%E2%80%94%20Content%20storage/) |
 
 ## Coming soon
 
 On the home grid but no case page yet.
 
-| Slot | Title | Client / Domain | Status | Folder |
-|------|-------|------------------|--------|--------|
-| 2 | Touch — Content production | Tinkoff · FinTech · Marketing automation | Coming soon | [`project-2/`](project-2/) |
-| 3 | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Coming soon | [`project-3/`](project-3/) |
+No coming soon projects are currently shown.
 
 ## Blank slots
 

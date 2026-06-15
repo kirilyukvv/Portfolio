@@ -486,6 +486,12 @@ img {
   background: #2b2b2b;
 }
 
+.project-figure--portrait .project-figure__image {
+  width: auto;
+  max-height: 640px;
+  max-width: 100%;
+}
+
 .project-figure__caption {
   margin-top: 12px;
   font-size: 12px;
