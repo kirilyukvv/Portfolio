@@ -1,12 +1,12 @@
-# Touch — Campaign Creation Flow
+# Touch — Campaign creation
 
-> Source content for [`../../../projects/touch-campaign-flow.html`](../../../projects/touch-campaign-flow.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `touch-campaign-flow`.
+> Source content for [`../../../projects/campaign-creation.html`](../../../projects/campaign-creation.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `campaign-creation`.
 
 **Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2022–Present
 
 **Lead:** Designed an end-to-end campaign creation flow in Touch that lets marketing managers build, configure, and publish multi-channel communication campaigns — with A/B testing and approval routing in one unified interface.
 
-<!-- FIGURE: Hero — use `00 Preview.png` (export as touch-campaign-flow.png + @2x for home card and case page) -->
+<!-- FIGURE: Hero — use `00 Preview.png` (export as campaign-creation.png + @2x for home card and case page) -->
 
 ![Scenario canvas — A/B test branches and multi-channel nodes](00%20Preview.png)
 
@@ -137,7 +137,7 @@ The flow reduces campaign time-to-launch by centralizing audience targeting, cre
 
 | File | What it shows | Use on case page |
 |------|---------------|------------------|
-| `00 Preview.png` | Scenario canvas — full flow to A/B split, left component palette | **Hero** + home card (`touch-campaign-flow.png` / `@2x`) |
+| `00 Preview.png` | Scenario canvas — full flow to A/B split, left component palette | **Hero** + home card (`campaign-creation.png` / `@2x`) |
 | `01.png` | Campaigns hub — list, statuses, "+ Create" | **Overview** — platform context (first in-story figure) |
 | `02.png` | About tab — metadata, hypothesis, Analysis / Approval / Board rail | **Solution §1** — Campaign Setup |
 | `03.png` | Audiences tab — segment list, volume 350k, T-segments | **Solution §2** — Audience Configuration |

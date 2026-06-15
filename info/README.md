@@ -20,7 +20,7 @@ Whenever you change an `info.md`, **update the connected web page in the same ed
 | [`cv/info.md`](cv/info.md) | [`cv.html`](../cv.html) |
 | [`projects/<slug>/info.md`](projects/) | [`projects/<slug>.html`](../projects/) |
 
-For projects, the slug in the `info.md` header (and in [`projects/README.md`](projects/README.md)) must match the HTML filename. Each project `info.md` links to its page at the top — e.g. `projects/touch-campaign-flow.html` ← `info/projects/project-1 Campaign/info.md`.
+For projects, the slug in the `info.md` header (and in [`projects/README.md`](projects/README.md)) must match the HTML filename. Each project `info.md` links to its page at the top — e.g. `projects/campaign-creation.html` ← `info/projects/Touch — Campaign creation/info.md`.
 
 **What to port when info changes:**
 

@@ -17,14 +17,13 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 
 | Slug | Title | Meta | Description | Source |
 |------|-------|------|-------------|--------|
-| `touch-campaign-flow` | Touch — Campaign Creation Flow | Tinkoff · FinTech · Marketing automation | End-to-end campaign wizard — audiences, multi-channel creatives, A/B testing, and approval routing in one interface. | [`../projects/project-1 Campaign/info.md`](../projects/project-1%20Campaign/info.md) |
+| `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | End-to-end campaign wizard — audiences, multi-channel creatives, A/B testing, and approval routing in one interface. | [`../projects/Touch — Campaign creation/info.md`](../projects/Touch%20%E2%80%94%20Campaign%20creation/info.md) |
+| `content-production` | Touch — Content production | Tinkoff · FinTech · Marketing automation | Role-based creative workspace for editors, designers, and technologists - from brief to approval, assets, JSON, and testing. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
+| `content-storage` | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Searchable content memory for creatives, assets, icons, and templates - with campaign usage, metadata, and reuse paths. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
 ### Coming soon (shown on the site, no case page yet)
 
-| Slot | Title | Meta | Description | Source |
-|------|-------|------|-------------|--------|
-| 2 | Touch — Content production | Tinkoff · FinTech · Marketing automation | Case study in progress. | [`../projects/project-2/info.md`](../projects/project-2/info.md) |
-| 3 | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Case study in progress. | [`../projects/project-3/info.md`](../projects/project-3/info.md) |
+No coming soon cards are currently shown.
 
 ### Blank slots (not on the site yet)
 
