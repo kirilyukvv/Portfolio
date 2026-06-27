@@ -749,7 +749,8 @@ img {
   border-top: 1px solid #3a3f44;
 }
 
-.markdown-preview a {
+.markdown-preview a:link,
+.markdown-preview a:visited {
   color: #00e0e0;
   text-decoration: none;
   transition: color 0.15s ease;
