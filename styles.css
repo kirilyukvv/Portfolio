@@ -56,6 +56,11 @@ img {
   transition: color 0.15s ease;
 }
 
+.hero-nav__sep {
+  font-size: 14px;
+  color: #666;
+}
+
 .hero-nav__link:hover,
 .hero-nav__link:focus-visible {
   color: #abe338;
