@@ -4,7 +4,7 @@ Lead Product Designer · AI, FinTech, Marketing & Analytics, SAAS
 
 Email: [kirilyukvv@gmail.com](mailto:kirilyukvv@gmail.com)
 LinkedIn: [https://www.linkedin.com/in/kirilyuk-dsgn/](https://www.linkedin.com/in/kirilyuk-dsgn/)
-Portfolio: [https://www.behance.net/kirilyukme](https://www.behance.net/kirilyukme)
+Portfolio: [https://kirilyukvv.github.io/Portfolio/](https://kirilyukvv.github.io/Portfolio/)
 Location: Almaty, Kazakhstan (Ready to relocation)
 
 ---
