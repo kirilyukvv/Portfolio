@@ -8,7 +8,6 @@ Source content for [`../../index.html`](../../index.html).
 - **Name:** Vova Kirilyuk
 - **Tagline:** AI · BIGTECH · FINTECH · MARKETING · ANALYTICS · WEB APP · HARDCORE PROJECTS
 - **Primary link:** CV → [`../cv/info.md`](../cv/info.md)
-- **Role CV:** CV Revolut ↓ [`../cv/revolut-platform-product-designer.docx`](../cv/revolut-platform-product-designer.docx) (source: [`../cv/revolut-platform-product-designer.md`](../cv/revolut-platform-product-designer.md))
 
 ## Project grid
 

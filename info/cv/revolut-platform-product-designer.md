@@ -4,7 +4,7 @@ Platform Product Designer · Internal Tools · FinTech · AI
 
 Email: kirilyukvv@gmail.com
 LinkedIn: https://www.linkedin.com/in/kirilyuk-dsgn/
-Portfolio: https://www.behance.net/kirilyukme
+Portfolio: https://kirilyukvv.github.io/Portfolio/
 Location: Almaty, Kazakhstan · Open to relocation
 
 ---

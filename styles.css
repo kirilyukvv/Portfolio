@@ -698,25 +698,94 @@ img {
   color: #8b9298;
 }
 
-.w-code-block {
-  margin: 0;
-  display: block;
-  overflow-x: auto;
-  background: #2b2b2b;
-  color: #f8f8f2;
-  padding: 0.5em;
-  border-radius: 4px;
+.markdown-preview {
+  max-width: 720px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #e9e9ea;
 }
 
-.w-code-block code.language-markdown {
-  white-space: pre-wrap;
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 13px;
-  line-height: 1.45;
+.markdown-preview > :first-child {
+  margin-top: 0;
 }
 
-pre.w-code-block code > span {
-  display: block !important;
+.markdown-preview h1 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #e9e9ea;
+}
+
+.markdown-preview h2 {
+  margin: 32px 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #00e0e0;
+}
+
+.markdown-preview h3 {
+  margin: 24px 0 12px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #e9e9ea;
+}
+
+.markdown-preview p {
+  margin: 0 0 16px;
+}
+
+.markdown-preview p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-preview hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #3a3f44;
+}
+
+.markdown-preview a {
+  color: #00e0e0;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.markdown-preview a:hover,
+.markdown-preview a:focus-visible {
+  color: #abe338;
+}
+
+.markdown-preview a:focus-visible {
+  outline: 2px solid #00e0e0;
+  outline-offset: 2px;
+}
+
+.markdown-preview strong {
+  font-weight: 500;
+  color: #e9e9ea;
+}
+
+.markdown-preview em {
+  font-style: italic;
+  color: #b8bcc0;
+}
+
+.markdown-preview ul {
+  margin: 0 0 16px;
+  padding-left: 1.25em;
+}
+
+.markdown-preview li {
+  margin-bottom: 8px;
+}
+
+.markdown-preview li:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
