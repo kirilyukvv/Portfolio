@@ -56,6 +56,15 @@ Rename only if the project demands it (e.g. “System” instead of “Solution�
 ## Suggested HTML shape (when implementing)
 
 ```text
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <!-- analytics injected by: node build.mjs -->
+  <script src="../auth.js"></script>
+  ...
+</head>
+
 .project-header
 .project-highlights          ← dl or grid: label / value rows
 .project-figure

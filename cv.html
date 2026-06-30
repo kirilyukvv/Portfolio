@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <script>
+  (function () {
+    var base = location.pathname.indexOf('/projects/') !== -1 ? '../' : '';
+    var script = document.createElement('script');
+    script.src = base + 'js/analytics.js';
+    document.head.appendChild(script);
+  })();
+  </script>
   <script src="auth.js"></script>
   <title>CV — Vova Kirilyuk</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
