@@ -85,6 +85,13 @@
 
 При повторной оценке добавить третью вкладку: график v1 → v2 по тем же критериям, статус каждого старого замечания и новые проблемы, которые появились после правок.
 
+## Проведённые прожарки
+
+| Кейс | Файл | Оценка |
+|---|---|---|
+| Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
+| Content production | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,6, страница не переписывалась |
+
 ## Как просить об этом в новом чате
 
 > Прожарь страницу проекта по [project-roast.md](project-roast.md). Сверь текст с материалами в `info/projects/`. Не выдумывай цифры. Сначала перевод и прожарка, страницу не меняй, пока я не отвечу на вопросы.
