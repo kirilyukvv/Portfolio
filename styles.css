@@ -607,6 +607,33 @@ img {
   color: #abe338;
 }
 
+.project-text a {
+  color: #00e0e0;
+  text-decoration: none;
+}
+
+.project-text a:hover,
+.project-text a:focus-visible {
+  color: #abe338;
+}
+
+/* Placeholder for data the author still has to provide. Remove the markup once filled. */
+.project-todo {
+  padding: 0 4px;
+  background: rgba(255, 196, 0, 0.12);
+  outline: 1px dashed #ffc400;
+  color: #ffc400;
+  font-style: normal;
+}
+
+.project-todo--block {
+  display: block;
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .project-decision {
   margin: 0 0 24px;
   padding: 24px;

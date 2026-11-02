@@ -18,7 +18,7 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 | Slug | Title | Meta | Description | Source |
 |------|-------|------|-------------|--------|
 | `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | End-to-end campaign wizard — audiences, multi-channel creatives, A/B testing, and approval routing in one interface. | [`../projects/Touch — Campaign creation/info.md`](../projects/Touch%20%E2%80%94%20Campaign%20creation/info.md) |
-| `content-production` | Touch — Content production | Tinkoff · FinTech · Marketing automation | Role-based creative workspace for editors, designers, and technologists - from brief to approval, assets, JSON, and testing. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
+| `content-production` | Touch — Content production | Tinkoff · FinTech · Marketing automation | One workspace with a mode for each role: editor, designer and technologist build campaign creatives together. A vision tested with 19 specialists before any code. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
 | `content-storage` | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Searchable content memory for creatives, assets, icons, and templates - with campaign usage, metadata, and reuse paths. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
 ### Coming soon (shown on the site, no case page yet)
