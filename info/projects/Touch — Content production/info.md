@@ -6,7 +6,7 @@
 
 **Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026 · Vision stage
 
-**Lead:** Editors, designers and technologists build the creatives for every Tinkoff campaign across Jira, Google Docs, Figma, chats and legacy constructors. We designed a vision for Content Hub: one workspace inside Touch with a mode for each role. Before writing any code, we tested it with 19 specialists and the platform stakeholders. `[нужно от тебя: кто вёл концепт и макеты — ты, Алекс или вместе? Под ответ поправить «We designed»]`
+**Lead:** Editors, designers and technologists build the creatives for every Tinkoff campaign across Jira, Google Docs, Figma, chats and legacy constructors. Designer Alex led a vision for Content Hub: one workspace inside Touch with a mode for each role. I reviewed the design, advised on the business process and drew part of the prototypes. Before writing any code, we tested it with 19 specialists and the platform stakeholders.
 
 ![Content Hub canvas](00%20Preview.png)
 
@@ -19,7 +19,7 @@
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing. This is the layer where creatives are made inside a campaign |
 | **◆ Scale** | A large campaign needs ~30 creatives and ~2 weeks of work; partner approval alone takes 2–3 days and several rounds |
 | **◆ Validation** | 4 sessions: 19 specialists (5 editors, 7 designers, 7 technologists) plus a session with platform product and architecture leads |
-| **◆ My role** | Product Design Lead. `[нужно от тебя: что ты делал сам — направление, постановка, ревью макетов, ведение встреч?]` |
+| **◆ My role** | Product Design Lead. Design review, business process expertise, part of the prototypes |
 | **◆ Status** | Vision, not shipped. Key points confirmed by users; architecture still open. `[нужно от тебя: что-то уже в работе или запущено?]` |
 
 ## Overview
@@ -47,13 +47,13 @@ In May we brought the updated vision to the platform's product and architecture 
 
 ## My role & team
 
-Alex led the concept and the layouts, and presented the vision in every session. `[нужно от тебя: твоя часть. Например: «I set the direction, reviewed the layouts, planned the validation and co-ran the sessions». Если Алекс работал под твоим руководством — так и написать]`
+Alex led the concept and the layouts, and presented the vision in every session. I reviewed the design at each step, advised on how campaign content is actually produced and approved, and drew part of the prototypes myself.
 
-At the stakeholder meeting I defended the role-based model and proposed settling the disputed points with users rather than in a meeting room. `[нужно от тебя: что ещё делал — постановка, синк с продуктом, план поставок?]`
+At the stakeholder meeting I defended the role-based model and proposed settling the disputed points with users rather than in a meeting room.
 
 | Name | Role | Area | Avatar |
 |------|------|------|--------|
-| Vova Kirilyuk | Product Design Lead | `[нужно от тебя: зона ответственности]` | `../../team/Vova.png` |
+| Vova Kirilyuk | Product Design Lead | Design review, business process, part of the prototypes | `../../team/Vova.png` |
 | Alex | Product designer | Concept, layouts, role sessions | `../../team/Alex.png` |
 
 ## Key decisions
