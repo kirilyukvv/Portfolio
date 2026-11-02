@@ -19,7 +19,7 @@ Each project folder is paired with one case study HTML file. **If you edit a pro
 | Slug | Title | Client / Domain | Status | Folder |
 |------|-------|------------------|--------|--------|
 | `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`Touch — Campaign creation/`](Touch%20%E2%80%94%20Campaign%20creation/) |
-| `content-production` | Touch — Content production (page title: One workspace, three crafts) | Tinkoff · FinTech · Marketing automation | Vision / discovery (2026) | [`Touch — Content production/`](Touch%20%E2%80%94%20Content%20production/) |
+| `content-production` | Touch — Content production (page title: One workspace, three crafts) | Tinkoff · FinTech · Marketing automation | MVP live (2026) | [`Touch — Content production/`](Touch%20%E2%80%94%20Content%20production/) |
 | `content-storage` | Touch — Content storage | Tinkoff · FinTech · Marketing automation | Vision / discovery (2026) | [`Touch — Content storage/`](Touch%20%E2%80%94%20Content%20storage/) |
 
 ## Coming soon

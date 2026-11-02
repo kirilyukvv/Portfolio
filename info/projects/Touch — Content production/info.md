@@ -4,7 +4,7 @@
 >
 > **`[нужно от тебя: …]`** marks data only the author can provide. On the live page these render as yellow dashed `<mark class="project-todo">` blocks. Replace both here and in the HTML, then delete the markup.
 
-**Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026 · Vision stage
+**Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026 · MVP
 
 **Lead:** Editors, designers and technologists build the creatives for every Tinkoff campaign across Jira, Google Docs, Figma, chats and legacy constructors. Designer Alex led a vision for Content Hub: one workspace inside Touch with a mode for each role. I reviewed the design, advised on the business process and drew part of the prototypes. Before writing any code, we tested it with 19 specialists and the platform stakeholders.
 
@@ -20,13 +20,13 @@
 | **◆ Scale** | A large campaign needs ~30 creatives and ~2 weeks of work; partner approval alone takes 2–3 days and several rounds |
 | **◆ Validation** | 4 sessions: 19 specialists (5 editors, 7 designers, 7 technologists) plus a session with platform product and architecture leads |
 | **◆ My role** | Product Design Lead. Design review, business process expertise, part of the prototypes |
-| **◆ Status** | Vision, not shipped. Key points confirmed by users; architecture still open. `[нужно от тебя: что-то уже в работе или запущено?]` |
+| **◆ Status** | First version (MVP) is live. Users work in it every day, and their feedback drives the next changes. Architecture questions are still open |
 
 ## Overview
 
 The [Campaign creation](../../../projects/campaign-creation.html) case gave the campaign a home in Touch: one entity that holds the brief, audiences, creatives and A/B tests. This case goes one level deeper. It is about how the creatives inside that campaign get made, and by whom.
 
-Three roles touch every creative. The editor writes the message and checks facts and tone. The designer builds the visual. The technologist adds personalization, deeplinks and triggers, then tests it. Today each of them works in a different tool, and the creative travels between them by hand. `[нужно от тебя: Content Hub — развитие этапа Content из первого кейса или отдельный продукт? Поправить абзац под ответ]`
+Three roles touch every creative. The editor writes the message and checks facts and tone. The designer builds the visual. The technologist adds personalization, deeplinks and triggers, then tests it. Today each of them works in a different tool, and the creative travels between them by hand. Content Hub continues the Content stage of Campaign creation: the campaign already holds its list of creatives, and now the work on each creative happens there too.
 
 ## Problem
 
@@ -106,11 +106,11 @@ He was partly right. The data model, versioning and template strategy are the bi
 
 The meeting ended without decisions. The compromise everyone accepted: each role should finish all of its work in one interface, and the disputed points get validated with users before anyone builds them.
 
-`[нужно от тебя: что было после 20.05? Спорные точки проверили на пользователях? Рабочая группа собралась? Что из этого вышло?]`
+After the meeting the project moved forward as an MVP. The first version is live, users work in it every day, and their feedback drives each next round of changes. This is the user check we argued for.
 
 ## Outcome
 
-This is a vision, not a launch. The proof is how far the concept was tested, and what changed because of it.
+The first version is live as an MVP and keeps changing based on user feedback. Below is what the validation confirmed, what it changed, and what is still open.
 
 - **Confirmed:** role-based modes on one canvas, Figma import for custom work, optional outside review by link.
 - **Changed:** full AI visual generation put on hold; every AI image goes through a designer; editors' experience with partner agencies goes into the brief.
@@ -126,7 +126,7 @@ This is a vision, not a launch. The proof is how far the concept was tested, and
 
 ## Sources
 
-Numbers and quotes come from the meeting transcripts in this folder: `Editors/Editors.txt`, `Designers/Designers.txt`, `Technologists/Technologists.txt` (17.02.2026) and `Вижен КХ.txt` (20.05.2026). `[нужно от тебя: можно ли публично цитировать цифры со встреч?]`
+Numbers and quotes come from the meeting transcripts in this folder: `Editors/Editors.txt`, `Designers/Designers.txt`, `Technologists/Technologists.txt` (17.02.2026) and `Вижен КХ.txt` (20.05.2026). The author has confirmed the numbers can be quoted.
 
 ## Assets in this folder
 
