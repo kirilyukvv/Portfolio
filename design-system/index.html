@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" class="sb-locked">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <!-- Private page: intentionally no analytics (build.mjs skips this folder). -->
+  <script>
+    try {
+      if (localStorage.getItem('ds_unlock') === '137ae5844df97d1aa3d561e5997af42aa4c378d7cb053f93d8ffc385c4038177') {
+        document.documentElement.className = 'sb-unlocked';
+      }
+    } catch (e) {}
+  </script>
+  <title>Design system — Vova Kirilyuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
+  <link href="storybook.css" rel="stylesheet">
+</head>
+<body class="body">
+
+  <!-- ============================== Gate ============================== -->
+  <section class="section section-login sb-gate">
+    <div class="container w-container">
+      <p class="sb-eyebrow">◆ Private</p>
+      <h1 class="login-title">Design system</h1>
+      <p class="login-lead">Owner-only workspace. Enter the passphrase to continue.</p>
+      <form class="login-form" id="sb-gate-form" novalidate>
+        <label class="login-label" for="sb-pass">Passphrase</label>
+        <input class="login-input" id="sb-pass" name="password" type="password" autocomplete="current-password" required>
+        <p class="login-error" id="sb-gate-error" role="alert" hidden>Wrong passphrase.</p>
+        <button class="login-button" type="submit">Unlock</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================== App =============================== -->
+  <div class="sb-app">
+    <header class="sb-topbar">
+      <p class="sb-brand">vovakiri<span>/ds</span></p>
+      <button class="sb-chip" id="sb-menu" type="button" aria-expanded="false" aria-controls="sb-sidebar">Menu</button>
+    </header>
+
+    <nav class="sb-sidebar" id="sb-sidebar" aria-label="Design system">
+      <p class="sb-brand">vovakiri<span>/ds</span></p>
+      <p class="sb-version">Portfolio design system · v1.0</p>
+      <input class="sb-search" id="sb-search" type="search" placeholder="Search  ( / )" aria-label="Search the design system">
+
+      <div class="sb-nav__group">
+        <p class="sb-nav__heading">Start</p>
+        <ul class="sb-nav__list">
+          <li><a class="sb-nav__link" href="#overview">Overview</a></li>
+          <li><a class="sb-nav__link" href="#audit">Audit</a></li>
+        </ul>
+      </div>
+      <div class="sb-nav__group">
+        <p class="sb-nav__heading">Foundations</p>
+        <ul class="sb-nav__list">
+          <li><a class="sb-nav__link" href="#colors">Color</a></li>
+          <li><a class="sb-nav__link" href="#typography">Typography</a></li>
+          <li><a class="sb-nav__link" href="#layout">Spacing &amp; layout</a></li>
+          <li><a class="sb-nav__link" href="#shape-motion">Radius, motion &amp; focus</a></li>
+          <li><a class="sb-nav__link" href="#symbols">Symbols</a></li>
+        </ul>
+      </div>
+      <div class="sb-nav__group">
+        <p class="sb-nav__heading">Components</p>
+        <ul class="sb-nav__list">
+          <li><a class="sb-nav__link" href="#links">Links &amp; navigation</a></li>
+          <li><a class="sb-nav__link" href="#forms">Button &amp; form</a></li>
+          <li><a class="sb-nav__link" href="#hero">Hero</a></li>
+          <li><a class="sb-nav__link" href="#project-card">Project card</a></li>
+          <li><a class="sb-nav__link" href="#project-header">Case header</a></li>
+          <li><a class="sb-nav__link" href="#highlights">Highlights</a></li>
+          <li><a class="sb-nav__link" href="#content-block">Content block</a></li>
+          <li><a class="sb-nav__link" href="#decision">Decision card</a></li>
+          <li><a class="sb-nav__link" href="#figure">Figure &amp; lightbox</a></li>
+          <li><a class="sb-nav__link" href="#team">Team</a></li>
+          <li><a class="sb-nav__link" href="#note">Archive note</a></li>
+          <li><a class="sb-nav__link" href="#prose">Prose (CV)</a></li>
+        </ul>
+      </div>
+      <div class="sb-nav__group">
+        <p class="sb-nav__heading">Patterns</p>
+        <ul class="sb-nav__list">
+          <li><a class="sb-nav__link" href="#pattern-home">Home page</a></li>
+          <li><a class="sb-nav__link" href="#pattern-case">Case study page</a></li>
+        </ul>
+      </div>
+
+      <div class="sb-sidebar__footer">
+        <a href="../index.html">← Back to site</a>
+        <button id="sb-lock" type="button">Lock this device</button>
+      </div>
+    </nav>
+
+    <main class="sb-main">
+      <div class="sb-main__inner">
+
+        <!-- ========================== Overview ========================== -->
+        <section class="sb-page" id="overview" data-title="Overview">
+          <p class="sb-eyebrow">◆ Start</p>
+          <h1 class="sb-h1">Portfolio design system</h1>
+          <p class="sb-lead">A living reference for every token, component and page pattern used on the portfolio. All previews render the real <code>styles.css</code>, so what you see here is exactly what ships.</p>
+
+          <div class="sb-score">
+            <div class="sb-score__item"><p class="sb-score__value">15</p><p class="sb-score__label">Color tokens</p></div>
+            <div class="sb-score__item"><p class="sb-score__value">1</p><p class="sb-score__label">Typeface</p></div>
+            <div class="sb-score__item"><p class="sb-score__value">12</p><p class="sb-score__label">Components</p></div>
+            <div class="sb-score__item"><p class="sb-score__value">2</p><p class="sb-score__label">Page patterns</p></div>
+          </div>
+
+          <h2 class="sb-h2">Principles</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Principle</th><th>What it means in practice</th></tr></thead>
+              <tbody>
+                <tr><td>Terminal, not template</td><td>One monospace family (JetBrains Mono) on a dark graphite canvas. Hierarchy comes from size and weight, not from extra fonts.</td></tr>
+                <tr><td>One accent, one reaction</td><td>Cyan <code>--color-accent</code> marks everything interactive or structural. Lime <code>--color-accent-hover</code> is only ever the response to hover or focus.</td></tr>
+                <tr><td>Light by default</td><td>Body copy sits at weight 300. Weight 500 is reserved for titles, labels and names.</td></tr>
+                <tr><td>Snapshot, then story</td><td>Cases open with scannable facts (highlights) and only then go into narrative and visuals.</td></tr>
+                <tr><td>Geeky labels</td><td>Small uppercase labels with tracking, often prefixed with a symbol like <code>◆</code>.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Files</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Path</th><th>Role</th></tr></thead>
+              <tbody>
+                <tr><td><code>styles.css</code></td><td>All tokens (<code>:root</code>) and components. Edit tokens there; this page reads them live.</td></tr>
+                <tr><td><code>js/project-lightbox.js</code></td><td>Lightbox behaviour for every <code>.project-figure__image</code>.</td></tr>
+                <tr><td><code>project-page-structure.md</code></td><td>Content rules for case studies (see the Case study pattern).</td></tr>
+                <tr><td><code>design-system/</code></td><td>This storybook. Unlinked, not indexed, not tracked by analytics.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =========================== Audit ============================ -->
+        <section class="sb-page" id="audit" data-title="Audit">
+          <p class="sb-eyebrow">◆ Start</p>
+          <h1 class="sb-h1">Audit</h1>
+          <p class="sb-lead">A review of <code>styles.css</code> and every page, done while building this system. Colors are now tokenized; the items below are what's left.</p>
+
+          <div class="sb-score">
+            <div class="sb-score__item"><p class="sb-score__value">72<span style="font-size:16px;color:var(--color-text-muted)">/100</span></p><p class="sb-score__label">Score</p></div>
+            <div class="sb-score__item"><p class="sb-score__value">~45</p><p class="sb-score__label">Classes reviewed</p></div>
+            <div class="sb-score__item"><p class="sb-score__value">9</p><p class="sb-score__label">Issues found</p></div>
+          </div>
+
+          <h2 class="sb-h2">Token coverage</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Category</th><th>Defined</th><th>Hardcoded values</th></tr></thead>
+              <tbody>
+                <tr><td>Color</td><td>15 tokens</td><td>0 — all 85 color usages now reference tokens</td></tr>
+                <tr><td>Typography</td><td>Family + 3 weights</td><td>15 distinct font sizes (11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 32, 44, 48, 64, 96 px), none tokenized</td></tr>
+                <tr><td>Spacing</td><td>Gutters only</td><td>16 distinct values; 10, 14, 56 and 72 px sit off the 4/8 rhythm</td></tr>
+                <tr><td>Radius</td><td>3 tokens</td><td>Defined, not yet referenced by components</td></tr>
+                <tr><td>Motion</td><td>2 tokens</td><td>All transitions use 0.15s ease — consistent, not yet referenced</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Accessibility</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Issue</th><th>Where</th><th>Recommendation</th></tr></thead>
+              <tbody>
+                <tr><td><span class="sb-badge sb-badge--fail">2.90:1</span> Disabled text on surface</td><td><code>.project-card__soon-label</code>, <code>.project-card__link--muted</code></td><td>Lift <code>--color-text-disabled</code> to ≈ <code>#80878d</code> (4.5:1 on surface), or accept as decorative and make sure the card title carries the meaning.</td></tr>
+                <tr><td><span class="sb-badge sb-badge--warn">4.49:1</span> Muted text on surface</td><td><code>.project-highlights__label</code>, <code>.project-decision__rows dt</code> (11px on <code>#2b2b2b</code>)</td><td>A hair under AA. Lighten <code>--color-text-muted</code> to <code>#8e959b</code> — visually identical, passes.</td></tr>
+                <tr><td><span class="sb-badge sb-badge--fail">2.89:1</span> Separator</td><td><code>.hero-nav__sep</code></td><td>Decorative; add <code>aria-hidden="true"</code> to the “·”.</td></tr>
+                <tr><td>No focus ring</td><td><code>.project-back</code></td><td>Only changes color on <code>:focus-visible</code>. Add the standard 2px accent outline like every other link.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Naming consistency</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Issue</th><th>Classes</th><th>Recommendation</th></tr></thead>
+              <tbody>
+                <tr><td>Webflow leftovers next to BEM</td><td><code>.heading</code>, <code>.text-span</code>, <code>.paragraph</code>, <code>.container-2</code>, <code>.w-container</code></td><td>Rename to <code>.hero__title</code>, <code>.hero__eyebrow</code>, <code>.hero__tags</code>, <code>.container--flush</code>, <code>.container</code>.</td></tr>
+                <tr><td>One pattern, three names</td><td><code>.section-title</code>, <code>.project-block__title</code>, <code>.project-designers__title</code></td><td>All are “small uppercase label”. Extract one <code>.label</code> with <code>--muted</code> / <code>--accent</code> modifiers.</td></tr>
+                <tr><td>Primitives tied to one page</td><td><code>.login-button</code>, <code>.login-input</code>, <code>.login-label</code></td><td>These are the only button/input in the system. Promote to <code>.button</code>, <code>.input</code>, <code>.field-label</code> and keep <code>login-*</code> as aliases.</td></tr>
+                <tr><td>Radius drift</td><td>Cards / notes use 4px; highlights, decisions and figures use 0</td><td>Pick one on purpose. Square = “document” surfaces, 4px = “interactive” surfaces is a fine rule — write it down.</td></tr>
+                <tr><td>Off-scale type</td><td>11, 13, 15, 22 px</td><td>Converge on a scale: 12 · 14 · 18 · 20 · 32 · 48 · 96 (+ 64/44 responsive).</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Priority actions</h2>
+          <ol class="project-list">
+            <li><strong>Fix the 4 contrast/focus issues.</strong> Two token tweaks and two one-line CSS changes.</li>
+            <li><strong>Promote button, input and label to generic primitives.</strong> Anything new (contact form, filters) will need them.</li>
+            <li><strong>Tokenize the type scale and spacing,</strong> then point radius and motion usages at the existing tokens.</li>
+          </ol>
+        </section>
+
+        <!-- =========================== Color ============================ -->
+        <section class="sb-page" id="colors" data-title="Color">
+          <p class="sb-eyebrow">◆ Foundations</p>
+          <h1 class="sb-h1">Color</h1>
+          <p class="sb-lead">A dark graphite palette with a single cyan accent. Values are read live from <code>:root</code> in <code>styles.css</code>; badges show WCAG contrast against the page background and the card surface.</p>
+          <div id="sb-swatches"></div>
+
+          <h2 class="sb-h2">Usage</h2>
+          <div class="sb-dodont">
+            <div>
+              <h4>Do</h4>
+              <ul>
+                <li>Use <code>--color-accent</code> for anything clickable or for structural block titles.</li>
+                <li>Switch to <code>--color-accent-hover</code> only on <code>:hover</code> / <code>:focus-visible</code>.</li>
+                <li>Use <code>--color-text-muted</code> for meta and labels, not for sentences.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Don't</h4>
+              <ul>
+                <li>Don't write raw hex in components — add a token first.</li>
+                <li>Don't use lime as a resting color; it's the hover answer.</li>
+                <li>Don't put <code>--color-text-disabled</code> text on the surface for anything that must be read.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================== Typography ========================== -->
+        <section class="sb-page" id="typography" data-title="Typography">
+          <p class="sb-eyebrow">◆ Foundations</p>
+          <h1 class="sb-h1">Typography</h1>
+          <p class="sb-lead">JetBrains Mono everywhere, weights 300 / 400 / 500. Base: 14px with 1.5 line-height. Large display sizes are tightened with <code>-0.02em</code> tracking; small labels are opened up with <code>0.06–0.08em</code> and uppercase.</p>
+
+          <h2 class="sb-h2">Weights</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Token</th><th>Value</th><th>Sample</th><th>Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>--font-weight-light</code></td><td>300</td><td style="font-weight:300;font-size:18px">Campaign creation</td><td>Body, leads, meta, captions</td></tr>
+                <tr><td><code>--font-weight-regular</code></td><td>400</td><td style="font-weight:400;font-size:18px">Campaign creation</td><td>Links, nav, small CTAs</td></tr>
+                <tr><td><code>--font-weight-medium</code></td><td>500</td><td style="font-weight:500;font-size:18px">Campaign creation</td><td>Titles, labels, names, buttons</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Type scale</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Role</th><th>Class</th><th>Size / LH / Weight</th><th>Sample</th></tr></thead>
+              <tbody>
+                <tr><td>Display</td><td><code>.heading</code></td><td>96 → 64 → 44 / 0.8 / 500</td><td><p class="sb-type-sample" style="font-size:56px;font-weight:500;line-height:.9;letter-spacing:-.02em">Vova K</p></td></tr>
+                <tr><td>Case title</td><td><code>.project-title</code></td><td>48 → 32 / 1 / 500</td><td><p class="sb-type-sample" style="font-size:48px;font-weight:500;line-height:1;letter-spacing:-.02em">Touch</p></td></tr>
+                <tr><td>Eyebrow / H1 prose</td><td><code>.text-span</code>, <code>.login-title</code></td><td>32 → 24 → 18 / 1.1 / 300–500</td><td><p class="sb-type-sample" style="font-size:32px;font-weight:300">Product Design Lead</p></td></tr>
+                <tr><td>Card title</td><td><code>.project-card__title</code></td><td>20 / 1.2 / 500</td><td><p class="sb-type-sample" style="font-size:20px;font-weight:500;letter-spacing:-.02em">Touch — Campaign creation</p></td></tr>
+                <tr><td>Lead</td><td><code>.project-lead</code></td><td>18 → 16 / 1.45 / 300</td><td><p class="sb-type-sample" style="font-size:18px;font-weight:300;color:var(--color-text-secondary)">One campaign entity instead of ten tools.</p></td></tr>
+                <tr><td>Decision title</td><td><code>.project-decision__title</code></td><td>18 / 1.3 / 500</td><td><p class="sb-type-sample" style="font-size:18px;font-weight:500">Set up once for every channel</p></td></tr>
+                <tr><td>Section label</td><td><code>.section-title</code></td><td>18 / 1 / 500 · upper · 0.08em</td><td><p class="sb-type-sample" style="font-size:18px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted)">Projects</p></td></tr>
+                <tr><td>Body</td><td><code>.project-text</code></td><td>14 / 1.55 / 300</td><td><p class="sb-type-sample" style="font-size:14px;font-weight:300">Research showed the real gap was a missing object.</p></td></tr>
+                <tr><td>Block label</td><td><code>.project-block__title</code></td><td>14 / 1 / 500 · upper · 0.06em</td><td><p class="sb-type-sample" style="font-size:14px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--color-accent)">Key decisions</p></td></tr>
+                <tr><td>Small</td><td><code>.project-highlights__value</code></td><td>13 / 1.45 / 300</td><td><p class="sb-type-sample" style="font-size:13px;font-weight:300">Product Design Lead, Tinkoff</p></td></tr>
+                <tr><td>Meta / caption</td><td><code>.project-meta</code></td><td>12 / 1.3–1.4 / 300</td><td><p class="sb-type-sample" style="font-size:12px;font-weight:300;color:var(--color-text-muted)">Tinkoff · FinTech · Marketing automation</p></td></tr>
+                <tr><td>Micro label</td><td><code>.project-highlights__label</code></td><td>11 / 1.3 / 500 · upper · 0.06em</td><td><p class="sb-type-sample" style="font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-muted)">◆ Context</p></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ========================== Layout ============================ -->
+        <section class="sb-page" id="layout" data-title="Spacing & layout">
+          <p class="sb-eyebrow">◆ Foundations</p>
+          <h1 class="sb-h1">Spacing &amp; layout</h1>
+          <p class="sb-lead">Spacing follows a loose 4/8 rhythm. Reading width is capped at 720px, media at 1024px, the page at 1200px.</p>
+
+          <h2 class="sb-h2">Spacing in use</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Step</th><th>px</th><th>Scale</th><th>Typical use</th></tr></thead>
+              <tbody>
+                <tr><td>2xs</td><td>4</td><td><span class="sb-space-bar" style="width:4px"></span></td><td>Label → value</td></tr>
+                <tr><td>xs</td><td>8</td><td><span class="sb-space-bar" style="width:8px"></span></td><td>Meta → title, list items</td></tr>
+                <tr><td>sm</td><td>12</td><td><span class="sb-space-bar" style="width:12px"></span></td><td>Form gaps, caption offset, avatar gap</td></tr>
+                <tr><td>md</td><td>16</td><td><span class="sb-space-bar" style="width:16px"></span></td><td>Paragraph spacing, title → content, mobile gutter</td></tr>
+                <tr><td>lg</td><td>24</td><td><span class="sb-space-bar" style="width:24px"></span></td><td>Grid gap, panel padding, desktop gutter</td></tr>
+                <tr><td>xl</td><td>32</td><td><span class="sb-space-bar" style="width:32px"></span></td><td>Back link → header</td></tr>
+                <tr><td>2xl</td><td>40</td><td><span class="sb-space-bar" style="width:40px"></span></td><td>Section top, between blocks</td></tr>
+                <tr><td>3xl</td><td>48</td><td><span class="sb-space-bar" style="width:48px"></span></td><td>Between figures / highlights</td></tr>
+                <tr><td>4xl</td><td>64</td><td><span class="sb-space-bar" style="width:64px"></span></td><td>Section bottom</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Widths</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Token</th><th>Value</th><th>Applies to</th></tr></thead>
+              <tbody>
+                <tr><td><code>--container-max</code></td><td>1200px</td><td><code>.w-container</code>, <code>.container</code></td></tr>
+                <tr><td><code>--media-max</code></td><td>1024px</td><td>Figures, highlights, decisions, <code>.project-content--wide</code></td></tr>
+                <tr><td><code>--content-max</code></td><td>720px</td><td>Header, blocks, prose — comfortable line length</td></tr>
+                <tr><td><code>--gutter</code> / <code>--gutter-mobile</code></td><td>24px / 16px</td><td>Container side padding</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Breakpoints</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Name</th><th>Query</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Tablet</td><td><code>max-width: 991px</code></td><td>Display heading 96 → 64, eyebrow 32 → 24</td></tr>
+                <tr><td>Mobile</td><td><code>max-width: 767px</code></td><td>Heading 44, single-column grid, 16px gutter, case title 32, decision rows stack, lightbox nav moves to the bottom</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Grids</h2>
+          <p class="sb-text"><code>.projects-grid</code> and the team block use <code>repeat(auto-fill, minmax(320px, 1fr))</code>; highlights use <code>minmax(280px, 1fr)</code>. No fixed column count — the grid fills what fits.</p>
+        </section>
+
+        <!-- ===================== Radius, motion, focus ================== -->
+        <section class="sb-page" id="shape-motion" data-title="Radius, motion & focus">
+          <p class="sb-eyebrow">◆ Foundations</p>
+          <h1 class="sb-h1">Radius, motion &amp; focus</h1>
+
+          <h2 class="sb-h2">Radius</h2>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Token</th><th>Value</th><th>Sample</th><th>Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>--radius-none</code></td><td>0</td><td><span class="sb-radius-demo" style="border-radius:0"></span></td><td>Highlights, decision cards, figures — “document” surfaces</td></tr>
+                <tr><td><code>--radius-sm</code></td><td>3px</td><td><span class="sb-radius-demo" style="border-radius:3px"></span></td><td>Inline code</td></tr>
+                <tr><td><code>--radius-md</code></td><td>4px</td><td><span class="sb-radius-demo" style="border-radius:4px"></span></td><td>Cards, inputs, buttons, avatars, notes — “interactive” surfaces</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sb-h2">Motion</h2>
+          <p class="sb-text">One transition for everything: <code>var(--duration-fast) var(--easing-standard)</code> = <code>0.15s ease</code>, applied to <code>color</code>, <code>background-color</code> and <code>border-color</code>. No movement, no scale. Hover this: <span class="sb-motion-demo">hover me</span></p>
+
+          <h2 class="sb-h2">Focus</h2>
+          <p class="sb-text">Keyboard focus is always a <code>2px solid var(--color-accent)</code> outline with a <code>2px</code> offset (<code>1px</code> on inputs). Hover and focus-visible share the same color change.</p>
+          <div class="sb-story" data-no-code>
+            <div class="sb-canvas">
+              <p class="hero-nav" style="margin:0"><a class="hero-nav__link sb-force-focus" href="#shape-motion">Focused link →</a></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================== Symbols =========================== -->
+        <section class="sb-page" id="symbols" data-title="Symbols">
+          <p class="sb-eyebrow">◆ Foundations</p>
+          <h1 class="sb-h1">Symbols</h1>
+          <p class="sb-lead">No icon font. Typographic symbols do the job of icons and keep the terminal feel. Use them as label prefixes, arrows on CTAs and separators.</p>
+          <ul class="sb-symbols">
+            <li><span>◆</span>label</li>
+            <li><span>→</span>forward CTA</li>
+            <li><span>←</span>back</li>
+            <li><span>·</span>separator</li>
+            <li><span>✕</span>close</li>
+            <li><span>▸</span>current</li>
+            <li><span>◇</span>placeholder</li>
+            <li><span>—</span>title dash</li>
+          </ul>
+        </section>
+
+        <!-- ====================== Links & navigation ==================== -->
+        <section class="sb-page" id="links" data-title="Links & navigation">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Links &amp; navigation</h1>
+          <p class="sb-lead">Links are cyan with no underline and turn lime on hover/focus. Forward links end in <code>→</code>, back links start with <code>←</code>.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Hero nav</h3><p class="sb-story__classes">.hero-nav · .hero-nav__link · .hero-nav__sep</p></header>
+            <p class="sb-story__desc">Primary page links under the hero. Separate with a muted dot.</p>
+            <div class="sb-controls" data-target=".hero-nav__link" data-states="default,hover,focus"></div>
+            <div class="sb-canvas">
+              <p class="hero-nav"><a class="hero-nav__link" href="#links">CV →</a> <span class="hero-nav__sep">·</span> <a class="hero-nav__link" href="#links">Me as a Manager →</a></p>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Back link</h3><p class="sb-story__classes">.project-back</p></header>
+            <p class="sb-story__desc">First element on every inner page. Muted at rest, cyan on hover.</p>
+            <div class="sb-controls" data-target=".project-back" data-states="default,hover,focus"></div>
+            <div class="sb-canvas">
+              <a class="project-back" href="#links">← Back</a>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Section title</h3><p class="sb-story__classes">.section-title</p></header>
+            <p class="sb-story__desc">Muted uppercase label that names a page section.</p>
+            <div class="sb-canvas">
+              <h2 class="section-title">Projects</h2>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================== Button & form ======================= -->
+        <section class="sb-page" id="forms" data-title="Button & form">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Button &amp; form</h1>
+          <p class="sb-lead">Today these only live on the login screen (<code>login-*</code>). They are the system's only button and input — see the Audit about promoting them.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Primary button</h3><p class="sb-story__classes">.login-button</p></header>
+            <p class="sb-story__desc">Cyan fill, dark text (10.06:1). Lime on hover. Left-aligned inside forms.</p>
+            <div class="sb-controls" data-target=".login-button" data-states="default,hover,focus"></div>
+            <div class="sb-canvas">
+              <button class="login-button" type="button">Enter</button>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Text field</h3><p class="sb-story__classes">.login-form · .login-label · .login-input · .login-error</p></header>
+            <p class="sb-story__desc">Label above the input, error below in <code>--color-danger</code>. Toggle the states to preview focus and error.</p>
+            <div class="sb-controls" data-target=".login-input" data-states="default,focus,error" data-error-toggle></div>
+            <div class="sb-canvas">
+              <form class="login-form" style="max-width:360px" onsubmit="return false">
+                <label class="login-label" for="sb-demo-pass">Password</label>
+                <input class="login-input" id="sb-demo-pass" type="password" value="hunter2">
+                <p class="login-error" hidden>Wrong password. Try again.</p>
+                <button class="login-button" type="submit">Enter</button>
+              </form>
+            </div>
+          </article>
+        </section>
+
+        <!-- ============================ Hero ============================ -->
+        <section class="sb-page" id="hero" data-title="Hero">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Hero</h1>
+          <p class="sb-lead">Home page intro: a light eyebrow (role) over a huge medium-weight name, tags line and nav.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Home hero</h3><p class="sb-story__classes">.heading · .text-span · .paragraph · .hero-nav</p></header>
+            <div class="sb-canvas sb-canvas--plain">
+              <h1 class="heading"><span class="text-span">Product Design Lead</span><br>Vova Kirilyuk</h1>
+              <p class="paragraph">AI · BIGTECH · FINTECH · MARKETING · ANALYTICS</p>
+              <p class="hero-nav"><a class="hero-nav__link" href="#hero">CV →</a> <span class="hero-nav__sep">·</span> <a class="hero-nav__link" href="#hero">Me as a Manager →</a></p>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================== Project card ======================== -->
+        <section class="sb-page" id="project-card" data-title="Project card">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Project card</h1>
+          <p class="sb-lead">The whole card is one link. Media on top (1024 / 637), then meta, title, one-to-two-sentence outcome and a “View case →” cue.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Default</h3><p class="sb-story__classes">.project-card · __media · __image · __body · __meta · __title · __desc · __link</p></header>
+            <div class="sb-controls" data-target=".project-card" data-states="default,hover,focus"></div>
+            <div class="sb-canvas">
+              <div class="projects-grid">
+                <a class="project-card" href="#project-card">
+                  <div class="project-card__media">
+                    <img class="project-card__image" src="../assets/projects/campaign-creation.png" alt="Campaign creation scenario canvas" width="1024" height="640" decoding="async">
+                  </div>
+                  <div class="project-card__body">
+                    <p class="project-card__meta">Tinkoff · FinTech · Marketing automation</p>
+                    <h3 class="project-card__title">Touch — Campaign creation</h3>
+                    <p class="project-card__desc">One campaign entity instead of ~10 tools. Launch time cut from 30–70 days to a week or less.</p>
+                    <p class="project-card__link">View case →</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Coming soon</h3><p class="sb-story__classes">.project-card--soon · __media--placeholder · __soon-symbol · __soon-label · __link--muted</p></header>
+            <p class="sb-story__desc">Placeholder for a case that's not ready. Not interactive — render it as a <code>div</code>, not a link.</p>
+            <div class="sb-canvas">
+              <div class="projects-grid">
+                <div class="project-card project-card--soon">
+                  <div class="project-card__media project-card__media--placeholder">
+                    <span class="project-card__soon-symbol">◇</span>
+                    <span class="project-card__soon-label">Coming soon</span>
+                  </div>
+                  <div class="project-card__body">
+                    <p class="project-card__meta">Client · Domain</p>
+                    <h3 class="project-card__title">Next case study</h3>
+                    <p class="project-card__desc">Short outcome-first description goes here.</p>
+                    <p class="project-card__link project-card__link--muted">In progress</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="sb-dodont">
+            <div><h4>Do</h4><ul><li>Lead the description with the outcome or a number.</li><li>Keep meta to <code>Client · Domain · Type</code>.</li><li>Lazy-load every card image after the first.</li></ul></div>
+            <div><h4>Don't</h4><ul><li>Don't nest other links inside the card.</li><li>Don't exceed two lines of description.</li></ul></div>
+          </div>
+        </section>
+
+        <!-- ======================== Case header ========================= -->
+        <section class="sb-page" id="project-header" data-title="Case header">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Case header</h1>
+          <p class="sb-lead">Layer 1 of a case: back link, meta line, title, one-sentence lead.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Header</h3><p class="sb-story__classes">.project-header · .project-meta · .project-title · .project-lead</p></header>
+            <div class="sb-canvas sb-canvas--plain">
+              <a class="project-back" href="#project-header">← Back</a>
+              <header class="project-header">
+                <p class="project-meta">Tinkoff · FinTech · Marketing automation · 2023–2024</p>
+                <h1 class="project-title">Touch — Campaign creation</h1>
+                <p class="project-lead">One campaign entity that brings the brief, audiences, creatives, A/B tests and approvals into one place.</p>
+              </header>
+            </div>
+          </article>
+        </section>
+
+        <!-- ========================= Highlights ========================= -->
+        <section class="sb-page" id="highlights" data-title="Highlights">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Highlights</h1>
+          <p class="sb-lead">Layer 2 of a case: a scannable fact grid. Built as a <code>&lt;dl&gt;</code>. Each value is one to three lines; omit rows rather than pad them.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Fact grid</h3><p class="sb-story__classes">.project-highlights · __item · __label · __value</p></header>
+            <div class="sb-canvas">
+              <dl class="project-highlights">
+                <div class="project-highlights__item">
+                  <dt class="project-highlights__label">◆ Context</dt>
+                  <dd class="project-highlights__value">Touch, Tinkoff's internal platform for customer marketing</dd>
+                </div>
+                <div class="project-highlights__item">
+                  <dt class="project-highlights__label">◆ Goal</dt>
+                  <dd class="project-highlights__value">Make the whole campaign launch visible in one place</dd>
+                </div>
+                <div class="project-highlights__item">
+                  <dt class="project-highlights__label">◆ Role</dt>
+                  <dd class="project-highlights__value">Lead designer — research, concept, reviews</dd>
+                </div>
+                <div class="project-highlights__item">
+                  <dt class="project-highlights__label">◆ Metrics</dt>
+                  <dd class="project-highlights__value">Launch time 30–70 days → ≤ 7 days</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <h2 class="sb-h2">Recommended labels</h2>
+          <p class="sb-text">Context · Task · Goal · Constraints · Role · Team · Scope · Metrics — optional: Tools, Timeline, Status. Keep <em>Task</em> (the brief) and <em>Goal</em> (how you'd know it worked) separate.</p>
+        </section>
+
+        <!-- ======================= Content block ======================== -->
+        <section class="sb-page" id="content-block" data-title="Content block">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Content block</h1>
+          <p class="sb-lead">Layer 3 of a case: the story. An accent label, paragraphs, lists and inline code. Wrap blocks in <code>.project-content</code> (720px) or <code>.project-content--wide</code> (1024px, text still capped at 720).</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Block</h3><p class="sb-story__classes">.project-content · .project-block · __title · .project-text · .project-list · .project-inline-code</p></header>
+            <div class="sb-canvas">
+              <div class="project-content">
+                <section class="project-block">
+                  <h2 class="project-block__title">Problem</h2>
+                  <p class="project-text">A campaign had no home, so Jira tickets and links between systems stood in for it.</p>
+                  <ul class="project-list">
+                    <li><strong>Ten tools</strong> to launch one campaign.</li>
+                    <li>Approvals lived in chat threads.</li>
+                  </ul>
+                  <p class="project-text">Variables like <code class="project-inline-code">{{foreign bank}}</code> were typed by hand.</p>
+                </section>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================= Decision card ======================== -->
+        <section class="sb-page" id="decision" data-title="Decision card">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Decision card</h1>
+          <p class="sb-lead">The signature component of a case. Numbered, titled with the decision itself, and broken into Why / How / Result. Rows stack on mobile.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Decision</h3><p class="sb-story__classes">.project-decision · __index · __title · __rows</p></header>
+            <div class="sb-canvas">
+              <article class="project-decision">
+                <p class="project-decision__index">Decision 01</p>
+                <h3 class="project-decision__title">The campaign becomes one entity</h3>
+                <dl class="project-decision__rows">
+                  <dt>Why</dt>
+                  <dd>Research showed the real gap was not a missing tool but a missing object.</dd>
+                  <dt>How</dt>
+                  <dd>Every artifact now lives inside the campaign: brief, audiences, creatives, scenarios, A/B tests and approvals.</dd>
+                  <dt>Result</dt>
+                  <dd>The hypothesis and risks are written down before any creative is made.</dd>
+                </dl>
+              </article>
+            </div>
+          </article>
+
+          <div class="sb-dodont">
+            <div><h4>Do</h4><ul><li>Title it as the decision (“The A/B test is a node”), not the topic (“A/B tests”).</li><li>Follow each decision with the figure that proves it.</li></ul></div>
+            <div><h4>Don't</h4><ul><li>Don't put a metric in “Result” you can't defend — use directional wins under NDA.</li></ul></div>
+          </div>
+        </section>
+
+        <!-- ===================== Figure & lightbox ====================== -->
+        <section class="sb-page" id="figure" data-title="Figure & lightbox">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Figure &amp; lightbox</h1>
+          <p class="sb-lead">Every <code>.project-figure__image</code> on a page automatically opens in the lightbox (<code>js/project-lightbox.js</code>): ← → to browse, Esc to close, caption carried over. Click the images below to try it.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Landscape figure</h3><p class="sb-story__classes">.project-figure · __image · __caption</p></header>
+            <div class="sb-canvas">
+              <figure class="project-figure">
+                <img class="project-figure__image" src="../assets/projects/campaign-creation/01.png" alt="Campaign list with statuses" width="2048" height="1280" loading="lazy" decoding="async">
+                <figcaption class="project-figure__caption">Campaign list. Each campaign is one entity with a status.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Portrait figure</h3><p class="sb-story__classes">.project-figure--portrait</p></header>
+            <p class="sb-story__desc">For tall screens: natural width, capped at 640px height.</p>
+            <div class="sb-canvas">
+              <figure class="project-figure project-figure--portrait">
+                <img class="project-figure__image" src="../assets/projects/campaign-creation/07.png" alt="Channel picker modal" width="2048" height="1280" loading="lazy" decoding="async">
+                <figcaption class="project-figure__caption">Captions explain what to notice, not what the image is.</figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+
+        <!-- ============================ Team ============================ -->
+        <section class="sb-page" id="team" data-title="Team">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Team</h1>
+          <p class="sb-lead">Pixel-art avatars (48px, <code>image-rendering: pixelated</code>) with name, role and optional area of ownership.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Inline list</h3><p class="sb-story__classes">.project-designers · __title · __list · .project-designer · __avatar · __info · __name · __role</p></header>
+            <div class="sb-canvas">
+              <section class="project-designers" aria-label="Design team">
+                <h2 class="project-designers__title">Team</h2>
+                <ul class="project-designers__list">
+                  <li class="project-designer">
+                    <img class="project-designer__avatar" src="../assets/team/Vova.png" alt="" width="48" height="48">
+                    <div class="project-designer__info"><p class="project-designer__name">Vova Kirilyuk</p><p class="project-designer__role">Lead designer</p></div>
+                  </li>
+                  <li class="project-designer">
+                    <img class="project-designer__avatar" src="../assets/team/Rita.png" alt="" width="48" height="48">
+                    <div class="project-designer__info"><p class="project-designer__name">Rita</p><p class="project-designer__role">Product designer</p></div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </article>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Block with ownership</h3><p class="sb-story__classes">.project-designers--block · .project-designer__area</p></header>
+            <p class="sb-story__desc">Use inside a content block when you explain how work was split.</p>
+            <div class="sb-canvas">
+              <section class="project-designers project-designers--block" aria-label="Design team">
+                <ul class="project-designers__list">
+                  <li class="project-designer">
+                    <img class="project-designer__avatar" src="../assets/team/Vova.png" alt="" width="48" height="48">
+                    <div class="project-designer__info">
+                      <p class="project-designer__name">Vova Kirilyuk</p>
+                      <p class="project-designer__role">Lead designer</p>
+                      <p class="project-designer__area">Research, concept, design reviews, stakeholder alignment</p>
+                    </div>
+                  </li>
+                  <li class="project-designer">
+                    <img class="project-designer__avatar" src="../assets/team/Serge.png" alt="" width="48" height="48">
+                    <div class="project-designer__info">
+                      <p class="project-designer__name">Serge</p>
+                      <p class="project-designer__role">Product designer</p>
+                      <p class="project-designer__area">Scenario canvas and A/B tests</p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================== Archive note ======================== -->
+        <section class="sb-page" id="note" data-title="Archive note">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Archive note</h1>
+          <p class="sb-lead">An inline notice with a muted left rule. Used to point from an old version of a case to the current one.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Note</h3><p class="sb-story__classes">.project-archive-note</p></header>
+            <div class="sb-controls" data-target=".project-archive-note a" data-states="default,hover,focus"></div>
+            <div class="sb-canvas">
+              <p class="project-archive-note">Archived version (v1). <a href="#note">See the current case →</a></p>
+            </div>
+          </article>
+        </section>
+
+        <!-- ============================ Prose =========================== -->
+        <section class="sb-page" id="prose" data-title="Prose (CV)">
+          <p class="sb-eyebrow">◆ Components</p>
+          <h1 class="sb-h1">Prose</h1>
+          <p class="sb-lead">Styles plain HTML (h1–h3, p, hr, a, strong, em, ul) for long documents like the CV, without per-element classes.</p>
+
+          <article class="sb-story">
+            <header class="sb-story__head"><h3 class="sb-story__title">Document</h3><p class="sb-story__classes">.markdown-preview</p></header>
+            <div class="sb-controls" data-target=".markdown-preview a" data-states="default,hover,focus"></div>
+            <div class="sb-canvas sb-canvas--plain">
+              <article class="markdown-preview">
+                <h1>Vladimir Kirilyuk</h1>
+                <p>Lead Product Designer · AI, FinTech, Marketing &amp; Analytics</p>
+                <p>Email: <a href="#prose">kirilyukvv@gmail.com</a></p>
+                <hr>
+                <h2>Experience</h2>
+                <h3>Tinkoff — Lead Product Designer</h3>
+                <p><strong>Remote</strong> · Mar 2022 to Present</p>
+                <p><em>B2B communication platform. FinTech / Marketing &amp; Analytics.</em></p>
+                <ul>
+                  <li>Led design across 12+ product areas.</li>
+                  <li>Grew two designers from Middle to Senior.</li>
+                </ul>
+              </article>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================= Pattern: home ======================== -->
+        <section class="sb-page" id="pattern-home" data-title="Home page">
+          <p class="sb-eyebrow">◆ Patterns</p>
+          <h1 class="sb-h1">Home page</h1>
+          <p class="sb-lead">Two sections: hero, then the project grid. Reference: <code>index.html</code>.</p>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>#</th><th>Section</th><th>Components</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td><code>.section</code></td><td>Hero (eyebrow, name, tags, hero nav)</td></tr>
+                <tr><td>2</td><td><code>.section.section-projects</code></td><td>Section title + <code>.projects-grid</code> of project cards</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <article class="sb-story" data-no-code>
+            <header class="sb-story__head"><h3 class="sb-story__title">Live preview</h3><p class="sb-story__classes">index.html</p></header>
+            <div class="sb-canvas sb-canvas--plain" style="padding:0">
+              <iframe src="../index.html" title="Home page preview" loading="lazy" style="display:block;width:100%;height:640px;border:0"></iframe>
+            </div>
+          </article>
+        </section>
+
+        <!-- ======================= Pattern: case ======================== -->
+        <section class="sb-page" id="pattern-case" data-title="Case study page">
+          <p class="sb-eyebrow">◆ Patterns</p>
+          <h1 class="sb-h1">Case study page</h1>
+          <p class="sb-lead">Snapshot first, story second. Fixed section order so every case feels familiar. Full content rules: <code>project-page-structure.md</code>. Reference: <code>projects/campaign-creation.html</code>.</p>
+          <div class="sb-table-wrap">
+            <table class="sb-table">
+              <thead><tr><th>Layer</th><th>Content</th><th>Components</th></tr></thead>
+              <tbody>
+                <tr><td>1 · Hero</td><td>Back, meta, title, lead, key visual</td><td>Back link, Case header, Figure</td></tr>
+                <tr><td>2 · Snapshot</td><td>Context, Task, Goal, Role, Team, Metrics…</td><td>Highlights</td></tr>
+                <tr><td>3 · Story</td><td>Problem → Research → Role &amp; team → Key decisions → Results</td><td>Content block, Team (block), Decision card + Figure pairs</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 class="sb-h2">Page skeleton</h2>
+          <article class="sb-story" data-no-code>
+            <div class="sb-canvas sb-canvas--plain">
+<pre class="project-text" style="margin:0;white-space:pre;overflow-x:auto;color:var(--color-text-secondary)">&lt;section class="section section-project"&gt;
+  &lt;div class="container w-container"&gt;
+    &lt;a class="project-back" href="../index.html"&gt;← Back&lt;/a&gt;
+    &lt;header class="project-header"&gt;…&lt;/header&gt;
+    &lt;figure class="project-figure"&gt;…&lt;/figure&gt;
+    &lt;dl class="project-highlights"&gt;…&lt;/dl&gt;
+    &lt;div class="project-content project-content--wide"&gt;
+      &lt;section class="project-block"&gt;…&lt;/section&gt;
+      &lt;section class="project-block project-block--wide"&gt;
+        &lt;h2 class="project-block__title"&gt;Key decisions&lt;/h2&gt;
+        &lt;article class="project-decision"&gt;…&lt;/article&gt;
+        &lt;figure class="project-figure"&gt;…&lt;/figure&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;script src="../js/project-lightbox.js" defer&gt;&lt;/script&gt;</pre>
+            </div>
+          </article>
+          <article class="sb-story" data-no-code>
+            <header class="sb-story__head"><h3 class="sb-story__title">Live preview</h3><p class="sb-story__classes">projects/campaign-creation.html</p></header>
+            <div class="sb-canvas sb-canvas--plain" style="padding:0">
+              <iframe src="../projects/campaign-creation.html" title="Case study preview" loading="lazy" style="display:block;width:100%;height:720px;border:0"></iframe>
+            </div>
+          </article>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="storybook.js"></script>
+  <script src="../js/project-lightbox.js"></script>
+</body>
+</html>

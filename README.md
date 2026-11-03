@@ -16,7 +16,8 @@ Static site showcasing selected product design work, case studies, and a CV. Bui
 | `cv.html` | CV |
 | `projects/` | Case study pages |
 | `assets/` | Images and media |
-| `styles.css` | Shared styles |
+| `styles.css` | Shared styles — design tokens live in `:root` at the top |
+| `design-system/` | Private design-system storybook (unlinked, passphrase-gated, no analytics) |
 | `js/analytics.js` | Google Analytics / Tag Manager code (single edit point) |
 | `partials/head-analytics.html` | Loader snippet injected into every page by the build |
 | `build.mjs` | Injects shared head snippets into all HTML files |
@@ -28,6 +29,18 @@ Static site showcasing selected product design work, case studies, and a CV. Bui
 3. Run `node build.mjs` — it updates every `.html` file automatically. New pages only need the standard `<head>` block; the build adds analytics if it is missing.
 
 On push to `main`, GitHub Actions runs the same build and commits updated HTML when needed.
+
+## Design system
+
+`design-system/index.html` is a private storybook of every token, component and page pattern, rendered with the real `styles.css`. It isn't linked from the site, is excluded from analytics by `build.mjs`, and asks for a passphrase. The passphrase is remembered per browser; use “Lock this device” in the sidebar to forget it.
+
+To change the passphrase, replace `PASS_HASH` in `design-system/storybook.js` and the hash in the inline script in `design-system/index.html` with:
+
+```bash
+printf '%s' 'new-passphrase' | sha256sum
+```
+
+The gate is client-side only. On a static host it keeps the page out of casual view but isn't real access control, so don't put secrets there.
 
 ## Local preview
 

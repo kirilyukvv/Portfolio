@@ -34,7 +34,10 @@ function collectHtmlFiles(dir) {
 let updated = 0;
 
 for (const file of collectHtmlFiles(root)) {
-  if (relative(root, file).startsWith('partials')) {
+  const rel = relative(root, file);
+
+  // partials/ are snippets; design-system/ is private and must not be tracked.
+  if (rel.startsWith('partials') || rel.startsWith('design-system')) {
     continue;
   }
 
