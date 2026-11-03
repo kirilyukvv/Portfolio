@@ -91,7 +91,7 @@
 |---|---|---|
 | Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
 | Content production | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,6, страница не переписывалась |
-| Content storage | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6, страница не переписывалась |
+| Content storage, v1 и повторная v2 | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6 → 6,2 |
 
 ## Как просить об этом в новом чате
 
