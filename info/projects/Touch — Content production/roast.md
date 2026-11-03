@@ -2,7 +2,10 @@
 
 Метод: [project-roast.md](../../../project-roast.md). Позиция: нанимающий менеджер на Lead Product Designer.
 
-Страница: [`projects/content-production.html`](../../../projects/content-production.html). Оценка 2 ноября 2026, средняя **4,6 / 10**. Сверено с записями встреч в этой папке: Editors, Designers, Technologists (17.02.2026) и «Вижен КХ» (20.05.2026). Страница переписана по этой прожарке, см. «После правок» в конце.
+- v1 (архив): [`projects/content-production-v1.html`](../../../projects/content-production-v1.html), 2 ноября 2026. Средняя **4,6 / 10**.
+- v2 (текущая): [`projects/content-production.html`](../../../projects/content-production.html), переписана по этой прожарке. Оценка в разделе «После правок».
+
+Оценка ниже относится к v1. Сверено с записями встреч в этой папке: Editors, Designers, Technologists (17.02.2026) и «Вижен КХ» (20.05.2026). Страница переписана по этой прожарке, см. «После правок» в конце.
 
 Для сравнения: Campaign creation после правок — 7,6 / 10.
 
