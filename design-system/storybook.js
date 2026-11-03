@@ -9,7 +9,7 @@
      To change the passphrase, put its SHA-256 hex here:
        printf '%s' 'new-passphrase' | sha256sum
      ------------------------------------------------------------------ */
-  var PASS_HASH = '137ae5844df97d1aa3d561e5997af42aa4c378d7cb053f93d8ffc385c4038177';
+  var PASS_HASH = '80d7688032dda428a5d1e0eea7ad434d219b770b7d3a0646fd58695e40107755';
   var STORAGE_KEY = 'ds_unlock';
   var root = document.documentElement;
 
