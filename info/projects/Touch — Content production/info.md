@@ -84,7 +84,7 @@ At the stakeholder meeting I defended the role-based model and proposed settling
 
 - **Why:** None of the AI generations designers had tried went to production without edits. In a regulated bank, an unchecked visual is a risk, not a shortcut.
 - **Before:** The early concept had AI generate complete visuals.
-- **After:** Full-visual generation is on hold. AI drafts text variants and helps with backgrounds, refinement and resizing. Every AI image goes to a designer for review.
+- **After:** AI content generation stayed out of the first delivery, because its output still needed extra review. When it ships, AI will draft variants and help with backgrounds and resizing, and every AI image will go to a designer for review.
 
 ![Designer AI assistant](Designers/04.png)
 *The AI assistant helps the designer explore and refine a background. The designer decides what ships.*
@@ -113,10 +113,10 @@ After the meeting the project moved forward as an MVP. The first version is live
 The first version is live as an MVP and keeps changing based on user feedback. Below is what the validation confirmed, what it changed, and what is still open.
 
 - **Confirmed:** role-based modes on one canvas, Figma import for custom work, optional outside review by link.
-- **Changed:** full AI visual generation put on hold; every AI image goes through a designer; editors' experience with partner agencies goes into the brief.
+- **Changed:** AI content generation left out of the first delivery; every AI image goes through a designer; editors' experience with partner agencies goes into the brief.
 - **Open:** the content data model and versioning, templates vs. branching existing content, role permissions, Jira integration during the transition, and reusing past creatives as "content memory".
 
-`[нужно от тебя: первая поставка — что в неё вошло и когда]`
+The first delivery shipped everything above except AI content generation. Its output still needed extra review, so it stays out until the quality holds up on its own.
 
 ## Learnings
 
