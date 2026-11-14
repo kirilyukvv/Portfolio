@@ -433,6 +433,11 @@ img {
   color: var(--color-accent);
 }
 
+.project-back:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .project-header {
   margin-bottom: 40px;
   max-width: 720px;
@@ -679,11 +684,17 @@ img {
 .project-archive-note a {
   color: var(--color-accent);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 .project-archive-note a:hover,
 .project-archive-note a:focus-visible {
   color: var(--color-accent-hover);
+}
+
+.project-archive-note a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .project-decision {
