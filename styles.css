@@ -99,6 +99,27 @@ img {
   padding-bottom: 64px;
 }
 
+.container.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero__text {
+  min-width: 0;
+}
+
+.hero__photo {
+  flex-shrink: 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background: var(--color-surface);
+  image-rendering: pixelated;
+}
+
 .hero-nav {
   margin: 24px 0 0;
 }
@@ -959,6 +980,11 @@ img {
   .text-span {
     font-size: 24px;
   }
+
+  .hero__photo {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -974,6 +1000,17 @@ img {
   .paragraph {
     font-size: 14px;
     line-height: 1.2;
+  }
+
+  .container.hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero__photo {
+    width: 96px;
+    height: 96px;
   }
 
   .w-container {
