@@ -4,7 +4,7 @@ Source content for [`../../index.html`](../../index.html).
 
 ## Hero
 
-- **Eyebrow:** Product Design Lead
+- **Eyebrow:** Lead Product Designer
 - **Name:** Vova Kirilyuk
 - **Tagline:** AI · BIGTECH · FINTECH · MARKETING · ANALYTICS · WEB APP · HARDCORE PROJECTS
 - **Primary link:** CV → [`../cv/info.md`](../cv/info.md)

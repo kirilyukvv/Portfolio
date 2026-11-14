@@ -20,7 +20,7 @@
 | **◆ Task** | Define the future workflow for content production inside Touch and validate it with Editors, Designers, and Technologists |
 | **◆ Goal** | Reduce campaign time-to-launch by keeping briefs, creative assets, review history, role approvals, and testing inside one campaign context |
 | **◆ Constraints** | Regulated financial communications; multiple creator roles; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
-| **◆ Role** | Product Design Lead - vision framing, UX architecture, stakeholder alignment, critique synthesis, validation plan |
+| **◆ Role** | Lead Product Designer - vision framing, UX architecture, stakeholder alignment, critique synthesis, validation plan |
 | **◆ Team** | Product, engineering, content platform, editors, designers, technologists, marketing stakeholders |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
 | **◆ Metrics** | _Vision stage - expected impact: fewer handoffs, faster creative production, clearer audit trail, reusable content and assets._ |
@@ -31,7 +31,7 @@
 
 | Name | Role | Avatar |
 |------|------|--------|
-| Vova Kirilyuk | Product Design Lead | `../../team/Vova.png` |
+| Vova Kirilyuk | Lead Product Designer | `../../team/Vova.png` |
 | Alex | Co-designer | `../../team/Alex.png` |
 
 ## Overview

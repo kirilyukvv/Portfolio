@@ -20,7 +20,7 @@
 | **◆ Task** | Define how Content Hub stores, finds, reuses, and audits campaign creatives and their building blocks |
 | **◆ Goal** | Reduce duplicated production work and make every creative traceable: where it came from, where it is used, how it performs, and which assets or templates can be reused |
 | **◆ Constraints** | Regulated financial communications; many content types; theme and localization changes; legacy JSON/template logic; separate production roles; need to integrate with Touch campaigns instead of becoming a disconnected DAM |
-| **◆ Role** | Product Design Lead - UX architecture, information model, visual concept, stakeholder alignment, critique synthesis |
+| **◆ Role** | Lead Product Designer - UX architecture, information model, visual concept, stakeholder alignment, critique synthesis |
 | **◆ Team** | Product, engineering, content platform, marketing operations, designers, editors, technologists |
 | **◆ Scope** | Creative registry, asset libraries, icon storage, banner templates, metadata, tags, campaign usage, touchpoints, performance preview, builder entry point |
 | **◆ Metrics** | _Vision stage - expected impact: less duplicated layout work, faster asset reuse, clearer audit trail, stronger foundation for analytics and future generation._ |
@@ -31,7 +31,7 @@
 
 | Name | Role | Avatar |
 |------|------|--------|
-| Vova Kirilyuk | Product Design Lead | `../../team/Vova.png` |
+| Vova Kirilyuk | Lead Product Designer | `../../team/Vova.png` |
 | Alex | Co-designer | `../../team/Alex.png` |
 
 ## Overview

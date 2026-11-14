@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio site for **Vladimir Kirilyuk** — Product Design Lead.
+Personal portfolio site for **Vladimir Kirilyuk** — Lead Product Designer.
 
 Hosted on [GitHub Pages](https://pages.github.com/). Live site: [kirilyukvv.github.io/Portfolio](https://kirilyukvv.github.io/Portfolio/)
 
