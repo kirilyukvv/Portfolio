@@ -280,6 +280,12 @@ img {
   font-size: 13px;
   font-weight: 400;
   color: var(--color-accent);
+  transition: color 0.15s ease;
+}
+
+.project-card:hover .project-card__link,
+.project-card:focus-visible .project-card__link {
+  color: var(--color-accent-hover);
 }
 
 .project-card--soon {
@@ -314,7 +320,8 @@ img {
   color: var(--color-text-disabled);
 }
 
-.project-card__link--muted {
+.project-card__link--muted,
+.project-card:hover .project-card__link--muted {
   color: var(--color-text-disabled);
 }
 
