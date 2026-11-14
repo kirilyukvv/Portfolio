@@ -437,7 +437,7 @@ img {
 
 .project-back:hover,
 .project-back:focus-visible {
-  color: var(--color-accent);
+  color: var(--color-accent-hover);
 }
 
 .project-back:focus-visible {
