@@ -3,6 +3,7 @@
    Documented in the private storybook at design-system/index.html.
    ========================================================================== */
 :root {
+  --color-screenshot-bg: #f6f7f8;
   /* Color — brand */
   --color-accent: #00e0e0;
   --color-accent-hover: #abe338;
@@ -564,7 +565,8 @@ img {
   width: 100%;
   height: auto;
   border-radius: 0;
-  background: var(--color-surface);
+  /* Same grey as the screenshots' own background, so their transparent rounded corners read as sharp. */
+  background: var(--color-screenshot-bg);
 }
 
 .project-figure--portrait .project-figure__image {
@@ -805,6 +807,7 @@ img {
   width: auto;
   height: auto;
   border-radius: 0;
+  background: var(--color-screenshot-bg);
 }
 
 .lightbox__caption {
