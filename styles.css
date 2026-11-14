@@ -172,6 +172,12 @@ img {
   letter-spacing: -0.02em;
 }
 
+/* Optical kerning for the monospaced surname: narrow glyphs (i, r, l) leave
+   uneven gaps, so each letter gets its own spacing offset via --k. */
+.heading__kern > span {
+  letter-spacing: calc(-0.02em + var(--k, 0em));
+}
+
 .text-span {
   font-size: 32px;
   font-weight: 300;
