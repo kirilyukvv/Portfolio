@@ -90,7 +90,7 @@
 | Кейс | Файл | Оценка |
 |---|---|---|
 | Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
-| Content production | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,6, страница не переписывалась |
+| Content production | [_nda/content-production/roast.md](_nda/content-production/roast.md) | 4,6, страница не переписывалась |
 
 ## Как просить об этом в новом чате
 
