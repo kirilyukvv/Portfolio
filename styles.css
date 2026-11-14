@@ -172,6 +172,11 @@ img {
   letter-spacing: -0.02em;
 }
 
+/* Extra air around letters that look cramped in the monospaced surname. */
+.heading__space {
+  margin-inline: 0.03em;
+}
+
 .text-span {
   font-size: 32px;
   font-weight: 300;
