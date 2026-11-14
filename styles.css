@@ -244,6 +244,7 @@ img {
   object-fit: contain;
   object-position: top center;
   image-rendering: auto;
+  background: var(--color-screenshot-bg);
 }
 
 .project-card__body {
