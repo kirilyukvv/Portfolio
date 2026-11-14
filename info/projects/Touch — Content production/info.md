@@ -2,9 +2,8 @@
 
 > Source content for [`../../../projects/content-production.html`](../../../projects/content-production.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `content-production`.
 
-**Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026
 
-**Lead:** Shaped a product vision for Content Hub inside Touch: one workspace where marketers, editors, designers, and technologists can create, review, version, test, and reuse campaign creatives without losing context across Jira, chats, Figma, Google Docs, and legacy constructors.
+**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one graphic editor where copy editors, designers and technologists create and set up any type of creative.
 
 <!-- FIGURE: Hero - use `00 oreview.png`. Canvas for the Transfers campaign with role tools, AI assistant, and approval controls. -->
 
@@ -16,23 +15,23 @@
 
 | Label | Value |
 |-------|-------|
-| **◆ Context** | Touch - internal CVM / marketing automation platform for financial services |
+| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing (CVM: customer value management) |
 | **◆ Task** | Define the future workflow for content production inside Touch and validate it with Editors, Designers, and Technologists |
-| **◆ Goal** | Reduce campaign time-to-launch by keeping briefs, creative assets, review history, role approvals, and testing inside one campaign context |
-| **◆ Constraints** | Regulated financial communications; multiple creator roles; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
-| **◆ Role** | Lead Product Designer - vision framing, UX architecture, stakeholder alignment, critique synthesis, validation plan |
-| **◆ Team** | Product, engineering, content platform, editors, designers, technologists, marketing stakeholders |
+| **◆ Goal** | Cut campaign Time to Market by reducing Time on Task for preparing and approving content across channels |
+| **◆ Constraints** | Regulated financial communications; 3 roles in Content Hub: copy editor, designer, technologist; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
+| **◆ Role** | Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision together with the section's designer; presented and defended it to stakeholders together |
+| **◆ Team** | Product, engineering, content platform |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
-| **◆ Metrics** | _Vision stage - expected impact: fewer handoffs, faster creative production, clearer audit trail, reusable content and assets._ |
+| **◆ Metrics** | _Time on Task for preparing and approving content, as part of campaign Time to Market. Vision stage, no results yet._ |
 | **◆ Status** | Vision / discovery |
-| **◆ Tools** | Figma, user interviews / stakeholder syncs |
+| **◆ Tools** | Figma, AI |
 
 ## Designers
 
 | Name | Role | Avatar |
 |------|------|--------|
 | Vova Kirilyuk | Lead Product Designer | `../../team/Vova.png` |
-| Alex | Co-designer | `../../team/Alex.png` |
+| Alex | Product designer · Content Hub owner: content and creatives | `../../team/Alex.png` |
 
 ## Overview
 
@@ -48,15 +47,15 @@ The concept started from a simple production problem. A single campaign could mo
 
 ## Problem
 
-- Campaign content production was split across tools: Jira, chats, Figma, Google Docs, content constructors, and launch systems.
-- Editors, designers, and technologists had different jobs, but they were working on the same creative artifact and repeatedly reassembled context for each handoff.
+- Each channel had its own content tool: push, SMS and email in one, banners in another, stories in a third. Around them, briefs lived in Jira, copy in Google Docs, design in Figma and approvals in chats.
+- Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds, and context had to be rebuilt at every handoff.
 - Review history and decision-making were hard to audit because comments, versions, references, and approvals lived outside the creative.
-- Template and asset reuse was weak: previous creatives, styles, images, icons, videos, and mechanics could not reliably become the starting point for the next campaign.
-- AI generation had promise, but teams were clear that it should support specialists rather than replace editorial, design, or technical judgment.
+- Reuse barely worked, although it is one of the main ways to go faster: previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.
+- AI generation doesn't give reliable quality yet. Generated copy and images still need review and rework, so content production can't be fully automated.
 
 ## Approach
 
-I treated the meetings as a validation loop for a product vision, not as a final feature pitch. The concept was shown separately to role groups - Editors, Designers, and Technologists - and then debated with product and architecture stakeholders.
+We held three sessions, one each with the technologists, the designers and the copy editors. Then we discussed the concept with product and architecture stakeholders.
 
 The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing. The product direction became a shared canvas with role-specific modes rather than a generic all-in-one editor.
 
@@ -145,6 +144,8 @@ The proposed Content Hub workspace has one canvas and several role modes. A camp
 The work produced a shared vision for how content production should live inside Touch: not as another isolated tool, but as the campaign's content memory and production workspace.
 
 The validation sessions surfaced concrete product decisions: keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch. The biggest unresolved risk is product architecture: the UX vision depends on a strong content data model, versioning, template strategy, and integrations with existing systems during the transition period.
+
+The next direction is fewer roles: for some communications, the person who requests the campaign should be able to prepare the content without a handoff.
 
 ## Learnings
 

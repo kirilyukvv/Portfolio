@@ -2,7 +2,6 @@
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `content-storage`.
 
-**Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026
 
 **Lead:** Designed the storage layer for Touch's content platform: a searchable content memory where teams can find creatives, assets, icons, and templates, understand where each item is used, and reuse proven content without losing campaign history, metadata, or performance context.
 
