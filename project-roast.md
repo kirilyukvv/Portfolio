@@ -90,8 +90,21 @@
 | Кейс | Файл | Оценка |
 |---|---|---|
 | Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
-| Content production, v1 и повторные v2–v5 | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,1 → 5,2 → 5,8 → 6,7 → 6,3 (до этого 4,6 по удалённым заметкам) |
-| Content storage, v1, v2 и v3 после исправления статуса | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6 → 6,2 → 6,6 → 6,9 → 7,0 |
+| Content production, v1 и повторные v2–v5 | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,1 → 5,2 → 5,8 → 6,7 → 6,3 → 6,7 (до этого 4,6 по удалённым заметкам) |
+| Content storage, v1, v2 и v3 после исправления статуса | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6 → 6,2 → 6,6 → 6,9 → 7,0 → 7,3 |
+
+### Сводка по портфолио (15 ноября 2026)
+
+| Кейс | Оценка | Статус продукта |
+|---|---:|---|
+| Campaign creation | 7,6 | Запущен, есть метрика |
+| Content production | 6,7 | В проде, результатов пока нет |
+| Content storage | 7,3 | Согласованное направление |
+| **Портфолио, среднее** | **7,2** | |
+
+Сильные стороны: три кейса читаются как одна история (кампания → производство креатива → хранение), роль автора описана одинаково, у решений есть статусы, в каждом кейсе есть охват исследования.
+
+Что поднимет портфолио: результаты по Time on Task во втором кейсе после запуска; объём («сотни креативов в месяц») во втором кейсе; одна отброшенная альтернатива и картинка «до» в первом.
 
 ## Как просить об этом в новом чате
 
