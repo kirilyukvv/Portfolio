@@ -3,7 +3,7 @@
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Previous version: [`info-v1.md`](info-v1.md). Slug: `content-storage`.
 
-**Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Designer Alex led the concept; I reviewed the design, advised on the business process and drew part of the prototypes.
+**Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Together with Alex, the section's designer, I shaped the vision for storage: I took part in the research, reviewed design decisions and drew part of the prototypes.
 
 ![Creative registry with a selected creative, its display conditions and campaign usage](01.webp)
 
@@ -15,7 +15,7 @@
 |---|---|
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing. Storage is where finished creatives and their parts live after production |
 | **◆ Research** | Library and templates shown in role sessions with 8 technologists, 10 designers and 7 copy editors; the full storage concept reviewed with platform product and architecture leads |
-| **◆ My role** | Lead Product Designer. Design review, business process expertise, part of the prototypes |
+| **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer, part of the prototypes |
 | **◆ Status** | Agreed direction, planned after Content production. Not built yet. The template model is still open |
 
 ## Overview
@@ -44,12 +44,12 @@ The full storage concept, with the creative registry and usage panel, was then r
 
 ## My role & team
 
-Alex led the concept and the layouts, and presented the library to each role and the full concept to stakeholders. I reviewed the design at each step, advised on how campaign content is actually produced and reused, and drew part of the prototypes myself.
+I took part in the research, reviewed design decisions and shaped the vision for storage together with Alex, the designer who owns the section. Alex drew the layouts and showed the library in each role session. I brought in how campaign content is actually produced and reused, and drew part of the prototypes myself. We presented the full concept to stakeholders and defended it together. When the architecture review stalled on templates and analytics, I proposed listing every disputed point and checking each one with users.
 
 | Name | Role | Area |
 |---|---|---|
-| Vova Kirilyuk | Lead Product Designer | Design review, business process, part of the prototypes |
-| Alex | Product designer | Concept, layouts, presentations |
+| Vova Kirilyuk | Lead Product Designer | Research, design reviews, vision, stakeholder presentations, part of the prototypes |
+| Alex | Product designer | Section owner: layouts, role sessions |
 
 ## Key decisions
 
