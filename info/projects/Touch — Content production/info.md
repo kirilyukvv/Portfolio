@@ -3,7 +3,7 @@
 > Source content for [`../../../projects/content-production.html`](../../../projects/content-production.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `content-production`.
 
 
-**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested the concept in three sessions with 7–10 people from each role.
+**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested the concept with 25 people in three sessions, one per role.
 
 <!-- FIGURE: Hero - use `00 oreview.png`. Canvas for the Transfers campaign with role tools, AI assistant, and approval controls. -->
 
@@ -19,7 +19,7 @@
 | **◆ Task** | Define the future workflow for content production inside Touch and validate it with copy editors, designers and technologists |
 | **◆ Goal** | Cut campaign Time to Market by reducing Time on Task for preparing and approving content across channels |
 | **◆ Constraints** | Regulated financial communications; 3 roles in Content Hub: copy editor, designer, technologist; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
-| **◆ Research** | 3 sessions, one per role, 7–10 people each; then product and architecture review |
+| **◆ Research** | 3 sessions, 25 people; then product and architecture review |
 | **◆ Role** | Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision with Alex, the section's designer. We presented and defended it to stakeholders together |
 | **◆ Team** | Product, engineering, content platform |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
@@ -49,7 +49,7 @@ The concept started from a simple production problem. A single campaign could mo
 
 ## Approach
 
-We held three sessions, one per role: technologists, designers and copy editors, with 7–10 people at each. Then we discussed the concept with product and architecture stakeholders.
+We held three sessions, one per role: 8 technologists, 10 designers and 7 copy editors. Then we discussed the concept with product and architecture stakeholders.
 
 The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Copy editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing.
 
