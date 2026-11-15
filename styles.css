@@ -647,6 +647,26 @@ img {
   color: var(--color-text);
 }
 
+.project-text a,
+.project-list a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--easing-standard);
+}
+
+.project-text a:hover,
+.project-text a:focus-visible,
+.project-list a:hover,
+.project-list a:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+.project-text a:focus-visible,
+.project-list a:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-accent);
+  outline-offset: var(--focus-ring-offset);
+}
+
 .project-text:last-child {
   margin-bottom: 0;
 }
