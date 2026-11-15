@@ -6,7 +6,7 @@
 
 **Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested it with 25 people from the three roles, and it is now live.
 
-![Content Hub canvas](00%20overview.png)
+![Content Hub canvas](00%20overview.webp)
 
 *Content Hub canvas: the banner, story and push of one campaign, with the AI assistant and approval controls.*
 
@@ -30,7 +30,7 @@ Marketing teams at Tinkoff launch campaigns like *Transfers to other countries*:
 
 The campaign creation case gave the campaign a home in Touch. Content Hub is the next layer: a home for each creative inside the campaign, where the three roles create, review, version and test content for every channel. I'll follow the Transfers campaign through the new flow.
 
-![Copy editor workspace with the brief next to creative previews](Editors/01.png)
+![Copy editor workspace with the brief next to creative previews](Editors/01.webp)
 
 *Copy editor workspace: the brief stays next to the banner, story and push previews, so nobody goes back to Jira or docs for context.*
 
@@ -69,7 +69,7 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 **Copy editor mode.** The copy editor changes the title, subtitle and buttons in fields next to the preview. One switch applies an edit to every selected creative, so the banner, the story and the push say the same thing. For alternatives, the editor asks the AI assistant, for example for more general options, and every result is saved in the version history. Reviewers leave comments right on the creative. When a customer or partner needs to see the text, they get a link to view and comment.
 
-![Copy editor mode with text fields and the apply-to-all switch](Editors/02.png)
+![Copy editor mode with text fields and the apply-to-all switch](Editors/02.webp)
 
 *Copy editor mode: fields for the title, subtitle and buttons sit next to the brief. “Apply to all creatives” sends one edit to the whole set.*
 
@@ -77,7 +77,7 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 *AI assistant and version history: the editor asks for more general options, and every version stays in the history for comparison.*
 
-![Comment left on the story preview](Editors/04.png)
+![Comment left on the story preview](Editors/04.webp)
 
 *Comments: a reviewer suggests other wording right on the story, and the thread stays with the creative.*
 
@@ -95,7 +95,7 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 *Layers: the story opens as pages, containers, text and buttons, so each element can be edited instead of a flat image.*
 
-![Designer AI assistant generating a blue background](Designers/04.png)
+![Designer AI assistant generating a blue background](Designers/04.webp)
 
 *Designer AI assistant: the request “Add a background in blue tones” returns a new version, and the designer decides whether to use it.*
 
@@ -113,7 +113,7 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 *Actions: page 1 of the story leads to page 2, and the button opens a deeplink.*
 
-![Testing panel with test group, touchpoints and triggers](Technologists/04.png)
+![Testing panel with test group, touchpoints and triggers](Technologists/04.webp)
 
 *Testing: the set goes to a tester’s two phones, appears on the mobile bank’s home screen and shows on app opening or a tap on the preview.*
 
@@ -157,20 +157,20 @@ Source files here; exact copies (not re-encoded) in `assets/projects/content-pro
 
 | Source | Web file | What it shows | Placement |
 |---|---|---|---|
-| `00 overview.png` | `content-production.png` | Shared canvas with AI assistant and approval controls | Hero, home card |
-| `Editors/01.png` | `editors-01.png` | Brief beside creative previews | Overview |
+| `00 overview.webp` | `content-production.webp` | Shared canvas with AI assistant and approval controls | Hero, home card |
+| `Editors/01.webp` | `editors-01.webp` | Brief beside creative previews | Overview |
 | — | `before-after.png` | Before / after diagram (rendered from HTML) | After Problem |
-| `Editors/02.png` | `editors-02.png` | Editor text fields and apply-to-all | Solution: copy editor mode |
+| `Editors/02.webp` | `editors-02.webp` | Editor text fields and apply-to-all | Solution: copy editor mode |
 | `Editors/03.png` | `editors-03.png` | AI copy variants and version history | Solution: copy editor mode |
-| `Editors/04.png` | `editors-04.png` | Comment on the story preview | Solution: copy editor mode |
+| `Editors/04.webp` | `editors-04.webp` | Comment on the story preview | Solution: copy editor mode |
 | `Designers/01.png` | `designers-01.png` | Designer properties panel | Solution: designer mode |
 | `Designers/02.png` | `designers-02.png` | Library with assets, styles and templates | Solution: designer mode |
 | `Designers/03.png` | `designers-03.png` | Layers panel | Solution: designer mode |
-| `Designers/04.png` | `designers-04.png` | AI assistant for images | Solution: designer mode |
+| `Designers/04.webp` | `designers-04.webp` | AI assistant for images | Solution: designer mode |
 | `Technologists/01.png` | `technologists-01.png` | VIP text branch, substitutions, deeplink | Solution: technologist mode |
 | `Technologists/02.png` | `technologists-02.png` | Data substitutions and JSON view | Solution: technologist mode |
 | `Technologists/03.png` | `technologists-03.png` | Navigation between story pages | Solution: technologist mode |
-| `Technologists/04.png` | `technologists-04.png` | Testing panel | Solution: technologist mode |
+| `Technologists/04.webp` | `technologists-04.webp` | Testing panel | Solution: technologist mode |
 
 ## Publishing checklist
 
