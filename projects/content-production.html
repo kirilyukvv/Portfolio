@@ -36,7 +36,7 @@
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Task</dt>
-          <dd class="project-highlights__value">Define the future workflow for content production inside Touch and validate it with Editors, Designers, and Technologists</dd>
+          <dd class="project-highlights__value">Define the future workflow for content production inside Touch and validate it with copy editors, designers and technologists</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Goal</dt>
@@ -48,7 +48,7 @@
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Role</dt>
-          <dd class="project-highlights__value">Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision together with the section's designer; presented and defended it to stakeholders together</dd>
+          <dd class="project-highlights__value">Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision with Alex, the section's designer. We presented and defended it to stakeholders together</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Team</dt>
@@ -60,7 +60,7 @@
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Metrics</dt>
-          <dd class="project-highlights__value">Time on Task for preparing and approving content, as part of campaign Time to Market. Vision stage, no results yet</dd>
+          <dd class="project-highlights__value">Time on Task for preparing and approving content, as part of campaign Time to Market. No results yet</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Status</dt>
@@ -113,7 +113,7 @@
         <section class="project-block">
           <h2 class="project-block__title">Problem</h2>
           <ul class="project-list">
-            <li>Each channel had its own content tool: push, SMS and email in one, banners in another, stories in a third. Around them, briefs lived in Jira, copy in Google Docs, design in Figma and approvals in chats.</li>
+            <li>One campaign's creatives were made in three unconnected tools, depending on the channel.</li>
             <li>Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds, and context had to be rebuilt at every handoff.</li>
             <li>Review history and decision-making were hard to audit because comments, versions, references, and approvals lived outside the creative.</li>
             <li>Reuse barely worked, although it is one of the main ways to go faster: previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.</li>
@@ -124,14 +124,57 @@
         <section class="project-block">
           <h2 class="project-block__title">Approach</h2>
           <p class="project-text">We held three sessions, one each with the technologists, the designers and the copy editors. Then we discussed the concept with product and architecture stakeholders.</p>
-          <p class="project-text">The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing. The product direction became a shared canvas with role-specific modes rather than a generic all-in-one editor.</p>
+          <p class="project-text">The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Copy editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing.</p>
+        </section>
+
+        <section class="project-block project-block--wide">
+          <h2 class="project-block__title">Key decisions</h2>
+
+          <article class="project-decision">
+            <p class="project-decision__index">Decision 01</p>
+            <h3 class="project-decision__title">One canvas, a mode for each role</h3>
+            <dl class="project-decision__rows">
+              <dt>Why</dt>
+              <dd>Creatives for different channels were made in different tools, and in the sessions each role described a different job. Copy editors care about tone and facts, designers about visual control, technologists about substitutions, deeplinks and testing.</dd>
+              <dt>How</dt>
+              <dd>Any type of creative, from a push to a story, opens on the same canvas. Each role switches to its own mode with its own panel. The brief, comments and approval status stay shared.</dd>
+              <dt>Instead of</dt>
+              <dd>One universal editor with every control for everyone.</dd>
+            </dl>
+          </article>
+
+          <article class="project-decision">
+            <p class="project-decision__index">Decision 02</p>
+            <h3 class="project-decision__title">AI drafts, a specialist decides</h3>
+            <dl class="project-decision__rows">
+              <dt>Why</dt>
+              <dd>Generated copy and images still need review and rework, so content production can't be automated end to end.</dd>
+              <dt>How</dt>
+              <dd>Each mode has an AI assistant: copy variants for editors, backgrounds and resizing for designers. Every generated version is saved and can be compared. A specialist approves the final creative.</dd>
+              <dt>Changed after the sessions</dt>
+              <dd>Sending every AI-assisted text back to the customer for re-approval became optional instead of mandatory.</dd>
+            </dl>
+          </article>
+
+          <article class="project-decision">
+            <p class="project-decision__index">Decision 03</p>
+            <h3 class="project-decision__title">Figma stays as a way out</h3>
+            <dl class="project-decision__rows">
+              <dt>Why</dt>
+              <dd>Some creatives are custom work that a built-in editor will not cover.</dd>
+              <dt>How</dt>
+              <dd>Designers can import finished work from Figma and continue in Content Hub.</dd>
+              <dt>Instead of</dt>
+              <dd>Forcing every task into the built-in editor.</dd>
+            </dl>
+          </article>
         </section>
 
         <section class="project-block">
           <h2 class="project-block__title">Solution</h2>
           <p class="project-text">The proposed Content Hub workspace has one canvas and several role modes. A campaign can pre-create the needed creative shells from the brief and scenario, then route them through content, design, layout, approval, and testing.</p>
           <p class="project-text"><strong>1. Shared campaign context</strong> - Every role starts from the same source: campaign brief, audience, hypothesis, A/B test logic, selected channels, creative requirements, generated drafts, comments, and status.</p>
-          <p class="project-text"><strong>2. Editor mode</strong> - Editors work with copy fields directly on creative previews, save versions, compare alternatives, use an AI assistant for variants, and optionally share a read-only/commenting view when customer or partner review is needed. The meetings refined an important rule: customer re-approval should be optional, not a mandatory loop for every AI-assisted text.</p>
+          <p class="project-text"><strong>2. Editor mode</strong> - Copy editors work with copy fields directly on creative previews, save versions, compare alternatives, use an AI assistant for variants, and optionally share a read-only/commenting view when customer or partner review is needed.</p>
         </section>
 
         <figure class="project-figure">
@@ -150,7 +193,7 @@
         </figure>
 
         <section class="project-block">
-          <p class="project-text"><strong>3. Designer mode</strong> - Designers can edit visual composition, tune backgrounds, manage layers, use a project library, reuse styles and templates, and resize assets across formats. The concept keeps Figma as an escape hatch for custom work: designers can import finished work instead of forcing every task into the built-in editor.</p>
+          <p class="project-text"><strong>3. Designer mode</strong> - Designers can edit visual composition, tune backgrounds, manage layers, use a project library, reuse styles and templates, and resize assets across formats.</p>
         </section>
 
         <figure class="project-figure">
@@ -212,7 +255,6 @@
           <h2 class="project-block__title">Learnings</h2>
           <ul class="project-list">
             <li>A "single workspace" only works when each role still gets its own focused job surface.</li>
-            <li>AI should remove repetitive production work - variants, substitutions, resize support, checks - but should not bypass specialist accountability.</li>
             <li>Vision work needs a technical counterpart early. The meetings made the UX target clearer, but also exposed where data model, roles, template architecture, and testing workflows need deeper design.</li>
           </ul>
         </section>

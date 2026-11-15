@@ -123,3 +123,13 @@
 Новые проблемы: Overview спорит с новым лидом и повторяет цепочку из Problem; «copy editors» и «Editors» вперемешку; строка Role обрывается; «Push, SMS and email…» дословно в лиде и Problem, «Vision stage» в Metrics и Status.
 
 Чтобы дойти до 7+: блок Key decisions, переписанный Overview, заголовок, число людей на встречах, назвать сквозной пример.
+
+## Правки после v2 (15 ноября)
+
+- Добавлен блок Key decisions перед Solution: 01 «One canvas, a mode for each role», 02 «AI drafts, a specialist decides», 03 «Figma stays as a way out». Три фразы, где эти решения были спрятаны, убраны из Approach и Solution.
+- Роль везде называется «copy editors»; «Editor mode» осталось как название режима.
+- Role: «…with Alex, the section's designer. We presented and defended it to stakeholders together».
+- Problem, пункт 1 сокращён: цепочка Jira → Docs → Figma осталась только в Overview, фраза про каналы — только в лиде.
+- «Vision stage» осталось только в Status. Вывод про AI убран из Learnings: он повторял Problem и Decision 02.
+
+Открыто: Overview всё ещё про «кампанию как источник правды», заголовок, число людей на встречах, сквозной пример, схема «до». Повторно не оценивалось.

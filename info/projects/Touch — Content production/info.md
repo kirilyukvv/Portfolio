@@ -16,13 +16,13 @@
 | Label | Value |
 |-------|-------|
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing (CVM: customer value management) |
-| **◆ Task** | Define the future workflow for content production inside Touch and validate it with Editors, Designers, and Technologists |
+| **◆ Task** | Define the future workflow for content production inside Touch and validate it with copy editors, designers and technologists |
 | **◆ Goal** | Cut campaign Time to Market by reducing Time on Task for preparing and approving content across channels |
 | **◆ Constraints** | Regulated financial communications; 3 roles in Content Hub: copy editor, designer, technologist; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
-| **◆ Role** | Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision together with the section's designer; presented and defended it to stakeholders together |
+| **◆ Role** | Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision with Alex, the section's designer. We presented and defended it to stakeholders together |
 | **◆ Team** | Product, engineering, content platform |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
-| **◆ Metrics** | _Time on Task for preparing and approving content, as part of campaign Time to Market. Vision stage, no results yet._ |
+| **◆ Metrics** | _Time on Task for preparing and approving content, as part of campaign Time to Market. No results yet._ |
 | **◆ Status** | Vision / discovery |
 | **◆ Tools** | Figma, AI |
 
@@ -47,7 +47,7 @@ The concept started from a simple production problem. A single campaign could mo
 
 ## Problem
 
-- Each channel had its own content tool: push, SMS and email in one, banners in another, stories in a third. Around them, briefs lived in Jira, copy in Google Docs, design in Figma and approvals in chats.
+- One campaign's creatives were made in three unconnected tools, depending on the channel.
 - Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds, and context had to be rebuilt at every handoff.
 - Review history and decision-making were hard to audit because comments, versions, references, and approvals lived outside the creative.
 - Reuse barely worked, although it is one of the main ways to go faster: previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.
@@ -57,7 +57,27 @@ The concept started from a simple production problem. A single campaign could mo
 
 We held three sessions, one each with the technologists, the designers and the copy editors. Then we discussed the concept with product and architecture stakeholders.
 
-The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing. The product direction became a shared canvas with role-specific modes rather than a generic all-in-one editor.
+The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Copy editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing.
+
+## Key decisions
+
+**Decision 01. One canvas, a mode for each role**
+
+- **Why:** Creatives for different channels were made in different tools, and in the sessions each role described a different job. Copy editors care about tone and facts, designers about visual control, technologists about substitutions, deeplinks and testing.
+- **How:** Any type of creative, from a push to a story, opens on the same canvas. Each role switches to its own mode with its own panel. The brief, comments and approval status stay shared.
+- **Instead of:** One universal editor with every control for everyone.
+
+**Decision 02. AI drafts, a specialist decides**
+
+- **Why:** Generated copy and images still need review and rework, so content production can't be automated end to end.
+- **How:** Each mode has an AI assistant: copy variants for editors, backgrounds and resizing for designers. Every generated version is saved and can be compared. A specialist approves the final creative.
+- **Changed after the sessions:** Sending every AI-assisted text back to the customer for re-approval became optional instead of mandatory.
+
+**Decision 03. Figma stays as a way out**
+
+- **Why:** Some creatives are custom work that a built-in editor will not cover.
+- **How:** Designers can import finished work from Figma and continue in Content Hub.
+- **Instead of:** Forcing every task into the built-in editor.
 
 ## Solution
 
@@ -71,7 +91,7 @@ The proposed Content Hub workspace has one canvas and several role modes. A camp
 
 *Editor mode - role-specific fields for title, subtitle, and buttons, with an option to apply text changes across selected creatives.*
 
-**2. Editor mode** - Editors work with copy fields directly on creative previews, save versions, compare alternatives, use an AI assistant for variants, and optionally share a read-only/commenting view when customer or partner review is needed. The meetings refined an important rule: customer re-approval should be optional, not a mandatory loop for every AI-assisted text.
+**2. Editor mode** - Copy editors work with copy fields directly on creative previews, save versions, compare alternatives, use an AI assistant for variants, and optionally share a read-only/commenting view when customer or partner review is needed.
 
 <!-- FIGURE: `Editors/03.png` - AI text variants and version history. -->
 
@@ -85,7 +105,7 @@ The proposed Content Hub workspace has one canvas and several role modes. A camp
 
 *Commenting mode - reviewers can leave feedback directly on the creative, keeping discussion attached to the artifact.*
 
-**3. Designer mode** - Designers can edit visual composition, tune backgrounds, manage layers, use a project library, reuse styles and templates, and resize assets across formats. The concept keeps Figma as an escape hatch for custom work: designers can import finished work instead of forcing every task into the built-in editor.
+**3. Designer mode** - Designers can edit visual composition, tune backgrounds, manage layers, use a project library, reuse styles and templates, and resize assets across formats.
 
 <!-- FIGURE: `Designers/01.png` - designer content controls. -->
 
@@ -150,7 +170,6 @@ The next direction is fewer roles: for some communications, the person who reque
 ## Learnings
 
 - A "single workspace" only works when each role still gets its own focused job surface.
-- AI should remove repetitive production work - variants, substitutions, resize support, checks - but should not bypass specialist accountability.
 - Vision work needs a technical counterpart early. The meetings made the UX target clearer, but also exposed where data model, roles, template architecture, and testing workflows need deeper design.
 
 ## Assets in this folder
