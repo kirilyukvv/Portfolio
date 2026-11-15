@@ -73,7 +73,7 @@ _Decision 02 · Agreed, metrics later_
 - **Why.** A creative can run in several campaigns and touchpoints at once. Before changing or reusing it, people need to see all of them.
 - **How.** A creative is a record, not a picture. Its panel shows display conditions, including the dark theme, the campaigns that use it and the touchpoints where it appears, with a link back to the builder.
 - **Instead of.** A gallery of previews, where finding usage means asking around.
-- **Status.** Usage comes first. Performance per creative comes later: the architecture team wants analytics to live outside the content system (see below).
+- **Status.** Usage comes first, performance per creative next. The architecture team keeps analytics data outside the content system, but people will see it inside storage, next to each creative.
 
 ![Creative panel with display conditions, campaigns and touchpoints](02.png)
 
@@ -104,7 +104,7 @@ _Decision 04 · Open_
 
 At that review, the platform architect pushed back on three points. Content needs a master system with versions and revisions, where anyone can see who changed what and what it was branched from. Templates don't need to be a separate entity. And analytics doesn't belong in the content system at all, apart from unique IDs for each piece of content and its variants.
 
-Versions and revisions are not in the concept yet. On analytics, the first version will show usage, not performance. On templates, the catalog stays in the concept because teams need starting points, but the data model behind it is still open. Instead of settling this in the room, I proposed listing every disputed point and checking each one with users.
+Versions and revisions are not in the concept yet. On analytics, the data can live wherever the platform needs it; the interface still shows performance inside storage, starting with usage in the first version. On templates, the catalog stays in the concept because teams need starting points, but the data model behind it is still open. Instead of settling this in the room, I proposed listing every disputed point and checking each one with users.
 
 ## Outcome
 
