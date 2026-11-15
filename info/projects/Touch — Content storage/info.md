@@ -14,6 +14,7 @@
 | Label | Value |
 |---|---|
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing, where teams produce hundreds of creatives every month. Storage is where finished creatives and their parts live after production |
+| **◆ Goal** | One place to store and reuse content and to see how well it performs |
 | **◆ Research** | Library and templates shown in role sessions with 8 technologists, 10 designers and 7 copy editors; the full storage concept reviewed with platform product and architecture leads |
 | **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer, part of the prototypes |
 | **◆ Status** | Agreed direction, planned after Content production. Not built yet. The template model is still open |
