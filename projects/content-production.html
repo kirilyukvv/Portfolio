@@ -13,11 +13,11 @@
   })();
   </script>
   <script src="../auth.js"></script>
-  <title>Touch — Content production — Vova Kirilyuk</title>
+  <title>Content Hub: one canvas for every channel — Vova Kirilyuk</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="../styles.css" rel="stylesheet">
+  <link href="../styles.css?v=4" rel="stylesheet">
 </head>
 <body class="body">
   <section class="section section-project">
@@ -25,18 +25,19 @@
       <a class="project-back" href="../index.html">← Back</a>
 
       <header class="project-header">
-        <h1 class="project-title">Touch — Content production</h1>
+        <h1 class="project-title">Content Hub: one canvas for every channel</h1>
         <p class="project-lead">At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested the concept with 25 people in three sessions, one per role.</p>
       </header>
+
+      <figure class="project-figure">
+        <img class="project-figure__image" src="../assets/projects/content-production.png" srcset="../assets/projects/content-production.png 1024w, ../assets/projects/content-production@2x.png 2048w" sizes="(max-width: 1200px) calc(100vw - 48px), 1024px" alt="Content Hub canvas with the banner, story and push of one campaign and the AI assistant" width="1024" height="640" decoding="async">
+        <figcaption class="project-figure__caption">Content Hub canvas: the banner, story and push of one campaign, with the AI assistant and approval controls.</figcaption>
+      </figure>
 
       <dl class="project-highlights">
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Context</dt>
           <dd class="project-highlights__value">Touch, Tinkoff's internal platform for customer marketing (CVM: customer value management)</dd>
-        </div>
-        <div class="project-highlights__item">
-          <dt class="project-highlights__label">◆ Task</dt>
-          <dd class="project-highlights__value">Define the future workflow for content production inside Touch and validate it with copy editors, designers and technologists</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Goal</dt>
@@ -51,8 +52,8 @@
           <dd class="project-highlights__value">3 sessions, 25 people; then product and architecture review</dd>
         </div>
         <div class="project-highlights__item">
-          <dt class="project-highlights__label">◆ Role</dt>
-          <dd class="project-highlights__value">Lead Product Designer. Took part in research, reviewed design decisions and shaped the vision with Alex, the section's designer. We presented and defended it to stakeholders together</dd>
+          <dt class="project-highlights__label">◆ My role</dt>
+          <dd class="project-highlights__value">Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Team</dt>
@@ -64,11 +65,7 @@
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Metrics</dt>
-          <dd class="project-highlights__value">Time on Task for preparing and approving content, as part of campaign Time to Market. No results yet</dd>
-        </div>
-        <div class="project-highlights__item">
-          <dt class="project-highlights__label">◆ Status</dt>
-          <dd class="project-highlights__value">Vision / discovery</dd>
+          <dd class="project-highlights__value">Vision / discovery, no results yet. Target: Time on Task for preparing and approving content, within campaign Time to Market</dd>
         </div>
         <div class="project-highlights__item">
           <dt class="project-highlights__label">◆ Tools</dt>
@@ -76,33 +73,33 @@
         </div>
       </dl>
 
-      <figure class="project-figure">
-        <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/00%20oreview.png" alt="Content Hub canvas with role-based creative workspace and AI assistant" width="1024" height="640" decoding="async">
-        <figcaption class="project-figure__caption">Content Hub canvas: the banner, story and push of one campaign, with the AI assistant and approval controls.</figcaption>
-      </figure>
-
       <div class="project-content project-content--wide">
         <section class="project-block">
           <h2 class="project-block__title">Overview</h2>
-          <p class="project-text">Touch is a platform initiative that brings scattered campaign launch tools into one CVM interface. Content Hub is the content layer of that platform: a place to create, store, manage, version, and analyze every creative used in a campaign.</p>
-          <p class="project-text">The concept started from a simple production problem. A single campaign could move through a brief in Jira, copy in Google Docs, design in Figma, layout in a separate constructor, approval in chats, and IDs pasted back into launch tools. Each transfer lost context. The vision was to make the campaign itself the source of truth: the brief, creative previews, comments, approvals, generated variants, assets, templates, JSON, testing, and analytics all stay attached to the same creative.</p>
+          <p class="project-text">Marketing teams at Tinkoff launch campaigns like <em>Transfers to other countries</em>: a banner, a two-page story and a push. Each creative passes through three roles. A copy editor writes the text, a designer builds the visuals, and a technologist prepares the creative for delivery in the app.</p>
+          <p class="project-text">The campaign creation case gave the campaign a home in Touch. Content Hub is the next layer: a home for each creative inside the campaign, where the three roles create, review, version and test content for every channel. I'll follow the Transfers campaign through the new flow.</p>
         </section>
 
         <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Editors/01.png" alt="Editor workspace with brief and creative previews" width="1024" height="640" loading="lazy" decoding="async">
+          <img class="project-figure__image" src="../assets/projects/content-production/editors-01.png" alt="Copy editor workspace with the brief next to creative previews" width="2048" height="1280" loading="lazy" decoding="async">
           <figcaption class="project-figure__caption">Copy editor workspace: the brief stays next to the banner, story and push previews, so nobody goes back to Jira or docs for context.</figcaption>
         </figure>
 
         <section class="project-block">
           <h2 class="project-block__title">Problem</h2>
           <ul class="project-list">
-            <li>One campaign's creatives were made in three unconnected tools, depending on the channel.</li>
-            <li>Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds, and context had to be rebuilt at every handoff.</li>
-            <li>Review history and decision-making were hard to audit because comments, versions, references, and approvals lived outside the creative.</li>
-            <li>Reuse barely worked, although it is one of the main ways to go faster: previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.</li>
-            <li>AI generation doesn't give reliable quality yet. Generated copy and images still need review and rework, so content production can't be fully automated.</li>
+            <li><strong>Three tools for one campaign.</strong> Creatives were made in different tools depending on the channel. Around them, briefs lived in Jira, copy in Google Docs, design in Figma and approvals in chats.</li>
+            <li><strong>Context rebuilt at every handoff.</strong> Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds.</li>
+            <li><strong>No audit trail.</strong> Comments, versions, references and approvals lived outside the creative, so it was hard to trace who decided what.</li>
+            <li><strong>Little reuse.</strong> Reuse is one of the main ways to go faster, but previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.</li>
+            <li><strong>AI can't do it alone yet.</strong> Generated copy and images still need review and rework, so content production can't be fully automated.</li>
           </ul>
         </section>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/before-after.png" alt="Before: one campaign split across three content tools plus Jira, Google Docs, Figma and chats. After: one canvas with a mode for each role" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Before and after. The same campaign used to be split across three content tools, with briefs, copy, design and approvals in four more places. In Content Hub, all three roles work on one canvas.</figcaption>
+        </figure>
 
         <section class="project-block">
           <h2 class="project-block__title">Approach</h2>
@@ -133,6 +130,80 @@
               </li>
             </ul>
           </section>
+        </section>
+
+        <section class="project-block">
+          <h2 class="project-block__title">Solution</h2>
+          <p class="project-text">Content Hub opens every creative of a campaign on one canvas. The screens follow the Transfers campaign: a banner, a two-page story (History on the screens) and a push. Content Hub creates these creatives from the brief and the campaign scenario. Then the copy editor, the designer and the technologist open the same creatives, each in their own mode.</p>
+          <p class="project-text"><strong>Shared context.</strong> Every role works next to the same brief, shown on the editor screen above: the messages, channels, number of creatives and the mechanics the campaign needs. Comments and approval status are shared too.</p>
+          <p class="project-text"><strong>Copy editor mode.</strong> The copy editor changes the title, subtitle and buttons in fields next to the preview. One switch applies an edit to every selected creative, so the banner, the story and the push say the same thing. For alternatives, the editor asks the AI assistant, for example for more general options, and every result is saved in the version history. Reviewers leave comments right on the creative. When a customer or partner needs to see the text, they get a link to view and comment.</p>
+        </section>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/editors-02.png" alt="Copy editor mode with text fields and the apply-to-all switch" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Copy editor mode: fields for the title, subtitle and buttons sit next to the brief. “Apply to all creatives” sends one edit to the whole set.</figcaption>
+        </figure>
+
+        <figure class="project-figure project-figure--portrait">
+          <img class="project-figure__image" src="../assets/projects/content-production/editors-03.png" alt="AI assistant with text variants and version history" width="1632" height="1880" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">AI assistant and version history: the editor asks for more general options, and every version stays in the history for comparison.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/editors-04.png" alt="Comment left on the story preview" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Comments: a reviewer suggests other wording right on the story, and the thread stays with the creative.</figcaption>
+        </figure>
+
+        <section class="project-block">
+          <p class="project-text"><strong>Designer mode.</strong> The designer opens the same creatives. Selecting an element on the story shows its position, spacing, fill and effects. The library keeps what was already made for the project: assets, styles, icons, images, video and templates for game mechanics. The layers panel shows the story as pages, containers, text and buttons. The AI assistant changes images on request: here it puts the illustration on a blue background, and the designer decides whether to use it. Custom work can still come in from Figma (see Decision 03 below).</p>
+        </section>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/designers-01.png" alt="Designer mode with position, spacing and fill settings" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Designer mode: the selected text block on page 1 of the story gets its own position, spacing, fill and effects.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/designers-02.png" alt="Library with project assets, styles and game templates" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Library: assets made in this project, styles, icons, images, video and templates for game mechanics such as bingo, voting or sudoku.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/designers-03.png" alt="Layers panel with story pages, containers, text and buttons" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Layers: the story opens as pages, containers, text and buttons, so each element can be edited instead of a flat image.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/designers-04.png" alt="Designer AI assistant generating a blue background" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Designer AI assistant: the request “Add a background in blue tones” returns a new version, and the designer decides whether to use it.</figcaption>
+        </figure>
+
+        <section class="project-block">
+          <p class="project-text"><strong>Technologist mode.</strong> The technologist prepares creatives for delivery in the app. On the banner, the technologist adds a separate text for VIP clients, picked by a segment condition. Substitution generation turns placeholders in the copy into data fields, such as the bank name and the limit, and the JSON view shows what the app will receive. Next come actions: page 1 of the story leads to page 2, and the button opens a deeplink. Last, the testing panel sends the set to a tester’s phones, at a chosen place in the mobile bank and on a chosen trigger.</p>
+        </section>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/technologists-01.png" alt="Technologist mode with a VIP text branch, substitutions and a deeplink" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Technologist mode: the banner gets a separate version for VIP clients, picked by a segment condition. The copy still has placeholders, and the button already has a deeplink.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/technologists-02.png" alt="Copy with data substitutions and the JSON view" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">After substitution generation, placeholders become data fields such as ${bank.name} and ${sum}. The JSON view at the bottom shows what the app receives.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/technologists-03.png" alt="Navigation from story page 1 to page 2 and a deeplink" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Actions: page 1 of the story leads to page 2, and the button opens a deeplink.</figcaption>
+        </figure>
+
+        <figure class="project-figure">
+          <img class="project-figure__image" src="../assets/projects/content-production/technologists-04.png" alt="Testing panel with test group, touchpoints and triggers" width="2048" height="1280" loading="lazy" decoding="async">
+          <figcaption class="project-figure__caption">Testing: the set goes to a tester’s two phones, appears on the mobile bank’s home screen and shows on app opening or a tap on the preview.</figcaption>
+        </figure>
+
+        <section class="project-block">
+          <p class="project-text"><strong>Content memory.</strong> Once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage and performance metadata become part of Content Hub. This turns production artifacts into reusable product data.</p>
         </section>
 
         <section class="project-block project-block--wide">
@@ -176,97 +247,26 @@
               <dd>Forcing every task into the built-in editor.</dd>
             </dl>
           </article>
-        </section>
 
-        <section class="project-block">
-          <h2 class="project-block__title">Solution</h2>
-          <p class="project-text">Content Hub opens every creative of a campaign on one canvas. The screens follow one campaign, Transfers to other countries: a banner, a two-page story (History on the screens) and a push. Content Hub creates these creatives from the brief and the campaign scenario. Then the copy editor, the designer and the technologist open the same creatives, each in their own mode.</p>
-          <p class="project-text"><strong>Shared context.</strong> Every role works next to the same brief, shown on the editor screen above: the messages, channels, number of creatives and the mechanics the campaign needs. Comments and approval status are shared too.</p>
-          <p class="project-text"><strong>Copy editor mode.</strong> The copy editor changes the title, subtitle and buttons in fields next to the preview. One switch applies an edit to every selected creative, so the banner, the story and the push say the same thing. For alternatives, the editor asks the AI assistant, for example for more general options, and every result is saved in the version history. Reviewers leave comments right on the creative. When a customer or partner needs to see the text, they get a link to view and comment.</p>
-        </section>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Editors/02.png" alt="Copy editor mode with text fields and the apply-to-all switch" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Copy editor mode: fields for the title, subtitle and buttons sit next to the brief. “Apply to all creatives” sends one edit to the whole set.</figcaption>
-        </figure>
-
-        <figure class="project-figure project-figure--portrait">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Editors/03.png" alt="AI assistant with text variants and version history" width="890" height="1024" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">AI assistant and version history: the editor asks for more general options, and every version stays in the history for comparison.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Editors/04.png" alt="Comment left on the story preview" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Comments: a reviewer suggests other wording right on the story, and the thread stays with the creative.</figcaption>
-        </figure>
-
-        <section class="project-block">
-          <p class="project-text"><strong>Designer mode.</strong> The designer opens the same creatives. Selecting an element on the story shows its position, spacing, fill and effects. The library keeps what was already made for the project: assets, styles, icons, images, video and templates for game mechanics. The layers panel shows the story as pages, containers, text and buttons. The AI assistant changes images on request: here it puts the illustration on a blue background, and the designer decides whether to use it. Custom work can still come in from Figma (Decision 03).</p>
-        </section>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Designers/01.png" alt="Designer mode with position, spacing and fill settings" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Designer mode: the selected text block on page 1 of the story gets its own position, spacing, fill and effects.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Designers/02.png" alt="Library with project assets, styles and game templates" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Library: assets made in this project, styles, icons, images, video and templates for game mechanics such as bingo, voting or sudoku.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Designers/03.png" alt="Layers panel with story pages, containers, text and buttons" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Layers: the story opens as pages, containers, text and buttons, so each element can be edited instead of a flat image.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Designers/04.png" alt="Designer AI assistant generating a blue background" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Designer AI assistant: the request “Add a background in blue tones” returns a new version, and the designer decides whether to use it.</figcaption>
-        </figure>
-
-        <section class="project-block">
-          <p class="project-text"><strong>Technologist mode.</strong> The technologist prepares creatives for delivery in the app. On the banner, the technologist adds a separate text for VIP clients, picked by a segment condition. Substitution generation turns placeholders in the copy into data fields, such as the bank name and the limit, and the JSON view shows what the app will receive. Next come actions: page 1 of the story leads to page 2, and the button opens a deeplink. Last, the testing panel sends the set to a tester’s phones, at a chosen place in the mobile bank and on a chosen trigger.</p>
-        </section>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Technologists/01.png" alt="Technologist mode with a VIP text branch, substitutions and a deeplink" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Technologist mode: the banner gets a separate version for VIP clients, picked by a segment condition. The copy still has placeholders, and the button already has a deeplink.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Technologists/02.png" alt="Copy with data substitutions and the JSON view" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">After substitution generation, placeholders become data fields such as ${bank.name} and ${sum}. The JSON view at the bottom shows what the app receives.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Technologists/03.png" alt="Navigation from story page 1 to page 2 and a deeplink" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Actions: page 1 of the story leads to page 2, and the button opens a deeplink.</figcaption>
-        </figure>
-
-        <figure class="project-figure">
-          <img class="project-figure__image" src="../info/projects/Touch%20%E2%80%94%20Content%20production/Technologists/04.png" alt="Testing panel with test group, touchpoints and triggers" width="1024" height="640" loading="lazy" decoding="async">
-          <figcaption class="project-figure__caption">Testing: the set goes to a tester’s two phones, appears on the mobile bank’s home screen and shows on app opening or a tap on the preview.</figcaption>
-        </figure>
-
-        <section class="project-block">
-          <p class="project-text"><strong>Content memory.</strong> Once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage and performance metadata become part of Content Hub. This turns production artifacts into reusable product data.</p>
         </section>
 
         <section class="project-block">
           <h2 class="project-block__title">Impact</h2>
-          <p class="project-text">The work produced a shared vision for how content production should live inside Touch: not as another isolated tool, but as the campaign's content memory and production workspace.</p>
-          <p class="project-text">The validation sessions surfaced concrete product decisions: keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch. The biggest unresolved risk is product architecture: the UX vision depends on a strong content data model, versioning, template strategy, and integrations with existing systems during the transition period.</p>
-          <p class="project-text">The next direction is fewer roles: for some communications, the person who requests the campaign should be able to prepare the content without a handoff.</p>
+          <ul class="project-list">
+            <li><strong>A shared vision.</strong> Content production lives inside Touch as the campaign's production workspace and content memory, instead of another separate tool.</li>
+            <li><strong>Decisions from the sessions.</strong> Keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch.</li>
+            <li><strong>Main open risk: architecture.</strong> The vision depends on a strong content data model, versioning, template strategy and integrations with existing systems during the transition period.</li>
+            <li><strong>Next: fewer roles.</strong> For some communications, the person who requests the campaign should be able to prepare the content without a handoff.</li>
+          </ul>
         </section>
 
         <section class="project-block">
           <h2 class="project-block__title">Learnings</h2>
           <ul class="project-list">
-            <li>A "single workspace" only works when each role still gets its own focused job surface.</li>
-            <li>Vision work needs a technical counterpart early. The meetings made the UX target clearer, but also exposed where data model, roles, template architecture, and testing workflows need deeper design.</li>
+            <li><strong>Shared canvas, separate surfaces.</strong> One workspace works only when each role keeps its own focused mode. The sessions showed that the three roles care about different things, even when they work on the same creative.</li>
+            <li><strong>Bring in a technical partner early.</strong> The meetings made the UX target clearer, but also showed where the data model, roles, template architecture and testing workflows need deeper design.</li>
           </ul>
         </section>
-
       </div>
     </div>
   </section>
