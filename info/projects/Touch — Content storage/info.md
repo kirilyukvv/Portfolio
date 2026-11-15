@@ -14,7 +14,7 @@
 | Label | Value |
 |---|---|
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing. Storage is where finished creatives and their parts live after production |
-| **◆ Review** | Concept reviews with the team and stakeholders, then a May review with platform product and architecture leads. Not yet shown to users |
+| **◆ Research** | Library and templates shown in role sessions with 8 technologists, 10 designers and 7 copy editors; the full storage concept reviewed with platform product and architecture leads |
 | **◆ My role** | Lead Product Designer. Design review, business process expertise, part of the prototypes |
 | **◆ Status** | Agreed direction, planned after Content production. Not built yet. The template model is still open |
 
@@ -28,20 +28,23 @@ Today the history of a creative is spread across a Jira task, a Figma file and t
 
 - **Reuse meant cloning.** "We take a finished task, clone it and tweak it a bit." That is how the platform architect described the usual way to reuse content.
 - **Templates lived outside the product.** Editors kept a whole Figma page of story templates, and Alex kept it open every day. A team that needed a new layout waited for whoever maintained the constructor.
-- **Building blocks had no names.** Ready-made story elements in the constructor had random names, so technologists found them from memory.
+- **Building blocks had random names.** Ready-made story elements in the constructor are hard to find, because nobody agreed on their names.
 - **A second library was about to appear.** The design team already ran a library of validated, tagged illustrations and planned to serve it company-wide. A separate library in Touch would split the source of truth.
 - **Overuse was invisible.** Designers asked for a way to see how often a creative had been reused, so the same visual doesn't end up in every campaign.
 
 ## Approach
 
-Storage has not been tested with users yet. Alex presented the concept to the product team and stakeholders, including the design team that runs the company's illustration library.
+The library and templates were part of the Content production sessions with each role: 8 technologists, 10 designers and 7 copy editors. Alex showed how the library fills itself from published creatives and where templates live. Editors and designers had the most to say.
+
+- **Editors** wanted to choose between story layouts with lists, facts and ratings instead of one standard template.
+- **Designers** asked us to plug in their validated library instead of building a second one, and to show how often a creative is reused.
 
 
-In May we brought the concept to the platform's product and architecture leads. They agreed on the direction and raised objections, described below. Testing with editors, designers and technologists comes when the team starts building it.
+The full storage concept, with the creative registry and usage panel, was then reviewed with the platform's product and architecture leads. They agreed on the direction and raised objections, described below.
 
 ## My role & team
 
-Alex led the concept and the layouts, and presented storage to the team and stakeholders. I reviewed the design at each step, advised on how campaign content is actually produced and reused, and drew part of the prototypes myself.
+Alex led the concept and the layouts, and presented the library to each role and the full concept to stakeholders. I reviewed the design at each step, advised on how campaign content is actually produced and reused, and drew part of the prototypes myself.
 
 | Name | Role | Area |
 |---|---|---|
@@ -77,7 +80,7 @@ _Decision 02 · Agreed, metrics later_
 
 ### One library with the design team, not two
 
-_Decision 03 · Changed after review_
+_Decision 03 · Changed after research_
 
 - **Why.** The design team already curates validated, tagged illustrations and plans to serve them company-wide. A second library in Touch would compete with theirs.
 - **Before.** The concept had Touch build its library only from its own creatives.
@@ -98,15 +101,15 @@ _Decision 04 · Open_
 
 ## Where the concept was challenged
 
-In May the platform architect pushed back on three points. Content needs a master system with versions and revisions, where anyone can see who changed what and what it was branched from. Templates don't need to be a separate entity. And analytics doesn't belong in the content system at all, apart from unique IDs for each piece of content and its variants.
+At that review, the platform architect pushed back on three points. Content needs a master system with versions and revisions, where anyone can see who changed what and what it was branched from. Templates don't need to be a separate entity. And analytics doesn't belong in the content system at all, apart from unique IDs for each piece of content and its variants.
 
 Versions and revisions are not in the concept yet. On analytics, the first version will show usage, not performance. On templates, the catalog stays in the concept because teams need starting points, but the data model behind it is still open. Instead of settling this in the room, I proposed listing every disputed point and checking each one with users.
 
 ## Outcome
 
 - **Agreed:** stakeholders and the team approved the direction: creative registry with campaign usage and touchpoints, illustration and icon libraries that fill themselves from published creatives, template catalog. Building starts after Content production.
-- **Changed after review:** one-way sync with the design team's library instead of a second library.
-- **Open:** template entity or branching, revision history, performance per creative, a reuse counter that designers asked for, and testing with users.
+- **Changed after research:** one-way sync with the design team's library instead of a second library.
+- **Open:** template entity or branching, revision history, performance per creative, a reuse counter that designers asked for, and testing the full concept with users.
 
 ## Learnings
 
