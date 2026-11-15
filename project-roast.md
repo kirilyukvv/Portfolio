@@ -2,7 +2,7 @@
 
 Как разбирать страницу проекта в портфолио, чтобы она показывала автора как Lead Product Designer. Структура страницы — в [project-page-structure.md](project-page-structure.md). Этот документ — про качество истории.
 
-Применялся к `projects/campaign-creation.html` и `projects/content-production.html`.
+Применялся к `projects/campaign-creation.html`, `projects/content-production.html` и `projects/content-storage.html`.
 
 ## Позиция
 
@@ -91,6 +91,7 @@
 |---|---|---|
 | Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
 | Content production, v1 и повторные v2–v4 | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,1 → 5,2 → 5,8 → 6,7 (до этого 4,6 по удалённым заметкам) |
+| Content storage, v1 и повторная v2 | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6 → 6,2 |
 
 ## Как просить об этом в новом чате
 
