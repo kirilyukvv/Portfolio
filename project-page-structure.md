@@ -7,10 +7,9 @@ Reference implementation: `projects/campaign-creation.html`
 ## Layer 1 — Hero
 
 1. Back link  
-2. Meta line — `Client · Domain · Type · Years`  
-3. Title  
-4. Lead — one sentence: what shipped + for whom  
-5. Hero figure — key visual + short caption  
+2. Title  
+3. Lead — one sentence: what shipped + for whom  
+4. Hero figure — key visual + short caption  
 
 ## Layer 2 — Highlights snapshot
 

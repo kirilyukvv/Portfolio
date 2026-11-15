@@ -1,179 +1,181 @@
 # Touch — Content production
 
-> Source content for [`../../../projects/content-production.html`](../../../projects/content-production.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `content-production`.
+> Source content for [`../../../projects/content-production.html`](../../../projects/content-production.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `content-production`. Web images live in [`../../../assets/projects/content-production/`](../../../assets/projects/content-production/).
 
-**Client · Domain · Type · Years:** Tinkoff · FinTech · Marketing automation · Web app · 2026
+**Title:** Content Hub: one canvas for every channel
 
-**Lead:** Shaped a product vision for Content Hub inside Touch: one workspace where marketers, editors, designers, and technologists can create, review, version, test, and reuse campaign creatives without losing context across Jira, chats, Figma, Google Docs, and legacy constructors.
+**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested the concept with 25 people in three sessions, one per role.
 
-<!-- FIGURE: Hero - use `00 oreview.png`. Canvas for the Transfers campaign with role tools, AI assistant, and approval controls. -->
+![Content Hub canvas](00%20overview.png)
 
-![Content Hub canvas - role-based creative workspace](00%20oreview.png)
-
-*Content Hub canvas - a shared creative workspace with campaign context, AI-assisted image generation, and role-based approval controls.*
+*Content Hub canvas: the banner, story and push of one campaign, with the AI assistant and approval controls.*
 
 ## Highlights snapshot
 
 | Label | Value |
 |-------|-------|
-| **◆ Context** | Touch - internal CVM / marketing automation platform for financial services |
-| **◆ Task** | Define the future workflow for content production inside Touch and validate it with Editors, Designers, and Technologists |
-| **◆ Goal** | Reduce campaign time-to-launch by keeping briefs, creative assets, review history, role approvals, and testing inside one campaign context |
-| **◆ Constraints** | Regulated financial communications; multiple creator roles; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
-| **◆ Role** | Lead Product Designer - vision framing, UX architecture, stakeholder alignment, critique synthesis, validation plan |
-| **◆ Team** | Product, engineering, content platform, editors, designers, technologists, marketing stakeholders |
+| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing (CVM: customer value management) |
+| **◆ Goal** | Cut campaign Time to Market by reducing Time on Task for preparing and approving content across channels |
+| **◆ Constraints** | Regulated financial communications; 3 roles in Content Hub: copy editor, designer, technologist; custom and template-based creative formats; transition period with Jira, Figma, chats, and existing constructors |
+| **◆ Research** | 3 sessions, 25 people; then product and architecture review |
+| **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer |
+| **◆ Team** | Product, engineering, content platform |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
-| **◆ Metrics** | _Vision stage - expected impact: fewer handoffs, faster creative production, clearer audit trail, reusable content and assets._ |
-| **◆ Status** | Vision / discovery |
-| **◆ Tools** | Figma, user interviews / stakeholder syncs |
-
-## Designers
-
-| Name | Role | Avatar |
-|------|------|--------|
-| Vova Kirilyuk | Lead Product Designer | `../../team/Vova.png` |
-| Alex | Co-designer | `../../team/Alex.png` |
+| **◆ Metrics** | Vision / discovery, no results yet. Target: Time on Task for preparing and approving content, within campaign Time to Market |
+| **◆ Tools** | Figma, AI |
 
 ## Overview
 
-Touch is a platform initiative that brings scattered campaign launch tools into one CVM interface. Content Hub is the content layer of that platform: a place to create, store, manage, version, and analyze every creative used in a campaign.
+Marketing teams at Tinkoff launch campaigns like *Transfers to other countries*: a banner, a two-page story and a push. Each creative passes through three roles. A copy editor writes the text, a designer builds the visuals, and a technologist prepares the creative for delivery in the app.
 
-The concept started from a simple production problem. A single campaign could move through a brief in Jira, copy in Google Docs, design in Figma, layout in a separate constructor, approval in chats, and IDs pasted back into launch tools. Each transfer lost context. The vision was to make the campaign itself the source of truth: the brief, creative previews, comments, approvals, generated variants, assets, templates, JSON, testing, and analytics all stay attached to the same creative.
+The campaign creation case gave the campaign a home in Touch. Content Hub is the next layer: a home for each creative inside the campaign, where the three roles create, review, version and test content for every channel. I'll follow the Transfers campaign through the new flow.
 
-<!-- FIGURE: `Editors/01.png` - first in-story figure. Shows brief context next to generated creatives. -->
+![Copy editor workspace with the brief next to creative previews](Editors/01.png)
 
-![Editor workspace - brief and creative previews](Editors/01.png)
-
-*Editor workspace - the brief stays visible beside Banner, History, and Push previews, so the role can work without jumping back to Jira or docs.*
+*Copy editor workspace: the brief stays next to the banner, story and push previews, so nobody goes back to Jira or docs for context.*
 
 ## Problem
 
-- Campaign content production was split across tools: Jira, chats, Figma, Google Docs, content constructors, and launch systems.
-- Editors, designers, and technologists had different jobs, but they were working on the same creative artifact and repeatedly reassembled context for each handoff.
-- Review history and decision-making were hard to audit because comments, versions, references, and approvals lived outside the creative.
-- Template and asset reuse was weak: previous creatives, styles, images, icons, videos, and mechanics could not reliably become the starting point for the next campaign.
-- AI generation had promise, but teams were clear that it should support specialists rather than replace editorial, design, or technical judgment.
+- **Three tools for one campaign.** Creatives were made in different tools depending on the channel. Around them, briefs lived in Jira, copy in Google Docs, design in Figma and approvals in chats.
+- **Context rebuilt at every handoff.** Copy editors, designers and technologists worked on the same creative in different places. Each creative went through 1–3 mandatory approval rounds.
+- **No audit trail.** Comments, versions, references and approvals lived outside the creative, so it was hard to trace who decided what.
+- **Little reuse.** Reuse is one of the main ways to go faster, but previous creatives, styles, images, icons, videos and mechanics could not reliably become the starting point for the next campaign.
+- **AI can't do it alone yet.** Generated copy and images still need review and rework, so content production can't be fully automated.
+
+![Before: one campaign split across three content tools plus Jira, Google Docs, Figma and chats. After: one canvas with a mode for each role](../../../assets/projects/content-production/before-after.png)
+
+*Before and after. The same campaign used to be split across three content tools, with briefs, copy, design and approvals in four more places. In Content Hub, all three roles work on one canvas.*
 
 ## Approach
 
-I treated the meetings as a validation loop for a product vision, not as a final feature pitch. The concept was shown separately to role groups - Editors, Designers, and Technologists - and then debated with product and architecture stakeholders.
+We held three sessions, one per role: 8 technologists, 10 designers and 7 copy editors. Then we discussed the concept with product and architecture stakeholders.
 
-The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing. The product direction became a shared canvas with role-specific modes rather than a generic all-in-one editor.
+The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Copy editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing.
+
+## My role & team
+
+I took part in the research, reviewed design decisions and shaped the vision for the section together with Alex, the designer who owns Content Hub. We presented the concept to stakeholders and defended it together.
+
+| Name | Role | Area | Avatar |
+|------|------|------|--------|
+| Vova Kirilyuk | Lead Product Designer | Research, design reviews, vision, stakeholder presentations | `../../team/Vova.png` |
+| Alex | Product designer | Content Hub owner: content and creatives | `../../team/Alex.png` |
 
 ## Solution
 
-The proposed Content Hub workspace has one canvas and several role modes. A campaign can pre-create the needed creative shells from the brief and scenario, then route them through content, design, layout, approval, and testing.
+Content Hub opens every creative of a campaign on one canvas. The screens follow the Transfers campaign: a banner, a two-page story (History on the screens) and a push. Content Hub creates these creatives from the brief and the campaign scenario. Then the copy editor, the designer and the technologist open the same creatives, each in their own mode.
 
-**1. Shared campaign context** - Every role starts from the same source: campaign brief, audience, hypothesis, A/B test logic, selected channels, creative requirements, generated drafts, comments, and status.
+**Shared context.** Every role works next to the same brief, shown on the editor screen above: the messages, channels, number of creatives and the mechanics the campaign needs. Comments and approval status are shared too.
 
-<!-- FIGURE: `Editors/02.png` - editor fields and apply-to-all. -->
+**Copy editor mode.** The copy editor changes the title, subtitle and buttons in fields next to the preview. One switch applies an edit to every selected creative, so the banner, the story and the push say the same thing. For alternatives, the editor asks the AI assistant, for example for more general options, and every result is saved in the version history. Reviewers leave comments right on the creative. When a customer or partner needs to see the text, they get a link to view and comment.
 
-![Editor mode - content fields and apply-to-all control](Editors/02.png)
+![Copy editor mode with text fields and the apply-to-all switch](Editors/02.png)
 
-*Editor mode - role-specific fields for title, subtitle, and buttons, with an option to apply text changes across selected creatives.*
+*Copy editor mode: fields for the title, subtitle and buttons sit next to the brief. “Apply to all creatives” sends one edit to the whole set.*
 
-**2. Editor mode** - Editors work with copy fields directly on creative previews, save versions, compare alternatives, use an AI assistant for variants, and optionally share a read-only/commenting view when customer or partner review is needed. The meetings refined an important rule: customer re-approval should be optional, not a mandatory loop for every AI-assisted text.
+![AI assistant with text variants and version history](Editors/03.png)
 
-<!-- FIGURE: `Editors/03.png` - AI text variants and version history. -->
+*AI assistant and version history: the editor asks for more general options, and every version stays in the history for comparison.*
 
-![Editor AI assistant and version history](Editors/03.png)
+![Comment left on the story preview](Editors/04.png)
 
-*AI assistant and version history - generated message variants are preserved so teams can compare options instead of losing drafts in chat threads.*
+*Comments: a reviewer suggests other wording right on the story, and the thread stays with the creative.*
 
-<!-- FIGURE: `Editors/04.png` - comments on creative preview. -->
+**Designer mode.** The designer opens the same creatives. Selecting an element on the story shows its position, spacing, fill and effects. The library keeps what was already made for the project: assets, styles, icons, images, video and templates for game mechanics. The layers panel shows the story as pages, containers, text and buttons. The AI assistant changes images on request: here it puts the illustration on a blue background, and the designer decides whether to use it. Custom work can still come in from Figma (see Decision 03 below).
 
-![Commenting mode - anchored feedback on creative](Editors/04.png)
+![Designer mode with position, spacing and fill settings](Designers/01.png)
 
-*Commenting mode - reviewers can leave feedback directly on the creative, keeping discussion attached to the artifact.*
+*Designer mode: the selected text block on page 1 of the story gets its own position, spacing, fill and effects.*
 
-**3. Designer mode** - Designers can edit visual composition, tune backgrounds, manage layers, use a project library, reuse styles and templates, and resize assets across formats. The concept keeps Figma as an escape hatch for custom work: designers can import finished work instead of forcing every task into the built-in editor.
+![Library with project assets, styles and game templates](Designers/02.png)
 
-<!-- FIGURE: `Designers/01.png` - designer content controls. -->
+*Library: assets made in this project, styles, icons, images, video and templates for game mechanics such as bingo, voting or sudoku.*
 
-![Designer mode - visual and text properties](Designers/01.png)
+![Layers panel with story pages, containers, text and buttons](Designers/03.png)
 
-*Designer mode - visual editing happens beside the same creative previews and approval controls used by the rest of the flow.*
+*Layers: the story opens as pages, containers, text and buttons, so each element can be edited instead of a flat image.*
 
-<!-- FIGURE: `Designers/02.png` - library and templates. -->
+![Designer AI assistant generating a blue background](Designers/04.png)
 
-![Design library - assets, styles, and templates](Designers/02.png)
+*Designer AI assistant: the request “Add a background in blue tones” returns a new version, and the designer decides whether to use it.*
 
-*Library - generated and uploaded assets, styles, images, videos, objects, and templates can be reused inside the next creative.*
+**Technologist mode.** The technologist prepares creatives for delivery in the app. On the banner, the technologist adds a separate text for VIP clients, picked by a segment condition. Substitution generation turns placeholders in the copy into data fields, such as the bank name and the limit, and the JSON view shows what the app will receive. Next come actions: page 1 of the story leads to page 2, and the button opens a deeplink. Last, the testing panel sends the set to a tester’s phones, at a chosen place in the mobile bank and on a chosen trigger.
 
-<!-- FIGURE: `Designers/03.png` - layers. -->
+![Technologist mode with a VIP text branch, substitutions and a deeplink](Technologists/01.png)
 
-![Layers panel - structured creative elements](Designers/03.png)
+*Technologist mode: the banner gets a separate version for VIP clients, picked by a segment condition. The copy still has placeholders, and the button already has a deeplink.*
 
-*Layers - complex formats such as stories can expose pages, containers, text, and buttons as editable structure instead of a flat screenshot.*
+![Copy with data substitutions and the JSON view](Technologists/02.png)
 
-<!-- FIGURE: `Designers/04.png` - AI assistant for image generation. -->
+*After substitution generation, placeholders become data fields such as ${bank.name} and ${sum}. The JSON view at the bottom shows what the app receives.*
 
-![Designer AI assistant - background generation](Designers/04.png)
+![Navigation from story page 1 to page 2 and a deeplink](Technologists/03.png)
 
-*Designer AI assistant - image generation is positioned as a helper for exploration, refinement, and resizing, not as an automatic replacement for design review.*
+*Actions: page 1 of the story leads to page 2, and the button opens a deeplink.*
 
-**4. Technologist mode** - Technologists inherit the same creative package, then add personalization, substitutions, actions, deeplinks, navigation, triggers, and JSON-level checks. This mode is optimized for the technical finishing work that still needs human control.
+![Testing panel with test group, touchpoints and triggers](Technologists/04.png)
 
-<!-- FIGURE: `Technologists/01.png` - personalization and deeplink setup. -->
+*Testing: the set goes to a tester’s two phones, appears on the mobile bank’s home screen and shows on app opening or a tap on the preview.*
 
-![Technologist mode - substitutions and deeplinks](Technologists/01.png)
+**Content memory.** Once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage and performance metadata become part of Content Hub. This turns production artifacts into reusable product data.
 
-*Technologist mode - substitutions, personalization, and action setup are attached to the same creative preview.*
+## Key decisions
 
-<!-- FIGURE: `Technologists/02.png` - JSON view. -->
+**Decision 01. One canvas, a mode for each role**
 
-![JSON view - technical creative structure](Technologists/02.png)
+- **Why:** Creatives for different channels were made in different tools, and in the sessions each role described a different job. Copy editors care about tone and facts, designers about visual control, technologists about substitutions, deeplinks and testing.
+- **How:** Any type of creative, from a push to a story, opens on the same canvas. Each role switches to its own mode with its own panel. The brief, comments and approval status stay shared.
+- **Instead of:** One universal editor with every control for everyone.
 
-*JSON view - technologists can inspect the underlying structure when a creative needs deeper technical control.*
+**Decision 02. AI drafts, a specialist decides**
 
-<!-- FIGURE: `Technologists/03.png` - navigation actions. -->
+- **Why:** Generated copy and images still need review and rework, so content production can't be automated end to end.
+- **How:** Each mode has an AI assistant: copy variants for editors, backgrounds and resizing for designers. Every generated version is saved and can be compared. A specialist approves the final creative.
+- **Changed after the sessions:** Sending every AI-assisted text back to the customer for re-approval became optional instead of mandatory.
 
-![Action setup - navigation and deeplinks](Technologists/03.png)
+**Decision 03. Figma stays as a way out**
 
-*Action setup - page navigation and deeplinks can be configured without leaving the creative workspace.*
-
-<!-- FIGURE: `Technologists/04.png` - testing setup. -->
-
-![Testing mode - test groups, touchpoints, and triggers](Technologists/04.png)
-
-*Testing mode - one panel configures test group, touchpoints, app triggers, and launch conditions for the selected creative set.*
-
-**5. Content memory** - Once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage, and performance metadata become part of the Content Hub. This turns production artifacts into reusable product data.
+- **Why:** Some creatives are custom work that a built-in editor will not cover.
+- **How:** Designers can import finished work from Figma and continue in Content Hub.
+- **Instead of:** Forcing every task into the built-in editor.
 
 ## Impact
 
-The work produced a shared vision for how content production should live inside Touch: not as another isolated tool, but as the campaign's content memory and production workspace.
-
-The validation sessions surfaced concrete product decisions: keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch. The biggest unresolved risk is product architecture: the UX vision depends on a strong content data model, versioning, template strategy, and integrations with existing systems during the transition period.
+- **A shared vision.** Content production lives inside Touch as the campaign's production workspace and content memory, instead of another separate tool.
+- **Decisions from the sessions.** Keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch.
+- **Main open risk: architecture.** The vision depends on a strong content data model, versioning, template strategy and integrations with existing systems during the transition period.
+- **Next: fewer roles.** For some communications, the person who requests the campaign should be able to prepare the content without a handoff.
 
 ## Learnings
 
-- A "single workspace" only works when each role still gets its own focused job surface.
-- AI should remove repetitive production work - variants, substitutions, resize support, checks - but should not bypass specialist accountability.
-- Vision work needs a technical counterpart early. The meetings made the UX target clearer, but also exposed where data model, roles, template architecture, and testing workflows need deeper design.
+- **Shared canvas, separate surfaces.** One workspace works only when each role keeps its own focused mode. The sessions showed that the three roles care about different things, even when they work on the same creative.
+- **Bring in a technical partner early.** The meetings made the UX target clearer, but also showed where the data model, roles, template architecture and testing workflows need deeper design.
 
 ## Assets in this folder
 
-| File | What it shows | Use on case page |
-|------|---------------|------------------|
-| `00 oreview.png` | Shared canvas with AI assistant and approval controls | **Hero** |
-| `Editors/01.png` | Brief beside creative previews | **Overview** |
-| `Editors/02.png` | Editor text fields and apply-to-all | **Solution - Editor mode** |
-| `Editors/03.png` | AI-generated copy variants and version history | **Solution - Editor mode** |
-| `Editors/04.png` | Anchored comments on creative preview | **Solution - Editor mode** |
-| `Designers/01.png` | Designer properties panel | **Solution - Designer mode** |
-| `Designers/02.png` | Library with assets, styles, images, videos, objects, templates | **Solution - Designer mode** |
-| `Designers/03.png` | Layers panel for structured creative pages | **Solution - Designer mode** |
-| `Designers/04.png` | AI assistant for image refinement | **Solution - Designer mode** |
-| `Technologists/01.png` | Substitutions and deeplink setup | **Solution - Technologist mode** |
-| `Technologists/02.png` | JSON view | **Solution - Technologist mode** |
-| `Technologists/03.png` | Navigation/action setup | **Solution - Technologist mode** |
-| `Technologists/04.png` | Testing panel | **Solution - Technologist mode** |
+Source files here; exact copies (not re-encoded) in `assets/projects/content-production/`.
+
+| Source | Web file | What it shows | Placement |
+|---|---|---|---|
+| `00 overview.png` | `content-production.png` | Shared canvas with AI assistant and approval controls | Hero, home card |
+| `Editors/01.png` | `editors-01.png` | Brief beside creative previews | Overview |
+| — | `before-after.png` | Before / after diagram (rendered from HTML) | After Problem |
+| `Editors/02.png` | `editors-02.png` | Editor text fields and apply-to-all | Solution: copy editor mode |
+| `Editors/03.png` | `editors-03.png` | AI copy variants and version history | Solution: copy editor mode |
+| `Editors/04.png` | `editors-04.png` | Comment on the story preview | Solution: copy editor mode |
+| `Designers/01.png` | `designers-01.png` | Designer properties panel | Solution: designer mode |
+| `Designers/02.png` | `designers-02.png` | Library with assets, styles and templates | Solution: designer mode |
+| `Designers/03.png` | `designers-03.png` | Layers panel | Solution: designer mode |
+| `Designers/04.png` | `designers-04.png` | AI assistant for images | Solution: designer mode |
+| `Technologists/01.png` | `technologists-01.png` | VIP text branch, substitutions, deeplink | Solution: technologist mode |
+| `Technologists/02.png` | `technologists-02.png` | Data substitutions and JSON view | Solution: technologist mode |
+| `Technologists/03.png` | `technologists-03.png` | Navigation between story pages | Solution: technologist mode |
+| `Technologists/04.png` | `technologists-04.png` | Testing panel | Solution: technologist mode |
 
 ## Publishing checklist
 
 - [x] Lead stands alone if someone only reads one sentence
-- [x] Snapshot has Task + Goal + Role; Metrics or honest "vision stage"
+- [x] Snapshot has Goal + Research + My role; Metrics with honest status
 - [x] At least one figure between Overview and Solution (`Editors/01.png`)
 - [x] Problem bullets are specific, not generic
 - [x] Solution references what is visible in the screenshots

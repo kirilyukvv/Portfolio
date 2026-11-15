@@ -2,7 +2,6 @@
 
 > Source content for [`../../../projects/campaign-creation.html`](../../../projects/campaign-creation.html). Structure follows [`../../../project-page-structure.md`](../../../project-page-structure.md). Slug: `campaign-creation`. Previous version: [`info-v1.md`](info-v1.md) / [`campaign-creation-v1.html`](../../../projects/campaign-creation-v1.html).
 
-**Client · Domain · Type:** Tinkoff · FinTech · Marketing automation · Web app
 
 **Title:** Campaign launch: from months to days
 
