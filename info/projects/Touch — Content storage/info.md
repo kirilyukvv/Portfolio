@@ -5,7 +5,7 @@
 
 **Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Designer Alex led the concept; I reviewed the design, advised on the business process and drew part of the prototypes.
 
-![Creative registry with a selected creative, its display conditions and campaign usage](01.png)
+![Creative registry with a selected creative, its display conditions and campaign usage](01.webp)
 
 *Creative registry. Pick any creative to see its business line, source task, display conditions and the campaigns it runs in.*
 
@@ -121,7 +121,8 @@ Versions and revisions are not in the concept yet. On analytics, the first versi
 
 | File | What it shows | Use on case page |
 |---|---|---|
-| `01.png` | Creative registry with detail panel | **Hero**, home card |
+| `01.webp` | Creative registry with detail panel (Russian labels removed, IDs fixed) | **Hero**, home card |
+| `01.png` | Previous version of the registry screen | Archived page `content-storage-v1.html` only |
 | `02.png` | Creative panel concept: conditions, campaigns, metrics, touchpoints | Decision 02 (metric cards later) |
 | `03.png` | Illustration library | Decision 01 |
 | `05.png` | Banner template catalog | Decision 04 |
@@ -130,5 +131,4 @@ Versions and revisions are not in the concept yet. On analytics, the first versi
 
 ## Known issues in the screenshots
 
-- `01.png`: two rows share ID 1249; filters mix Russian (Поиск, Бизнес линия, Создать) with English UI.
-- `01.png` says "Dark theme" and "Open in the builder", `02.png` says "Dark mode" and "Open in builder".
+- `01.webp` says "Dark theme" and "Open in the builder", `02.png` says "Dark mode" and "Open in builder".
