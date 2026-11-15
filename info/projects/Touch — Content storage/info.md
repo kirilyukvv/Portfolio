@@ -131,5 +131,4 @@ Versions and revisions are not in the concept yet. On analytics, the first versi
 
 ## Known issues in the screenshots
 
-- `01.webp`: the Create button still reads «Создать».
 - `01.webp` says "Dark theme" and "Open in the builder", `02.png` says "Dark mode" and "Open in builder".
