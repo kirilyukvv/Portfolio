@@ -13,7 +13,7 @@
 
 | Label | Value |
 |---|---|
-| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing. Storage is where finished creatives and their parts live after production |
+| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing, where teams produce hundreds of creatives every month. Storage is where finished creatives and their parts live after production |
 | **◆ Research** | Library and templates shown in role sessions with 8 technologists, 10 designers and 7 copy editors; the full storage concept reviewed with platform product and architecture leads |
 | **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer, part of the prototypes |
 | **◆ Status** | Agreed direction, planned after Content production. Not built yet. The template model is still open |
@@ -22,7 +22,7 @@
 
 [Campaign creation](../../../projects/campaign-creation.html) gave the campaign a home in Touch. [Content production](../../../projects/content-production.html) is where editors, designers and technologists make the creatives inside it. This case is about what happens after: where finished creatives and the pieces they are made of live, and how the next team finds them.
 
-Today the history of a creative is spread across a Jira task, a Figma file and the memory of whoever made it. Reuse works only if you know whom to ask.
+Teams produce hundreds of creatives every month. Today the history of each one is spread across a Jira task, a Figma file and the memory of whoever made it. Reuse works only if you know whom to ask.
 
 ## Problem
 
@@ -63,7 +63,7 @@ _Decision 01 · Agreed_
 
 ![Illustration library with tags and business-line filters](03.png)
 
-*Illustration library. Assets that arrive with a published creative are already tagged by campaign and business line, so search and filters work without manual tagging.*
+*Illustration library. Each asset carries subject tags and a business line, so a designer finds it with search and filters instead of scrolling a Figma page.*
 
 ### Every creative answers "where is this used?"
 
