@@ -3,7 +3,7 @@
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Previous version: [`info-v1.md`](info-v1.md). Slug: `content-storage`.
 
-**Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Together with Alex, the section's designer, I shaped the vision for storage: I took part in the research, reviewed design decisions and drew part of the prototypes.
+**Lead:** Tinkoff's marketing teams reuse creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a library for Touch that fills itself when a creative is published, so anything can be found and traced to its campaigns. The direction is agreed and planned after Content production. I shaped the vision with Alex, the section's designer, reviewed design decisions and drew part of the prototypes.
 
 ![Creative registry with a selected creative, its display conditions and campaign usage](01.webp)
 
@@ -27,11 +27,11 @@ Teams produce hundreds of creatives every month. Today the history of each one i
 
 ## Problem
 
-- **Reuse meant cloning.** "We take a finished task, clone it and tweak it a bit." That is how the platform architect described the usual way to reuse content.
-- **Templates lived outside the product.** Editors kept a whole Figma page of story templates, and Alex kept it open every day. A team that needed a new layout waited for whoever maintained the constructor.
-- **Building blocks had random names.** Ready-made story elements in the constructor are hard to find, because nobody agreed on their names.
-- **A second library was about to appear.** The design team already ran a library of validated, tagged illustrations and planned to serve it company-wide. A separate library in Touch would split the source of truth.
-- **Overuse was invisible.** Designers asked for a way to see how often a creative had been reused, so the same visual doesn't end up in every campaign.
+- **Reuse means cloning.** "We take a finished task, clone it and tweak it a bit." That is how the platform architect described the usual way to reuse content.
+- **Templates live outside the product.** Editors keep a whole Figma page of story templates, and even the section's designer works from it every day. A team that needs a new layout waits for whoever maintains the constructor.
+- **Building blocks have random names.** Ready-made story elements in the constructor are hard to find, because nobody agreed on their names.
+- **A second library is about to appear.** The design team already runs a library of validated, tagged illustrations and plans to serve it company-wide. A separate library in Touch would split the source of truth.
+- **Overuse is invisible.** Designers asked for a way to see how often a creative has been reused, so the same visual doesn't end up in every campaign.
 
 ## Approach
 
@@ -73,7 +73,6 @@ _Decision 02 · Agreed, metrics later_
 - **Why.** A creative can run in several campaigns and touchpoints at once. Before changing or reusing it, people need to see all of them.
 - **How.** A creative is a record, not a picture. Its panel shows display conditions, including the dark theme, the campaigns that use it and the touchpoints where it appears, with a link back to the builder.
 - **Instead of.** A gallery of previews, where finding usage means asking around.
-- **Status.** Usage comes first, performance per creative next. The architecture team keeps analytics data outside the content system, but people will see it inside storage, next to each creative.
 
 ![Creative panel with display conditions, campaigns and touchpoints](02.png)
 
@@ -108,7 +107,7 @@ Versions and revisions are not in the concept yet. On analytics, the data can li
 
 ## Outcome
 
-- **Agreed:** stakeholders and the team approved the direction: creative registry with campaign usage and touchpoints, illustration and icon libraries that fill themselves from published creatives, template catalog. Building starts after Content production.
+- **Agreed:** creative registry with campaign usage and touchpoints, illustration and icon libraries that fill themselves from published creatives, and a template catalog. Stakeholders and the team approved the direction; building starts after Content production.
 - **Changed after research:** one-way sync with the design team's library instead of a second library.
 - **Open:** template entity or branching, revision history, performance per creative, a reuse counter that designers asked for, and testing the full concept with users.
 
