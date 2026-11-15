@@ -90,7 +90,7 @@
 | Кейс | Файл | Оценка |
 |---|---|---|
 | Campaign creation, v1 и повторная v2 | [info/projects/Touch — Campaign creation/roast.md](info/projects/Touch%20—%20Campaign%20creation/roast.md) | 4,1 → 7,6 |
-| Content production, v1 и повторные v2–v4 | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,1 → 5,2 → 5,8 → 6,7 (до этого 4,6 по удалённым заметкам) |
+| Content production, v1 и повторные v2–v5 | [info/projects/Touch — Content production/roast.md](info/projects/Touch%20—%20Content%20production/roast.md) | 4,1 → 5,2 → 5,8 → 6,7 → 6,3 (до этого 4,6 по удалённым заметкам) |
 | Content storage, v1 и повторная v2 | [info/projects/Touch — Content storage/roast.md](info/projects/Touch%20—%20Content%20storage/roast.md) | 3,6 → 6,2 |
 
 ## Как просить об этом в новом чате
