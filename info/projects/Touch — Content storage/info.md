@@ -3,7 +3,7 @@
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Previous version: [`info-v1.md`](info-v1.md). Slug: `content-storage`.
 
-**Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Designer Alex led the concept; I reviewed the design, advised on the business process and drew part of the prototypes.
+**Lead:** Tinkoff's marketing teams reused creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a concept for Touch: a library that fills itself when a creative is published, so any creative, illustration, icon or template can be found and traced to its campaigns. The direction is agreed with stakeholders and planned after Content production. Together with Alex, the section's designer, I shaped the vision for storage: I took part in the research, reviewed design decisions and drew part of the prototypes.
 
 ![Creative registry with a selected creative, its display conditions and campaign usage](01.webp)
 
@@ -13,16 +13,17 @@
 
 | Label | Value |
 |---|---|
-| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing. Storage is where finished creatives and their parts live after production |
+| **◆ Context** | Touch, Tinkoff's internal platform for customer marketing, where teams produce hundreds of creatives every month. Storage is where finished creatives and their parts live after production |
+| **◆ Goal** | One place to store and reuse content and to see how well it performs |
 | **◆ Research** | Library and templates shown in role sessions with 8 technologists, 10 designers and 7 copy editors; the full storage concept reviewed with platform product and architecture leads |
-| **◆ My role** | Lead Product Designer. Design review, business process expertise, part of the prototypes |
+| **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer, part of the prototypes |
 | **◆ Status** | Agreed direction, planned after Content production. Not built yet. The template model is still open |
 
 ## Overview
 
 [Campaign creation](../../../projects/campaign-creation.html) gave the campaign a home in Touch. [Content production](../../../projects/content-production.html) is where editors, designers and technologists make the creatives inside it. This case is about what happens after: where finished creatives and the pieces they are made of live, and how the next team finds them.
 
-Today the history of a creative is spread across a Jira task, a Figma file and the memory of whoever made it. Reuse works only if you know whom to ask.
+Teams produce hundreds of creatives every month. Today the history of each one is spread across a Jira task, a Figma file and the memory of whoever made it. Reuse works only if you know whom to ask.
 
 ## Problem
 
@@ -44,12 +45,12 @@ The full storage concept, with the creative registry and usage panel, was then r
 
 ## My role & team
 
-Alex led the concept and the layouts, and presented the library to each role and the full concept to stakeholders. I reviewed the design at each step, advised on how campaign content is actually produced and reused, and drew part of the prototypes myself.
+I took part in the research, reviewed design decisions and shaped the vision for storage together with Alex, the designer who owns the section. Alex drew the layouts and showed the library in each role session. I brought in how campaign content is actually produced and reused, and drew part of the prototypes myself. We presented the full concept to stakeholders and defended it together. When the architecture review stalled on templates and analytics, I proposed listing every disputed point and checking each one with users.
 
 | Name | Role | Area |
 |---|---|---|
-| Vova Kirilyuk | Lead Product Designer | Design review, business process, part of the prototypes |
-| Alex | Product designer | Concept, layouts, presentations |
+| Vova Kirilyuk | Lead Product Designer | Research, design reviews, vision, stakeholder presentations, part of the prototypes |
+| Alex | Product designer | Section owner: layouts, role sessions |
 
 ## Key decisions
 
@@ -63,7 +64,7 @@ _Decision 01 · Agreed_
 
 ![Illustration library with tags and business-line filters](03.png)
 
-*Illustration library. Assets that arrive with a published creative are already tagged by campaign and business line, so search and filters work without manual tagging.*
+*Illustration library. Each asset carries subject tags and a business line, so a designer finds it with search and filters instead of scrolling a Figma page.*
 
 ### Every creative answers "where is this used?"
 
@@ -72,7 +73,7 @@ _Decision 02 · Agreed, metrics later_
 - **Why.** A creative can run in several campaigns and touchpoints at once. Before changing or reusing it, people need to see all of them.
 - **How.** A creative is a record, not a picture. Its panel shows display conditions, including the dark theme, the campaigns that use it and the touchpoints where it appears, with a link back to the builder.
 - **Instead of.** A gallery of previews, where finding usage means asking around.
-- **Status.** Usage comes first. Performance per creative comes later: the architecture team wants analytics to live outside the content system (see below).
+- **Status.** Usage comes first, performance per creative next. The architecture team keeps analytics data outside the content system, but people will see it inside storage, next to each creative.
 
 ![Creative panel with display conditions, campaigns and touchpoints](02.png)
 
@@ -103,7 +104,7 @@ _Decision 04 · Open_
 
 At that review, the platform architect pushed back on three points. Content needs a master system with versions and revisions, where anyone can see who changed what and what it was branched from. Templates don't need to be a separate entity. And analytics doesn't belong in the content system at all, apart from unique IDs for each piece of content and its variants.
 
-Versions and revisions are not in the concept yet. On analytics, the first version will show usage, not performance. On templates, the catalog stays in the concept because teams need starting points, but the data model behind it is still open. Instead of settling this in the room, I proposed listing every disputed point and checking each one with users.
+Versions and revisions are not in the concept yet. On analytics, the data can live wherever the platform needs it; the interface still shows performance inside storage, starting with usage in the first version. On templates, the catalog stays in the concept because teams need starting points, but the data model behind it is still open. Instead of settling this in the room, I proposed listing every disputed point and checking each one with users.
 
 ## Outcome
 
