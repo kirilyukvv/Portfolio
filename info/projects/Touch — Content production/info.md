@@ -153,11 +153,11 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 ## Assets in this folder
 
-Source files here; web copies (2048 px) in `assets/projects/content-production/`.
+Source files here; exact copies (not re-encoded) in `assets/projects/content-production/`.
 
 | Source | Web file | What it shows | Placement |
 |---|---|---|---|
-| `00 overview.png` | `content-production.png / @2x` | Shared canvas with AI assistant and approval controls | Hero, home card |
+| `00 overview.png` | `content-production.png` | Shared canvas with AI assistant and approval controls | Hero, home card |
 | `Editors/01.png` | `editors-01.png` | Brief beside creative previews | Overview |
 | — | `before-after.png` | Before / after diagram (rendered from HTML) | After Problem |
 | `Editors/02.png` | `editors-02.png` | Editor text fields and apply-to-all | Solution: copy editor mode |
