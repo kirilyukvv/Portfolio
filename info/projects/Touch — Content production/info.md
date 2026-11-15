@@ -4,7 +4,7 @@
 
 **Title:** Content Hub: one canvas for every channel
 
-**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested the concept with 25 people in three sessions, one per role.
+**Lead:** At Tinkoff, content for each channel was made in its own tool: push, SMS and email in one place, banners in another, stories in a third. Together with the section's designer, I shaped Content Hub inside Touch: one canvas where copy editors, designers and technologists create and set up any type of creative. We tested it with 25 people from the three roles, and it is now live.
 
 ![Content Hub canvas](00%20overview.png)
 
@@ -21,7 +21,7 @@
 | **◆ My role** | Lead Product Designer. Research, design reviews, shared vision and stakeholder defense with the section's designer |
 | **◆ Team** | Product, engineering, content platform |
 | **◆ Scope** | Shared creative canvas, role modes, AI assistant, versioning, comments, approval routing, asset library, JSON/substitution tooling, testing setup |
-| **◆ Metrics** | Vision / discovery, no results yet. Target: Time on Task for preparing and approving content, within campaign Time to Market |
+| **◆ Metrics** | Live. Target: Time on Task for preparing and approving content, within campaign Time to Market |
 | **◆ Tools** | Figma, AI |
 
 ## Overview
@@ -48,7 +48,7 @@ The campaign creation case gave the campaign a home in Touch. Content Hub is the
 
 ## Approach
 
-We held three sessions, one per role: 8 technologists, 10 designers and 7 copy editors. Then we discussed the concept with product and architecture stakeholders.
+We held three sessions, one per role: 8 technologists, 10 designers and 7 copy editors. Then we presented the concept to product and architecture leads. They accepted separate modes for each role without objections, and the team built them.
 
 The key alignment point was not "everyone uses the same screen." It was "each participant can complete their job in one coherent place." Copy editors need message quality, facts, tone, variants, and optional customer review. Designers need visual control, libraries, resizing, layers, templates, and Figma import. Technologists need JSON, substitutions, actions, deeplinks, triggers, test groups, and bulk testing.
 
@@ -117,17 +117,17 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 *Testing: the set goes to a tester’s two phones, appears on the mobile bank’s home screen and shows on app opening or a tap on the preview.*
 
-**Content memory.** Once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage and performance metadata become part of Content Hub. This turns production artifacts into reusable product data.
+**Content memory.** The agreed next step: once creatives are built, their assets, templates, revisions, generated variants, comments, approval state, campaign linkage and performance metadata become part of Content Hub. This turns production artifacts into reusable product data.
 
 ## Key decisions
 
-**Decision 01. One canvas, a mode for each role**
+**Decision 01 · Live. One canvas, a mode for each role**
 
 - **Why:** Creatives for different channels were made in different tools, and in the sessions each role described a different job. Copy editors care about tone and facts, designers about visual control, technologists about substitutions, deeplinks and testing.
 - **How:** Any type of creative, from a push to a story, opens on the same canvas. Each role switches to its own mode with its own panel. The brief, comments and approval status stay shared.
 - **Instead of:** One universal editor with every control for everyone.
 
-**Decision 02. AI drafts, a specialist decides**
+**Decision 02 · Changed after research. AI drafts, a specialist decides**
 
 - **Why:** Generated copy and images still need review and rework, so content production can't be automated end to end.
 - **How:** Each mode has an AI assistant: copy variants for editors, backgrounds and resizing for designers. Every generated version is saved and can be compared. A specialist approves the final creative.
@@ -141,9 +141,9 @@ Content Hub opens every creative of a campaign on one canvas. The screens follow
 
 ## Impact
 
-- **A shared vision.** Content production lives inside Touch as the campaign's production workspace and content memory, instead of another separate tool.
-- **Decisions from the sessions.** Keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, plan for role permissions, and test the product with real users before launch.
-- **Main open risk: architecture.** The vision depends on a strong content data model, versioning, template strategy and integrations with existing systems during the transition period.
+- **Live in production.** Content production lives inside Touch as the campaign's production workspace, instead of another separate tool.
+- **Decisions from the sessions.** Keep role-specific modes, make AI assistive, preserve Figma import for custom work, support optional external review, and plan for role permissions.
+- **Main open risk: architecture.** Next steps depend on a strong content data model, versioning, template strategy and integrations with existing systems during the transition period.
 - **Next: fewer roles.** For some communications, the person who requests the campaign should be able to prepare the content without a handoff.
 
 ## Learnings

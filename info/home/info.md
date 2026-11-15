@@ -18,8 +18,8 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 | Slug | Title | Meta | Description | Source |
 |------|-------|------|-------------|--------|
 | `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | End-to-end campaign wizard — audiences, multi-channel creatives, A/B testing, and approval routing in one interface. | [`../projects/Touch — Campaign creation/info.md`](../projects/Touch%20%E2%80%94%20Campaign%20creation/info.md) |
-| `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | One canvas for creatives of every channel, with a mode for copy editors, designers and technologists. Tested with 25 people from three roles. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
-| `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Live. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
+| `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | One canvas for creatives of every channel, with a mode for copy editors, designers and technologists. Live; tested with 25 people from three roles. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
+| `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Agreed next step for Touch. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
 ### Coming soon (shown on the site, no case page yet)
 
