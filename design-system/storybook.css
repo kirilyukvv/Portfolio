@@ -340,10 +340,11 @@
 
 /* Forced states for previews */
 .sb-force-hover.project-card { background: var(--color-surface-hover); }
+.sb-force-hover.project-card .project-card__link:not(.project-card__link--muted) { color: var(--color-accent-hover); }
 .sb-force-hover.hero-nav__link,
 .sb-force-hover.project-archive-note a,
 .sb-force-hover.markdown-preview a { color: var(--color-accent-hover); }
-.sb-force-hover.project-back { color: var(--color-accent); }
+.sb-force-hover.project-back { color: var(--color-accent-hover); }
 .sb-force-hover.login-button { background: var(--color-accent-hover); }
 .sb-force-focus { outline: var(--focus-ring-width) solid var(--color-accent) !important; outline-offset: var(--focus-ring-offset); }
 .sb-force-focus.login-input { outline-offset: 1px; border-color: var(--color-accent); }
