@@ -1504,10 +1504,6 @@ img {
   }
 }
 
-.site-footer {
-  border-top: 1px dashed var(--color-border-dashed);
-}
-
 .site-footer--content .site-footer__inner {
   max-width: 1024px;
 }
@@ -1517,6 +1513,7 @@ img {
 }
 
 .site-footer__inner {
+  border-top: 1px dashed var(--color-border-dashed);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
