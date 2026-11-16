@@ -185,6 +185,35 @@ img {
   padding-bottom: 16px;
 }
 
+.hero-roles {
+  display: block;
+  min-height: 1.25em;
+  font-weight: 300;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+}
+
+.hero-roles__caret {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  margin-left: 0.08em;
+  vertical-align: -0.1em;
+  background: currentColor;
+  animation: hero-caret 1s steps(1) infinite;
+}
+
+@keyframes hero-caret {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-roles__caret {
+    display: none;
+  }
+}
+
 .paragraph {
   margin-top: 0;
   margin-bottom: 0;
