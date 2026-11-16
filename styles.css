@@ -1196,6 +1196,18 @@ img {
   color: var(--color-text-muted);
 }
 
+.next-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  max-width: 720px;
+  margin-top: 48px;
+}
+
+.next-nav .next-page {
+  margin-top: 0;
+}
+
 .next-page {
   display: flex;
   flex-direction: column;
