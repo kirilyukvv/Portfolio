@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="styles.css?v=21" rel="stylesheet">
+  <link href="styles.css?v=22" rel="stylesheet">
 </head>
 <body class="body">
   <section class="section section-project">
@@ -154,21 +154,31 @@
           <h2 class="project-block__title">Hiring</h2>
           <p class="project-text">I hired two designers to my team: I defined the role, reviewed portfolios, ran the interviews and made the decision.</p>
           <p class="project-text">I also hire designers for the company. I run the whiteboard section of the design interview; before that I ran the first-round interview after HR screening. In both I look for craft, judgment under uncertainty, and how a candidate explains their own trade-offs.</p>
-          <dl class="project-stats">
-            <div class="project-stats__item project-stats__item--total">
-              <dd class="project-stats__value">87</dd>
-              <dt class="project-stats__label">Interviews at Tinkoff</dt>
-            </div>
-            <div class="project-stats__item">
-              <dd class="project-stats__value">49</dd>
-              <dt class="project-stats__label">Whiteboard</dt>
-            </div>
-            <div class="project-stats__item">
-              <dd class="project-stats__value">38</dd>
-              <dt class="project-stats__label">First-round</dt>
-            </div>
-          </dl>
         </section>
+
+        <figure class="hiring-map" aria-label="Hiring at Tinkoff: HR screening, then the first-round interview I ran earlier (38 interviews), then the whiteboard section I run now (49 interviews)">
+          <p class="hiring-map__label">Hiring at Tinkoff</p>
+          <p class="hiring-map__title">Two stages of the design interview</p>
+          <ol class="hiring-map__flow">
+            <li class="hiring-map__stage hiring-map__stage--muted">
+              <span class="hiring-map__when">Before me</span>
+              <span class="hiring-map__name">HR screening</span>
+            </li>
+            <li class="hiring-map__arrow" aria-hidden="true"></li>
+            <li class="hiring-map__stage">
+              <span class="hiring-map__when">Earlier</span>
+              <span class="hiring-map__name">First-round interview</span>
+              <span class="hiring-map__value">38</span>
+            </li>
+            <li class="hiring-map__arrow" aria-hidden="true"></li>
+            <li class="hiring-map__stage hiring-map__stage--accent">
+              <span class="hiring-map__when">Now</span>
+              <span class="hiring-map__name">Whiteboard section</span>
+              <span class="hiring-map__value">49</span>
+            </li>
+          </ol>
+          <p class="hiring-map__foot"><span class="hiring-map__em">87 interviews with candidates</span>, 2 designers hired to my team</p>
+        </figure>
 
         <section class="project-block">
           <h2 class="project-block__title">Growing designers</h2>
