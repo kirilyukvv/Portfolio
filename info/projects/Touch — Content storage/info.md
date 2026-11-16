@@ -50,7 +50,7 @@ I took part in the research, reviewed design decisions and shaped the vision for
 | Name | Role | Area |
 |---|---|---|
 | Vova Kirilyuk | Lead Product Designer | Research, design reviews, vision, stakeholder presentations, part of the prototypes |
-| Alex | Product designer | Section owner: layouts, role sessions |
+| Alex |  | Section owner: layouts, role sessions |
 
 ## Key decisions
 

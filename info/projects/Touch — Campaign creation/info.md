@@ -39,9 +39,9 @@
 | Name | Role | Area |
 |------|------|------|
 | Vova Kirilyuk | Lead Product Designer | Research, concept, design reviews, stakeholder alignment, part of the layouts |
-| Rita | Product designer | Campaign entity, brief, scenarios |
-| Serge | Product designer | Audiences, pre-launch analysis, A/B tests |
-| Alex | Product designer | Content and creatives |
+| Rita |  | Campaign entity, brief, scenarios |
+| Serge |  | Audiences, pre-launch analysis, A/B tests |
+| Alex |  | Content and creatives |
 
 ## Story
 
