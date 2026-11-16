@@ -1,4 +1,4 @@
-# A library that fills itself
+# Content storage: reuse any creative after launch
 
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Previous version: [`info-v1.md`](info-v1.md). Slug: `content-storage`.
