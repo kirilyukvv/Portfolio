@@ -5,7 +5,7 @@
   // "~" marks a short pause while typing, as if thinking for a moment. It is not shown.
   var ROLES = [
     'and analyst',
-    'and family man',
+    'and family guy',
     'and researcher',
     'and musician',
     'and product manager',
