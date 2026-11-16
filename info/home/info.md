@@ -32,7 +32,7 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 | `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | One canvas for creatives of every channel, with a mode for copy editors, designers and technologists. Live; tested with 25 people from three roles. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
 | `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Agreed next step for Touch. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
-### In progress (shown on the site, no case page yet)
+### In progress (shown at the end of the Cases grid, no case page yet)
 
 | Slug | Title | Description | Image |
 |------|-------|-------------|-------|
