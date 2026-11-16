@@ -3,7 +3,7 @@
 
 > Source content for [`../../../projects/content-storage.html`](../../../projects/content-storage.html). Previous version: [`info-v1.md`](info-v1.md). Slug: `content-storage`.
 
-**Lead:** At Tinkoff, marketing teams make hundreds of creatives every month, and after launch they get lost in old Jira tasks and Figma files. To reuse one, people clone a past task or search a Figma page of templates. Together with the section's designer, I shaped Content storage inside Touch: a library that fills itself as creatives are published, so any creative can be found, reused and traced to the campaigns it ran in. The direction is agreed and comes next after Content Hub.
+**Lead:** Tinkoff's marketing teams reuse creatives by cloning old Jira tasks and digging through a Figma page of templates. Content storage is a library for Touch that fills itself when a creative is published, so anything can be found and traced to its campaigns. The direction is agreed and planned after Content production. I shaped the vision with Alex, the section's designer, reviewed design decisions and drew part of the prototypes.
 
 ![Creative registry with a selected creative, its display conditions and campaign usage](01.webp)
 
