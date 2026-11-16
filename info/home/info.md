@@ -37,7 +37,7 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 
 | Slug | Title | Description | Image |
 |------|-------|-------------|-------|
-| `finlife` | FinLife | Family finance assistant with an AI advisor: a shared budget, goals, and tips that help a family build its financial future. Pet project. | `assets/projects/finlife.png` (concept screens drawn for the card) |
+| `finlife` | FinLife | Family finance assistant with an AI advisor: a shared budget, goals, and tips that help a family build its financial future. Pet project. | `assets/projects/finlife-sketch.jpg` (hand-drawn sketch) |
 | `yellow-brush` | Yellow Brush | A kids' app that turns brushing teeth into a game: a buddy to brush with, a guided two-minute routine, and a star for every clean. | `assets/projects/yellow-brush.png` (3D monster render + app screens) |
 
 ### Blank slots (not on the site yet)
