@@ -16,7 +16,7 @@ Three short blocks under the hero, from the interview intro.
 
 | Label | Text |
 |---|---|
-| Who I am | 8+ years, mostly B2B fintech. Also an AI startup that went from a Russian accelerator to the US market, B2C products, and my own apartment-search service as a founder. |
+| Who I am | 8+ years, mostly B2B fintech. Also an AI startup that went through an accelerator and into the US market, B2C products, and my own apartment-search service as a founder. |
 | What I design | Tools for professionals who work with data, settings and workflows. Now Touch, where Tinkoff's marketing teams launch campaigns: about ten tools become one interface with workflows and AI automation. |
 | How I work | I lead 4 designers and work with stakeholders, users, product owners and developers. My designers shape product decisions. When a task is unclear, we first find out what to build, then make the complex simple. |
 
