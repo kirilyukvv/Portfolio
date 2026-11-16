@@ -14,7 +14,7 @@
     'and psychologist~ sometimes',
     'and interior designer',
     'and warm-weather traveler',
-    'and frontend developer',
+    'and frontend developer~?',
     'and civil engineer',
     'and AI integrator',
     'and nuclear plant designer',
