@@ -124,12 +124,26 @@ img {
 }
 
 .hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
   margin: 24px 0 0;
 }
 
+.hero-nav__icon {
+  flex-shrink: 0;
+  display: block;
+}
+
 .hero-nav__link {
-  font-size: 14px;
-  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--color-accent);
   text-decoration: none;
   transition: color 0.15s ease;
@@ -226,7 +240,7 @@ img {
 .section-head {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 8px 24px;
   margin: 0 0 24px;
@@ -238,8 +252,8 @@ img {
 }
 
 .section-about {
-  padding-top: 48px;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .project-highlights.project-highlights--home {
