@@ -20,7 +20,7 @@ Each project folder is paired with one case study HTML file. **If you edit a pro
 |------|-------|------------------|--------|--------|
 | `campaign-creation` | Touch — Campaign creation | Tinkoff · FinTech · Marketing automation | Shipped (2022–Present) | [`Touch — Campaign creation/`](Touch%20%E2%80%94%20Campaign%20creation/) |
 | `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | Live | [`Touch — Content production/`](Touch%20%E2%80%94%20Content%20production/) |
-| `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Agreed direction, not built yet | [`Touch — Content storage/`](Touch%20%E2%80%94%20Content%20storage/) |
+| `content-storage` | Content storage: reuse any creative after launch | Tinkoff · FinTech · Marketing automation | Agreed direction, not built yet | [`Touch — Content storage/`](Touch%20%E2%80%94%20Content%20storage/) |
 
 ## Coming soon
 

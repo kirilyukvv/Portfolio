@@ -30,7 +30,7 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 |------|-------|------|-------------|--------|
 | `campaign-creation` | Campaign launch: from months to days | Tinkoff · FinTech · Marketing automation | Tinkoff’s ~10 launch tools merged into one campaign entity. Launch time: 30–70 days → under a week. | [`../projects/Touch — Campaign creation/info.md`](../projects/Touch%20%E2%80%94%20Campaign%20creation/info.md) |
 | `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | One canvas for creatives of every channel, with a mode for copy editors, designers and technologists. Live; tested with 25 people from three roles. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
-| `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Agreed next step for Touch. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
+| `content-storage` | Content storage: reuse any creative after launch | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Agreed next step for Touch. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
 ### In progress (shown at the end of the Cases grid, no case page yet)
 
