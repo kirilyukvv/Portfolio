@@ -59,7 +59,7 @@ I took part in the research, reviewed design decisions and shaped the vision for
 | Name | Role | Area | Avatar |
 |------|------|------|--------|
 | Vova Kirilyuk | Lead Product Designer | Research, design reviews, vision, stakeholder presentations | `../../team/Vova.png` |
-| Alex | Product designer | Content Hub owner: content and creatives | `../../team/Alex.png` |
+| Alex |  | Content Hub owner: content and creatives | `../../team/Alex.png` |
 
 ## Solution
 

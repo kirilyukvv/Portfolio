@@ -17,17 +17,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="styles.css?v=13" rel="stylesheet">
 </head>
 <body class="body">
   <section class="section">
     <div class="container w-container hero">
       <div class="hero__text">
-      <h1 class="heading"><span class="text-span">Lead Product Designer</span><br>Vova K<span class="heading__space">i</span>rily<span class="heading__space">u</span>k</h1>
+      <h1 class="heading"><span class="text-span">Lead Product Designer<span class="hero-roles" aria-hidden="true"><span class="hero-roles__text"></span><span class="hero-roles__caret"></span></span></span><br>Vova K<span class="heading__space">i</span>rily<span class="heading__space">u</span>k</h1>
       <p class="paragraph">AI · BIGTECH · FINTECH · MARKETING · ANALYTICS · WEB APP · HARDCORE PROJECTS</p>
-      <p class="hero-nav"><a class="hero-nav__link" href="cv.html">CV →</a> <span class="hero-nav__sep">·</span> <a class="hero-nav__link" href="management.html">Me as a Manager →</a></p>
       </div>
       <img class="hero__photo" src="assets/team/Vova.png" alt="Vova Kirilyuk" width="200" height="200" decoding="async">
+    </div>
+  </section>
+  <section class="section section-about">
+    <div class="container w-container">
+      <div class="section-head">
+        <h2 class="section-title">In short</h2>
+        <p class="hero-nav"><a class="hero-nav__link" href="cv.html">CV →</a> <span class="hero-nav__sep">·</span> <a class="hero-nav__link" href="management.html">How I lead →</a></p>
+      </div>
+      <dl class="project-highlights project-highlights--home">
+        <div class="project-highlights__item">
+          <dt class="project-highlights__label">◆ Who I am</dt>
+          <dd class="project-highlights__value">8+ years, mostly B2B fintech. Also an AI startup that went from a Russian accelerator to the US market, B2C products, and my own apartment-search service as a founder.</dd>
+        </div>
+        <div class="project-highlights__item">
+          <dt class="project-highlights__label">◆ What I design</dt>
+          <dd class="project-highlights__value">Tools for professionals who work with data, settings and workflows. Now Touch, where Tinkoff's marketing teams launch campaigns: about ten tools become one interface with workflows and AI automation.</dd>
+        </div>
+        <div class="project-highlights__item">
+          <dt class="project-highlights__label">◆ How I work</dt>
+          <dd class="project-highlights__value">I lead 4 designers and work with stakeholders, users, product owners and developers. My designers shape product decisions. When a task is unclear, we first find out what to build, then make the complex simple.</dd>
+        </div>
+      </dl>
     </div>
   </section>
   <section class="section section-projects">
@@ -67,5 +88,6 @@
       </div>
     </div>
   </section>
+  <script src="js/hero-roles.js" defer></script>
 </body>
 </html>

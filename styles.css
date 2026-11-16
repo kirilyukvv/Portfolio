@@ -185,12 +185,74 @@ img {
   padding-bottom: 16px;
 }
 
+.text-span {
+  position: relative;
+}
+
+.hero-roles {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding-left: 0.3em;
+  font-weight: 300;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+}
+
+.hero-roles__caret {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  margin-left: 0.08em;
+  vertical-align: -0.1em;
+  background: currentColor;
+  animation: hero-caret 1s steps(1) infinite;
+}
+
+@keyframes hero-caret {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-roles__caret {
+    display: none;
+  }
+}
+
 .paragraph {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 100%;
   font-weight: 300;
   line-height: 1;
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin: 0 0 24px;
+}
+
+.section-head .section-title,
+.section-head .hero-nav {
+  margin: 0;
+}
+
+.section-about {
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+.project-highlights.project-highlights--home {
+  max-width: none;
+  margin: 0;
+}
+
+.project-highlights--home .project-highlights__value {
+  font-size: 14px;
 }
 
 .section-projects {
@@ -253,7 +315,10 @@ img {
 }
 
 .project-card__body {
-  padding: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 0 4px;
 }
 
 .project-card__meta {
@@ -281,7 +346,7 @@ img {
 }
 
 .project-card__link {
-  margin: 0;
+  margin: auto 0 0;
   font-size: 13px;
   font-weight: 400;
   color: var(--color-accent);
@@ -791,6 +856,23 @@ img {
   color: var(--color-text-secondary);
 }
 
+.project-designer__growth {
+  color: var(--color-accent);
+}
+
+.project-team__group {
+  margin: 24px 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.project-block__title + .project-text + .project-team__group {
+  margin-top: 16px;
+}
+
 .project-designers--block {
   margin: 0;
 }
@@ -1017,6 +1099,17 @@ img {
 
 .markdown-preview li:last-child {
   margin-bottom: 0;
+}
+
+/* Too narrow for the longest role on the same line: give roles their own line. */
+@media screen and (max-width: 1099px) {
+  .hero-roles {
+    position: static;
+    display: block;
+    min-height: 1.25em;
+    padding-left: 0;
+    line-height: 1.25;
+  }
 }
 
 @media screen and (max-width: 991px) {
