@@ -334,7 +334,9 @@ img {
 }
 
 .project-card__desc {
+  max-width: 85%;
   margin: 0 0 16px;
+  text-wrap: pretty;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.45;
