@@ -32,9 +32,12 @@ Each entry corresponds to a card on the home page. Keep meta lines in the shape 
 | `content-production` | Content Hub: one canvas for every channel | Tinkoff · FinTech · Marketing automation | One canvas for creatives of every channel, with a mode for copy editors, designers and technologists. Live; tested with 25 people from three roles. | [`../projects/Touch — Content production/info.md`](../projects/Touch%20%E2%80%94%20Content%20production/info.md) |
 | `content-storage` | A library that fills itself | Tinkoff · FinTech · Marketing automation | Content storage in Touch: creatives and their assets land in the library on publish, tagged by campaign, and show every campaign they run in. Agreed next step for Touch. | [`../projects/Touch — Content storage/info.md`](../projects/Touch%20%E2%80%94%20Content%20storage/info.md) |
 
-### Coming soon (shown on the site, no case page yet)
+### In progress (shown on the site, no case page yet)
 
-No coming soon cards are currently shown.
+| Slug | Title | Description | Image |
+|------|-------|-------------|-------|
+| `finlife` | FinLife | Family finance assistant with an AI advisor: a shared budget, goals, and tips that help a family build its financial future. Pet project. | `assets/projects/finlife.png` (concept screens drawn for the card) |
+| `yellow-brush` | Yellow Brush | A kids' app that turns brushing teeth into a game: a buddy to brush with, a guided two-minute routine, and a star for every clean. | `assets/projects/yellow-brush.png` (3D monster render + app screens) |
 
 ### Blank slots (not on the site yet)
 

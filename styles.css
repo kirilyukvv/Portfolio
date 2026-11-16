@@ -358,6 +358,10 @@ img {
   cursor: default;
 }
 
+.section-progress {
+  padding-top: 0;
+}
+
 .project-card--soon:hover,
 .project-card--soon:focus-visible {
   background: var(--color-surface);
