@@ -543,7 +543,8 @@ img {
 .testimonial {
   margin: 0 0 48px;
   padding: 4px 0 4px 24px;
-  max-width: 1024px;
+  max-width: 720px;
+  box-sizing: border-box;
   border-left: 2px solid var(--color-accent);
 }
 
