@@ -1508,6 +1508,14 @@ img {
   border-top: 1px dashed var(--color-border-dashed);
 }
 
+.site-footer--content .site-footer__inner {
+  max-width: 1024px;
+}
+
+.site-footer--text .site-footer__inner {
+  max-width: 720px;
+}
+
 .site-footer__inner {
   display: flex;
   flex-wrap: wrap;
@@ -1518,7 +1526,7 @@ img {
 }
 
 .site-footer__slogan {
-  flex: 1 1 280px;
+  flex: 1 1 auto;
   margin: 0;
   font-size: 14px;
   font-weight: 300;
