@@ -193,6 +193,20 @@ img {
   line-height: 1;
 }
 
+.section-about {
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+.project-highlights.project-highlights--home {
+  max-width: none;
+  margin: 0;
+}
+
+.project-highlights--home .project-highlights__value {
+  font-size: 14px;
+}
+
 .section-projects {
   padding-top: 0;
   padding-bottom: 64px;
