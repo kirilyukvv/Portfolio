@@ -540,6 +540,60 @@ img {
   color: var(--color-text-secondary);
 }
 
+.testimonial {
+  margin: 0 0 48px;
+  padding: 4px 0 4px 24px;
+  max-width: 1024px;
+  border-left: 2px solid var(--color-accent);
+}
+
+.testimonial__quote {
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.testimonial__quote p {
+  margin: 0 0 12px;
+}
+
+.testimonial__quote p:first-child {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.testimonial__quote p:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.testimonial__role {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
 .project-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
