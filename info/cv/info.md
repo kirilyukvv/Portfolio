@@ -36,4 +36,4 @@ Product Design · UX Strategy · Design Systems · User Research · Data-Driven 
 - Designed **Segments**, a visual audience builder for non-technical users.
 - Led design of **Liza** (acquisition tooling for Google Ads, Yandex Direct and similar) and **Bunny** (resizable, HTML and animated banner constructor).
 - Drove design across **RTB** (display, in-app, bottom sheet, story), **Polls** (quantitative research constructor), **Productivity apps** (Gantt for campaign planning), **Partners** (CPA/influencer network), **Promocodes**, **Sales Experience** (triggers, rules, automations), and **Hitman** (call channel orchestrator).
-- Hire designers for the company: run the whiteboard interview, earlier ran the first-round interview after HR screening. Grew 3 designers: 2 from Middle to Senior, 1 from Junior to Middle.
+- Hire designers for the company: run the whiteboard interview, earlier ran the first-round interview after HR screening. Conducted 87 interviews: 49 whiteboard, 38 first-round. Grew 3 designers: 2 from Middle to Senior, 1 from Junior to Middle.
