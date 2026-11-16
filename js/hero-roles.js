@@ -2,11 +2,12 @@
 (function () {
   'use strict';
 
+  // "~" marks a short pause while typing, as if thinking for a moment. It is not shown.
   var ROLES = [
     'and analyst',
     'and researcher',
     'and product manager',
-    'and psychologist sometimes',
+    'and psychologist~ sometimes',
     'and frontend developer',
     'and AI integrator',
     'and visioneer'
@@ -19,10 +20,17 @@
     var role = 0;
     var chars = 0;
     var deleting = false;
+    var paused = false;
 
     function tick() {
-      var text = ROLES[role];
+      var raw = ROLES[role];
+      var pauseAt = raw.indexOf('~');
+      var text = raw.replace('~', '');
       if (!deleting) {
+        if (chars === pauseAt && !paused) {
+          paused = true;
+          return setTimeout(tick, 800);
+        }
         chars += 1;
         target.textContent = text.slice(0, chars);
         if (chars === text.length) {
@@ -36,6 +44,7 @@
       target.textContent = text.slice(0, chars);
       if (chars === 0) {
         deleting = false;
+        paused = false;
         role = (role + 1) % ROLES.length;
         return setTimeout(tick, 350);
       }
