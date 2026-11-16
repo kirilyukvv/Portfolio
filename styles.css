@@ -193,6 +193,20 @@ img {
   line-height: 1;
 }
 
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin: 0 0 24px;
+}
+
+.section-head .section-title,
+.section-head .hero-nav {
+  margin: 0;
+}
+
 .section-about {
   padding-top: 48px;
   padding-bottom: 40px;
