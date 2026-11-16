@@ -675,11 +675,16 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--color-accent);
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.hiring-map__arrow::before {
-  content: "\2192";
+.hiring-map__arrow--eq::before {
+  content: "=";
+}
+
+.hiring-map__arrow--plus::before {
+  content: "+";
 }
 
 .hiring-map__foot {
@@ -1410,9 +1415,6 @@ img {
     height: 32px;
   }
 
-  .hiring-map__arrow::before {
-    content: "\2193";
-  }
 
 
   .project-decision {
