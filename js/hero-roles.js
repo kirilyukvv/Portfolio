@@ -5,11 +5,19 @@
   // "~" marks a short pause while typing, as if thinking for a moment. It is not shown.
   var ROLES = [
     'and analyst',
+    'and family man',
     'and researcher',
+    'and musician',
     'and product manager',
+    'and gamer',
     'and psychologist~ sometimes',
+    'and interior designer',
     'and frontend developer',
+    'and civil engineer',
     'and AI integrator',
+    'and nuclear plant designer',
+    'and philosopher',
+    'and tech geek',
     'and visioneer'
   ];
 
