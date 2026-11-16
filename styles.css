@@ -339,6 +339,17 @@ img {
   color: var(--color-text-muted);
 }
 
+.project-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.project-card__badges .project-card__badge {
+  margin: 0;
+}
+
 .project-card__badge {
   align-self: flex-start;
   margin: 0 0 12px;
