@@ -193,7 +193,7 @@ img {
   position: absolute;
   top: 0;
   left: 100%;
-  padding-left: 0.3em;
+  padding-left: 1ch;
   font-weight: 300;
   white-space: nowrap;
   color: var(--color-text-muted);
@@ -211,12 +211,6 @@ img {
 
 @keyframes hero-caret {
   50% { opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-roles__caret {
-    display: none;
-  }
 }
 
 .paragraph {

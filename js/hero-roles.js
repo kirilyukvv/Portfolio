@@ -16,18 +16,6 @@
     var target = document.querySelector('.hero-roles__text');
     if (!target) return;
 
-    // With reduced motion, swap whole roles instead of typing them letter by letter.
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) {
-      var index = 0;
-      target.textContent = ROLES[index];
-      setInterval(function () {
-        index = (index + 1) % ROLES.length;
-        target.textContent = ROLES[index];
-      }, 2200);
-      return;
-    }
-
     var role = 0;
     var chars = 0;
     var deleting = false;
