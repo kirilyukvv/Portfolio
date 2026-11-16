@@ -281,7 +281,10 @@ img {
 }
 
 .project-card__body {
-  padding: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 0 4px;
 }
 
 .project-card__meta {
@@ -309,7 +312,7 @@ img {
 }
 
 .project-card__link {
-  margin: 0;
+  margin: auto 0 0;
   font-size: 13px;
   font-weight: 400;
   color: var(--color-accent);
