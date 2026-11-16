@@ -791,6 +791,10 @@ img {
   color: var(--color-text-secondary);
 }
 
+.project-designer__growth {
+  color: var(--color-accent);
+}
+
 .project-designers--block {
   margin: 0;
 }
