@@ -5,7 +5,7 @@ Source content for [`../../index.html`](../../index.html).
 ## Hero
 
 - **Eyebrow:** Lead Product Designer
-- **Roles typed after the eyebrow** (`js/hero-roles.js`, muted, typed and deleted one at a time): and analyst · and family guy · and researcher · and musician · and product manager · and gamer · and psychologist sometimes (pause before “sometimes”) · and interior designer · and frontend developer · and civil engineer · and AI integrator · and nuclear plant designer · and philosopher · and tech geek · and visioneer
+- **Roles typed after the eyebrow** (`js/hero-roles.js`, muted, typed and deleted one at a time): and analyst · and family guy · and researcher · and skateboarder · and musician · and product manager · and gamer · and psychologist sometimes (pause before “sometimes”) · and interior designer · and warm-weather traveler · and frontend developer · and civil engineer · and AI integrator · and nuclear plant designer · and philosopher · and steak & pizza lover · and tech geek · and visioneer
 - **Name:** Vova Kirilyuk
 - **Tagline:** AI · BIGTECH · FINTECH · MARKETING · ANALYTICS · WEB APP · HARDCORE PROJECTS
 - **Links** (in the In short heading row): CV → [`../cv/info.md`](../cv/info.md) · How I lead → [`../../management.html`](../../management.html)
