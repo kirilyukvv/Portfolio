@@ -267,7 +267,7 @@ img {
 
 .section-projects {
   padding-top: 0;
-  padding-bottom: 64px;
+  padding-bottom: 0;
 }
 
 .section-title {
@@ -1502,4 +1502,53 @@ img {
     right: 16px;
     transform: none;
   }
+}
+
+.site-footer {
+  border-top: 1px dashed var(--color-border-dashed);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 40px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.site-footer__slogan {
+  flex: 1 1 280px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.site-footer__link {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+.site-footer__copy {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-text-muted);
 }
