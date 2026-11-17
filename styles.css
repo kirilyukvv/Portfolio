@@ -1522,10 +1522,6 @@ img {
   max-width: 1024px;
 }
 
-.site-footer--text .site-footer__inner {
-  max-width: 720px;
-}
-
 .site-footer__inner {
   border-top: 1px dashed var(--color-border-dashed);
   display: flex;
