@@ -851,10 +851,12 @@ img {
   background: var(--color-screenshot-bg);
 }
 
+/* Tall screenshots fill the same 16:10 frame as the others, centred on the screenshot grey. */
 .project-figure--portrait .project-figure__image {
-  width: auto;
-  max-height: 640px;
-  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
 }
 
 .project-figure__caption {
@@ -1453,6 +1455,10 @@ img {
 
   .project-lead {
     font-size: 16px;
+  }
+
+  .project-figure--portrait .project-figure__image {
+    aspect-ratio: 4 / 5;
   }
 
   .hiring-map {
