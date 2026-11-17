@@ -252,9 +252,17 @@ img {
   padding-bottom: 0;
 }
 
+/* Same columns as the cases grid, so the text lines up with the card content. */
 .project-highlights.project-highlights--home {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px 24px;
   max-width: none;
   margin: 0;
+  padding: 24px 0;
+}
+
+.project-highlights--home .project-highlights__item {
+  padding: 0 20px;
 }
 
 .project-highlights--home .project-highlights__value {
