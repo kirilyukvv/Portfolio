@@ -157,7 +157,7 @@ Source files here; exact copies (not re-encoded) in `assets/projects/content-pro
 
 | Source | Web file | What it shows | Placement |
 |---|---|---|---|
-| `00 overview.webp` | `content-production.webp` | Shared canvas with AI assistant and approval controls | Hero, home card |
+| — | `content-production-cover.webp` | Canvas close-up: banner, toolbar and AI assistant | Hero, home card |
 | `Editors/01.webp` | `editors-01.webp` | Brief beside creative previews | Overview |
 | — | `before-after.png` | Before / after diagram (rendered from HTML) | After Problem |
 | `Editors/02.webp` | `editors-02.webp` | Editor text fields and apply-to-all | Solution: copy editor mode |
