@@ -795,7 +795,7 @@ img {
 
 .project-designer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   min-width: 0;
 }
@@ -810,22 +810,8 @@ img {
   image-rendering: pixelated;
 }
 
-/* Short two-line entries (name + level) sit centred on the avatar.
-   The 6px nudge centres the letters themselves, not their line boxes. */
-.project-designers--centered .project-designer {
-  align-items: center;
-}
-
-.project-designers--centered .project-designer__info {
-  position: relative;
-  top: 6px;
-  margin-top: 0;
-}
-
-/* Pull the name up so its capitals line up with the top of the avatar. */
 .project-designer__info {
   min-width: 0;
-  margin-top: -3px;
 }
 
 .project-designer__name {
@@ -1092,10 +1078,6 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px 24px;
   margin-top: 16px;
-}
-
-.project-designers--block .project-designer {
-  align-items: flex-start;
 }
 
 .lightbox-trigger {
