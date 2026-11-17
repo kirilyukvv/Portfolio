@@ -30,7 +30,7 @@ Product Design · UX Strategy · Design Systems · User Research · Data-Driven 
 *Touch, Tinkoff's internal platform for customer marketing (CVM). All products below are parts of Touch. FinTech / Marketing & Analytics.*
 
 - Led design of **Touch** campaign creation: about ten launch tools became one campaign entity, and launch time went from 30–70 days to between one day and a week.
-- Lead a team of 4 product designers; ran about 50 interviews with users and stakeholders; run design reviews across 12+ product areas.
+- Lead a team of 4 product designers; ran hundreds of interviews with users and stakeholders; run design reviews across 12+ product areas.
 - Shaped **Content Hub** with the section's designer: one canvas where copy editors, designers and technologists build creatives for every channel. Tested with 25 people from three roles; now live.
 - Led design of **Caen (Campaign Engine)**: orchestrator across email, push, SMS and chat; node-based workflow builder for audience, channel selection and step sequencing.
 - Designed **Segments**, a visual audience builder for non-technical users.
