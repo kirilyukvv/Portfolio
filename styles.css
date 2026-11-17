@@ -346,6 +346,10 @@ img {
   margin: 0 0 12px;
 }
 
+.project-header__badges {
+  margin-bottom: 16px;
+}
+
 .project-card__badges .project-card__badge {
   margin: 0;
 }
