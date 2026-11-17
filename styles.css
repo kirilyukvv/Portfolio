@@ -810,6 +810,15 @@ img {
   image-rendering: pixelated;
 }
 
+/* Short two-line entries (name + level) sit centred on the avatar. */
+.project-designers--centered .project-designer {
+  align-items: center;
+}
+
+.project-designers--centered .project-designer__info {
+  margin-top: 0;
+}
+
 /* Pull the name up so its capitals line up with the top of the avatar. */
 .project-designer__info {
   min-width: 0;
