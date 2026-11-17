@@ -126,14 +126,10 @@ img {
 .hero-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 56px;
+  gap: 8px 24px;
   margin: 24px 0 0;
 }
 
-.hero-nav__icon {
-  flex-shrink: 0;
-  display: block;
-}
 
 .hero-nav__link {
   display: inline-flex;
