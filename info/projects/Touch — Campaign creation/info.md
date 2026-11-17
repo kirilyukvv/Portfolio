@@ -51,7 +51,7 @@ Overview → Problem → Approach → My role & team → Solution (4 stages) →
 
 | File | Placement |
 |------|-----------|
-| `00 Preview.png` | Hero (`campaign-creation.png` / `@2x`) |
+| — | Hero and home card: `assets/projects/campaign-creation-cover.webp` (A/B test node wired to communication types) |
 | `01.png` | Decision 01 — campaign list |
 | `02.png` | Decision 01 — About stage |
 | `04.png` | Decision 02 — creatives for several channels in one list |
