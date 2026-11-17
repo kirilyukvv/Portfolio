@@ -810,12 +810,15 @@ img {
   image-rendering: pixelated;
 }
 
-/* Short two-line entries (name + level) sit centred on the avatar. */
+/* Short two-line entries (name + level) sit centred on the avatar.
+   The 6px nudge centres the letters themselves, not their line boxes. */
 .project-designers--centered .project-designer {
   align-items: center;
 }
 
 .project-designers--centered .project-designer__info {
+  position: relative;
+  top: 6px;
   margin-top: 0;
 }
 
