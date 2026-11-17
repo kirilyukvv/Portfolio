@@ -600,11 +600,6 @@ img {
   margin: 0 0 12px;
 }
 
-.testimonial__quote p:first-child {
-  font-size: 18px;
-  line-height: 1.45;
-}
-
 .testimonial__quote p:last-child {
   margin-bottom: 0;
 }
