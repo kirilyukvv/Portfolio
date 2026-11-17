@@ -810,8 +810,11 @@ img {
   image-rendering: pixelated;
 }
 
+/* Trim the line boxes to the capitals on top and the last baseline at the
+   bottom, so the avatar centres on the visible text, not its leading. */
 .project-designer__info {
   min-width: 0;
+  text-box: trim-both cap alphabetic;
 }
 
 .project-designer__name {
