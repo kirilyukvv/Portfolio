@@ -1002,14 +1002,16 @@ img {
 .project-decision {
   margin: 0 0 24px;
   padding: 24px;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 1024px;
+  max-width: 720px;
   background: var(--color-surface);
   border-radius: 0;
 }
 
+/* Decisions follow the text column, not the screenshots. */
 .project-content--wide .project-decision {
-  max-width: 1024px;
+  max-width: 720px;
 }
 
 .project-decision__index {
