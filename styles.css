@@ -817,6 +817,14 @@ img {
   text-box: trim-both cap alphabetic;
 }
 
+/* Browsers without text-box (Firefox, older Safari): negative margins
+   remove the same space above the capitals and below the last baseline. */
+@supports not (text-box: trim-both cap alphabetic) {
+  .project-designer__info {
+    margin: -4px 0 -4px;
+  }
+}
+
 .project-designer__name {
   margin: 0 0 2px;
   font-size: 14px;
