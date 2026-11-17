@@ -18,7 +18,7 @@
 | **◆ Context** | Touch, Tinkoff's internal platform for customer marketing (CVM: customer value management) |
 | **◆ Goal** | Make the whole campaign launch visible in one place instead of ~10 tools linked through Jira |
 | **◆ Constraints** | Regulated financial services; 8 channel formats; 1–3 mandatory approval rounds by editor, designer and technologist |
-| **◆ Research** | Hundreds of interviews I ran with users and stakeholders; launch process digitized with time cost per stage |
+| **◆ Research** | Interviews I ran with users and stakeholders; launch process digitized with time cost per stage |
 | **◆ My role** | Lead Product Designer. Research, concept, stakeholder buy-in; led 3 designers |
 | **◆ Impact** | Launch time: 30–70 days → 1 day to 1 week |
 
@@ -28,7 +28,7 @@
 - Launch took 30–70 days depending on complexity, number of approvals and rework. Now it takes 1 day to 1 week.
 - 1–3 approval rounds per creative; this number does not change with Touch, so approval is not a value story.
 - Rollout is gradual because teams have to rebuild their process; Touch will become the only campaign tool company-wide.
-- Research: about a year of analysis by designers, PMs and analysts; hundreds of interviews run by Vova with users and stakeholders; business process digitized with time cost per stage.
+- Research: about a year of analysis by designers, PMs and analysts; interviews run by Vova with users and stakeholders; business process digitized with time cost per stage.
 - Main problem: no single "Campaign" entity that makes the launch transparent and holds all artifacts.
 - AI-generated creatives are still reviewed by designers; speed grows with better models and more unified creatives.
 - Not confirmed, don't claim: how the new launch time was measured, fewer approval rounds, rejected design alternatives.
